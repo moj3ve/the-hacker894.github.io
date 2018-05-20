@@ -59,6 +59,8 @@
 <!-- Stylesheet
     ================================================== -->
 <link rel="stylesheet" type="text/css"  href="css/style.css">
+<link rel="stylesheet" type="text/css"  href="css/cards.css">
+
 <link rel="stylesheet" type="text/css" href="css/prettyPhoto.css">
 <script type="text/javascript" src="js/modernizr.custom.js"></script>
 
@@ -102,7 +104,7 @@
           <li> <a class="page-scroll" href="#page-top">Home</a> </li>
           <li> <a class="page-scroll" href="#about">About</a> </li>
           <li> <a class="page-scroll" href="#skills">Skills</a> </li>
-          <li> <a class="page-scroll" href="#portfolio">Portfolio</a> </li>
+          <li> <a class="page-scroll" href="#projects">Projects</a> </li>
           <li> <a class="page-scroll" href="#websites">Websites</a> </li>
           <li> <a class="page-scroll" href="#contact">Contact</a> </li>
         </ul>
@@ -123,7 +125,7 @@
         <div class="about-text">
           <p>I create NodeJS applications and release the source code on GitHub.</p>
           <p>I have also recently started making Android applications. They're very simple, but I hope to do more advanced coding in the future.</p>
-          <a href="#portfolio" class="btn btn-primary btn-lg page-scroll">My Portfolio</a> </div>
+          <a href="#projects" class="btn btn-primary btn-lg page-scroll">My Portfolio</a> </div>
       </div>
     </div>
   </div>
@@ -152,110 +154,244 @@
   </div>
 </div>
 <!-- Portfolio Section -->
-<div id="portfolio">
+<div id="projects">
   <div class="container">
     <div class="section-title text-center center">
-      <h2>Portfolio</h2>
+      <h2>Projects</h2>
       <hr>
     </div>
- <!--   <div class="categories">
-      <ul class="cat">
-        <li>
-          <ol class="type">
-            <li><a href="#" data-filter="*" class="active">All</a></li>
-            <li><a href="#" data-filter=".web">Web Design</a></li>
-            <li><a href="#" data-filter=".app">App Development</a></li>
-            <li><a href="#" data-filter=".branding">Branding</a></li>
-          </ol>
-        </li>
-      </ul>
-      <div class="clearfix"></div>
-    </div> -->
     <div class="row">
-      <div class="portfolio-items">
-        <div class="col-sm-6 col-md-3 col-lg-3 web">
-          <div class="portfolio-item">
-            <div class="hover-bg"> <a href="img/portfolio/sunset.png" title="The Swiss-Army Knife of DiscordJS Bots" rel="prettyPhoto">
-              <div class="hover-text">
-                <h4>Sunset</h4>
-                <small>NodeJS Discord Bot</small> </div>
-              <img src="img/portfolio/sunset.png" class="img-responsive" alt="Sunset"> </a> </div>
+        <div class="column">
+
+                <div class="my-2 mx-1   p-relative bg-white shadow-1 blue-hover" style="width: 360px; overflow: hidden; border-radius: 1px;">
+                    <img src="img/portfolio/sunset.png" alt="Sunset"
+                        class="d-block w-full">
+            
+              <div class="px-2 py-2">
+                <p class="mb-0 small font-weight-medium text-uppercase mb-1 text-muted lts-2px">
+                  NodeJS
+                </p>
+            
+                <h1 class="ff-serif font-weight-normal text-black card-heading mt-0 mb-1" style="line-height: 1.25;">
+                  Sunset
+                </h1>
+            
+                <p class="mb-1">
+                  The swiss-army knife of Discord Bots. Programmed in NodeJS
+                </p>
+            
+              </div>
+            
+              <a href="//hacker-hub.com/sunset/" class="text-uppercase d-inline-block font-weight-medium lts-2px ml-2 mb-2 text-center styled-link">
+                Read More
+              </a>
+              </a>
+        
+            </div>
+
+                <div class="my-2 mx-1   p-relative bg-white shadow-1 blue-hover" style="width: 360px; overflow: hidden; border-radius: 1px;">
+                    <img src="img/portfolio/alpexia.png" alt="AlpexiaSupport"
+                        class="d-block w-full">
+            
+              <div class="px-2 py-2">
+                <p class="mb-0 small font-weight-medium text-uppercase mb-1 text-muted lts-2px">
+                  NodeJS
+                </p>
+            
+                <h1 class="ff-serif font-weight-normal text-black card-heading mt-0 mb-1" style="line-height: 1.25;">
+                  Alpexia Support
+                </h1>
+            
+                <p class="mb-1">
+                  The server-exclusive support bot for the Alpexia Discord Bot
+                  </p>
+            
+              </div>
+            
+              <a href="//hacker-hub.com/projects/other/AlpexiaSupport.zip" class="text-uppercase d-inline-block font-weight-medium lts-2px ml-2 mb-2 text-center styled-link">
+                Download
+              </a>
+              </a>
+        
+            </div>
+
+            <div class="my-2 mx-1   p-relative bg-white shadow-1 blue-hover" style="width: 360px; overflow: hidden; border-radius: 1px;">
+                <img src="img/portfolio/zucc.png" alt="The Zucc"
+                    class="d-block w-full">
+        
+          <div class="px-2 py-2">
+            <p class="mb-0 small font-weight-medium text-uppercase mb-1 text-muted lts-2px">
+              NodeJS
+            </p>
+        
+            <h1 class="ff-serif font-weight-normal text-black card-heading mt-0 mb-1" style="line-height: 1.25;">
+              The Zucc
+            </h1>
+        
+            <p class="mb-1">
+              A very simple DiscordJS bot based off of the Mark Zuckerburg memes.
+              </p>
+        
           </div>
+        
+          <a href="//hacker-hub.com/projects/other/zucc.zip" class="text-uppercase d-inline-block font-weight-medium lts-2px ml-2 mb-2 text-center styled-link">
+            Download
+          </a>
+          </a>
+    
         </div>
-        <div class="col-sm-6 col-md-3 col-lg-3 app">
-          <div class="portfolio-item">
-            <div class="hover-bg"> <a href="img/portfolio/alpexia.png" title="Support Bot for the Alpexia Discord Server" rel="prettyPhoto">
-              <div class="hover-text">
-                <h4>AlpexiaSupport</h4>
-                <small>NodeJS Discord Bot</small> </div>
-              <img src="img/portfolio/alpexia.png" class="img-responsive" alt="AlepxiaSupport"> </a> </div>
-          </div>
+        
+        
+
+    
         </div>
-        <div class="col-sm-6 col-md-3 col-lg-3 web">
-          <div class="portfolio-item">
-            <div class="hover-bg"> <a href="img/portfolio/exposex.png" title="Server-exclusive DiscordJS Bot for the Expose X server" rel="prettyPhoto">
-              <div class="hover-text">
-                <h4>Expose X Bot</h4>
-                <small>NodeJS Discord Bot</small> </div>
-              <img src="img/portfolio/exposex.png" class="img-responsive" alt="Expose X Bot"> </a> </div>
+        <div class="column">
+
+            <div class="my-2 mx-1   p-relative bg-white shadow-1 blue-hover" style="width: 360px; overflow: hidden; border-radius: 1px;">
+                <img src="img/portfolio/gamershubapp.png" alt="GamersHub Android App"
+                    class="d-block w-full">
+        
+          <div class="px-2 py-2">
+            <p class="mb-0 small font-weight-medium text-uppercase mb-1 text-muted lts-2px">
+              Java &amp; XML
+            </p>
+        
+            <h1 class="ff-serif font-weight-normal text-black card-heading mt-0 mb-1" style="line-height: 1.25;">
+              GamersHub App
+            </h1>
+        
+            <p class="mb-1">
+              A small app for GamersHub requested by Yann#8138.
+            </p>
+        
           </div>
+        
+          <a href="https://github.com/The-Hacker894/GamersHub-App/releases/tag/v1.1" class="text-uppercase d-inline-block font-weight-medium lts-2px ml-2 mb-2 text-center styled-link">
+            GitHub
+          </a>
+          <a href="https://play.google.com/store/apps/details?id=com.hackerlabs.sky.gamershub" class="text-uppercase d-inline-block font-weight-medium lts-2px ml-2 mb-2 text-center styled-link">
+            Google Play
+          </a>
+          </a>
+    
         </div>
-        <div class="col-sm-6 col-md-3 col-lg-3 web">
-          <div class="portfolio-item">
-            <div class="hover-bg"> <a href="img/hacker.jpg" title="<a href='https://hacker-hub.com/'>HackerHub Website</a>" rel="prettyPhoto">
-              <div class="hover-text">
-                <h4>HackerHub</h4>
-                <small>Web Design</small> </div>
-              <img src="img/hacker.jpg" class="img-responsive" alt="HackerHub Website"> </a> </div>
-          </div>
+
+        <div class="my-2 mx-1   p-relative bg-white shadow-1 blue-hover" style="width: 360px; overflow: hidden; border-radius: 1px;">
+            <img src="img/portfolio/nouapp.png" alt="No U Android App"
+                class="d-block w-full">
+    
+      <div class="px-2 py-2">
+        <p class="mb-0 small font-weight-medium text-uppercase mb-1 text-muted lts-2px">
+          Java &amp; XML
+        </p>
+    
+        <h1 class="ff-serif font-weight-normal text-black card-heading mt-0 mb-1" style="line-height: 1.25;">
+          No U App
+        </h1>
+    
+        <p class="mb-1">
+          The app for all of your comebacks. Available on Android.
+          </p>
+    
+      </div>
+      
+    
+      <a href="https://github.com/The-Hacker894/NoU-App/releases/tag/v1.0" class="text-uppercase d-inline-block font-weight-medium lts-2px ml-2 mb-2 text-center styled-link">
+        GitHub
+      </a>
+      <a href="https://play.google.com/store/apps/details?id=com.hackerlabs.sky.nou" class="text-uppercase d-inline-block font-weight-medium lts-2px ml-2 mb-2 text-center styled-link">
+        Google Play
+      </a>
+      </a>
+
+    </div>
+
+    <div class="my-2 mx-1   p-relative bg-white shadow-1 blue-hover" style="width: 360px; overflow: hidden; border-radius: 1px;">
+        <img src="img/portfolio/exposex.png" alt="Expose X"
+            class="d-block w-full">
+
+  <div class="px-2 py-2">
+    <p class="mb-0 small font-weight-medium text-uppercase mb-1 text-muted lts-2px">
+      NodeJS
+    </p>
+
+    <h1 class="ff-serif font-weight-normal text-black card-heading mt-0 mb-1" style="line-height: 1.25;">
+      Expose X Bot
+    </h1>
+
+    <p class="mb-1">
+      The server-exclusive support bot for the Expose X Bot requested by Corbs#0001.
+      </p>
+
+  </div>
+
+  <a href="//hacker-hub.com/projects/other/Expose_X.zip" class="text-uppercase d-inline-block font-weight-medium lts-2px ml-2 mb-2 text-center styled-link">
+    Download
+  </a>
+  </a>
+
+</div>
         </div>
-        <div class="col-sm-6 col-md-3 col-lg-3 app">
-          <div class="portfolio-item">
-            <div class="hover-bg"> <a href="img/hacker.jpg" title="WebApp for HackerHub. <a href='//hacker-hub.com/webapp/'>Download for Linux, macOS, Windows, and Android here</a> " rel="prettyPhoto">
-              <div class="hover-text">
-                <h4>HackerHub WebApp</h4>
-                <small>Various Languages (App Development)</small> </div>
-              <img src="img/hacker.jpg" class="img-responsive" alt="HackerHub WebApp"> </a> </div>
+        <div class="column">
+            <div class="my-2 mx-1   p-relative bg-white shadow-1 blue-hover" style="width: 360px; overflow: hidden; border-radius: 1px;">
+                <img src="img/hacker.jpg" alt="HackerHub WebApp"
+                    class="d-block w-full">
+        
+          <div class="px-2 py-2">
+            <p class="mb-0 small font-weight-medium text-uppercase mb-1 text-muted lts-2px">
+              Various Languages
+            </p>
+        
+            <h1 class="ff-serif font-weight-normal text-black card-heading mt-0 mb-1" style="line-height: 1.25;">
+              HackerHub WebApp
+            </h1>
+        
+            <p class="mb-1">
+              WebApp available for macOS, Linux, Windows, and Android.
+              </p>
+        
           </div>
+        
+          <a href="https://github.com/The-Hacker894/HackerHub-WebApp" class="text-uppercase d-inline-block font-weight-medium lts-2px ml-2 mb-2 text-center styled-link">
+            GitHub
+          </a>
+          <a href="https://play.google.com/store/apps/details?id=com.hackerlabs.sky.hackerhub" class="text-uppercase d-inline-block font-weight-medium lts-2px ml-2 mb-2 text-center styled-link">
+            Google Play
+          </a>
+          </a>
+    
         </div>
-    <!--    <div class="col-sm-6 col-md-3 col-lg-3 branding">
-          <div class="portfolio-item">
-            <div class="hover-bg"> <a href="img/portfolio/06-large.jpg" title="Project description" rel="prettyPhoto">
-              <div class="hover-text">
-                <h4>Project Title</h4>
-                <small>Branding</small> </div>
-              <img src="img/portfolio/06-small.jpg" class="img-responsive" alt="Project Title"> </a> </div>
-          </div>
-        </div>
-        <div class="col-sm-6 col-md-3 col-lg-3 branding app">
-          <div class="portfolio-item">
-            <div class="hover-bg"> <a href="img/portfolio/07-large.jpg" title="Project description" rel="prettyPhoto">
-              <div class="hover-text">
-                <h4>Project Title</h4>
-                <small>App Development, Branding</small> </div>
-              <img src="img/portfolio/07-small.jpg" class="img-responsive" alt="Project Title"> </a> </div>
-          </div>
-        </div>
-        <div class="col-sm-6 col-md-3 col-lg-3 web">
-          <div class="portfolio-item">
-            <div class="hover-bg"> <a href="img/portfolio/08-large.jpg" title="Project description" rel="prettyPhoto">
-              <div class="hover-text">
-                <h4>Project Title</h4>
-                <small>Web Design</small> </div>
-              <img src="img/portfolio/08-small.jpg" class="img-responsive" alt="Project Title"> </a> </div>
-          </div>
-        </div> -->
-        <div>
+        <div class="my-2 mx-1   p-relative bg-white shadow-1 blue-hover" style="width: 360px; overflow: hidden; border-radius: 1px;">
+            <img src="img/portfolio/ageapprove.png" alt="AgeApprove"
+                class="d-block w-full">
+    
+      <div class="px-2 py-2">
+        <p class="mb-0 small font-weight-medium text-uppercase mb-1 text-muted lts-2px">
+          NodeJS
+        </p>
+    
+        <h1 class="ff-serif font-weight-normal text-black card-heading mt-0 mb-1" style="line-height: 1.25;">
+          AgeApprove
+        </h1>
+    
+        <p class="mb-1">
+          The server-exclusive DiscordJS for approving the ages of the server's members. Requested by Corbs#0001.
+          </p>
+    
+      </div>
+    
+      <a href="//hacker-hub.com/projects/other/AgeApprove.zip" class="text-uppercase d-inline-block font-weight-medium lts-2px ml-2 mb-2 text-center styled-link">
+        Download
+      </a>
+      </a>
+    
+    </div>
         </div>
       </div>
-      <br>
-      <a style="display:flex;justify-content:center;align-items:flex-end;" href="//hacker-hub.com/" class="btn btn-primary btn-lg">See More</a>
-    </div>
-  </div>
-  <br>
-  <div id="color-div"></div>
-  <br>
-
+   
+   
+</div>
+</div>
   <div id="websites">
     <div class="container">
       <div class="section-title text-center center">
@@ -289,7 +425,7 @@
     <div style="display:flex;justify-content:center;align-items:center;">
       <div class="col-md-3 col-sm-3 wow fadeInDown" data-wow-delay="400ms">
         <div class="achievement-box"> <span class="count">1.5</span>
-          <h4>Years of Experience</h4>
+          <h4>Years of Programming Experience</h4>
         </div>
       </div>
       </div>
@@ -297,48 +433,6 @@
   </div>
 
 
-<!-- Testimonials Section 
-<div id="testimonials" class="text-center">
-  <div class="container">
-    <div class="section-title center">
-      <h2>Testimonials</h2>
-      <hr>
-    </div>
-    <div class="row">
-      <div class="col-md-10 col-md-offset-1">
-        <div class="row testimonials">
-          <div class="col-sm-4">
-            <blockquote><i class="fa fa-quote-left"></i>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elitduis sed dapibus leo nec ornare.</p>
-              <div class="clients-name">
-                <p><strong>John Doe</strong><br>
-                  <em>CEO, Company Inc.</em></p>
-              </div>
-            </blockquote>
-          </div>
-          <div class="col-sm-4">
-            <blockquote><i class="fa fa-quote-left"></i>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elitduis sed dapibus leo nec ornare.</p>
-              <div class="clients-name">
-                <p><strong>Jane Doe</strong><br>
-                  <em>CEO, Company Inc.</em></p>
-              </div>
-            </blockquote>
-          </div>
-          <div class="col-sm-4">
-            <blockquote><i class="fa fa-quote-left"></i>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elitduis sed dapibus leo nec ornare.</p>
-              <div class="clients-name">
-                <p><strong>Chris Smith</strong><br>
-                  <em>CEO, Company Inc.</em></p>
-              </div>
-            </blockquote>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div> -->
 
 
 <!-- Contact Section -->
@@ -351,7 +445,8 @@
       </div>
       <div class="col-md-8 col-md-offset-2">
         <a href="mailto:skylarmccauley864@gmail.com" class="btn btn-default btn-lg">Email Me</a>         <br>
-        <a href="https://mail.google.com/mail/u/0/?view=cm&fs=1&tf=1&to=skylarmccauley864@gmail.com&su=" class="btn btn-default btn-lg">Email Me (GMail)</a>
+        <a href="https://mail.google.com/mail/u/0/?view=cm&fs=1&tf=1&to=skylarmccauley864@gmail.com&su=" class="btn btn-default btn-lg">Email Me (GMail)</a> <br> <br>
+        <strong>skylarmccauley864@gmail.com</strong>
         <div class="social">
           <ul>
             <li><a href="https://github.com/The-Hacker894"><i class="fa fa-github"></i></a></li>

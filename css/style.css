@@ -302,7 +302,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6b4da8', end
 	font-size: .8em;
 }
 /* Portfolio Section */
-#portfolio {
+#projects {
 	padding: 100px 0;
 	background: #f6f6f6;
 }
@@ -424,7 +424,7 @@ ol.type li a:hover {
 .hover-bg:hover .hover-text {
 	opacity: 1;
 }
-#portfolio i.fa {
+#projects i.fa {
 	font-size: 20px;
 	padding: 5px;
 	color: #E87E04;
