@@ -240,6 +240,17 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d96b4da8', e
 	margin-top: 20px;
 	margin-bottom: 30px;
 }
+#websites {
+	padding: 100px 0;
+	background: #f6f6f6;
+}
+#websites img {
+	float: right;
+}
+#websites p {
+	margin-top: 20px;
+	margin-bottom: 30px;
+}
 /* Skills Section */
 #skills {
 	padding: 100px 0;
@@ -616,6 +627,13 @@ header .intro-text {
 	padding-top: 150px;
 	padding-bottom: 150px;
 }
+}
+#color-div {
+	color: #526cbb;
+	background-color: #526cbb;
+	width: 100%;
+	height: 2px;
+	margin-top: 5%;
 }
 
 @media (max-width: 1024px) {
