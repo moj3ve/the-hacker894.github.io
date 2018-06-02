@@ -47,6 +47,25 @@
     }
   }
   </script>
+    <link href="css/spop.css" rel="stylesheet">
+<!-- Even better, SamallPop is made with scss,
+     @import to your style.scss -->
+<script src="js/spop.min.js"></script>
+    <script>
+        function myFunction() {
+  /* Get the text field */
+  var copyText = document.getElementById("email");
+
+  /* Select the text field */
+  copyText.select();
+
+  /* Copy the text inside the text field */
+  document.execCommand("copy");
+
+  /* Alert the copied text */
+  spop('Email Copied to Clipboard', 'success');
+}
+    </script>
 
 
 
@@ -473,7 +492,7 @@
       <div class="col-md-8 col-md-offset-2">
         <a href="mailto:skylarmccauley864@gmail.com" class="btn btn-default btn-lg">Email Me</a>         <br>
         <a href="https://mail.google.com/mail/u/0/?view=cm&fs=1&tf=1&to=skylarmccauley864@gmail.com&su=" class="btn btn-default btn-lg">Email Me (GMail)</a> <br> <br>
-        <strong>skylarmccauley864@gmail.com</strong>
+          <div id="email" onClick="myFunction()"><strong>skylarmccauley864@gmail.com</strong></div>
         <div class="social">
           <ul>
             <li><a href="https://github.com/The-Hacker894"><i class="fa fa-github"></i></a></li>
