@@ -10,8 +10,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Skylar McCauley - NodeJS &amp; Web Developer</title>
-<meta name="description" content="">
-<meta name="author" content="">
 
 <!-- Favicons
     ================================================== -->
@@ -26,6 +24,7 @@
 
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-117081817-2"></script>
+<script src="js/copyEmail.js"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
@@ -491,8 +490,9 @@
       </div>
       <div class="col-md-8 col-md-offset-2">
         <a href="mailto:skylarmccauley864@gmail.com" class="btn btn-default btn-lg">Email Me</a>         <br>
-        <a href="https://mail.google.com/mail/u/0/?view=cm&fs=1&tf=1&to=skylarmccauley864@gmail.com&su=" class="btn btn-default btn-lg">Email Me (GMail)</a> <br> <br>
-          <div id="email" onClick="myFunction()"><strong>skylarmccauley864@gmail.com</strong></div>
+        <a href="https://mail.google.com/mail/u/0/?view=cm&fs=1&tf=1&to=skylarmccauley864@gmail.com&su=" class="btn btn-default btn-lg">Email Me (GMail)</a> <br>
+        <p id="emailLink" style="display: none"><strong>skylarmccauley864@gmail.com</strong></p>
+        <a onClick="copyToClipboard('#emailLink')" id="copyEmail"class="btn btn-default btn-lg">Copy Email</a>
         <div class="social">
           <ul>
             <li><a href="https://github.com/The-Hacker894"><i class="fa fa-github"></i></a></li>
