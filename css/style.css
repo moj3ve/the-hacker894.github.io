@@ -167,6 +167,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6b4da8', end
 	font-size: 15px;
 	border-radius: 0;
 	text-transform: uppercase;
+	margin-top: 2pt;
 }
 .btn-default:hover, .btn-default:focus, .btn-default.focus, .btn-default:active, .btn-default.active {
 	color: #fff;
@@ -182,6 +183,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6b4da8', end
 	text-transform: uppercase;
 	font-size: 15px;
 	font-weight: 400;
+	margin-top: 2pt;
 }
 .btn-primary:hover, .btn-primary:focus, .btn-primary.focus, .btn-primary:active, .btn-primary.active {
 	color: #fff;
@@ -568,7 +570,7 @@ color: #2c3e50;
 color: #2c3e50;
 }
 #contact .btn {
-	margin-top: 20px;
+	margin-top: 2pt;
 }
 #contact .social {
 	margin-top: 80px;
@@ -603,7 +605,7 @@ color: #2c3e50;
 }
 
 /* Media Queries */
-@media(min-width:768px) {
+@media(min-width:780px) {
 .intro {
 	height: 100%;
 	padding: 0;
