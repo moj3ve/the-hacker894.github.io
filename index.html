@@ -52,6 +52,32 @@
   spop('Email Copied to Clipboard', 'success');
 }
     </script>
+    <script>
+      function botsShow() {
+        $('.discordBots').fadeIn(500)
+        $('.apps').fadeOut(500)
+        $('.projects-highlighter1').fadeTo("fast", 1)
+        $('.projects-highlighter2').fadeTo("fast", 0.001)
+        $('.projects-highlighter3').fadeTo("fast", 0.001)
+
+      }
+      function appsShow() {
+        $('.apps').fadeIn(500)
+        $('.discordBots').fadeOut(500)
+        $('.projects-highlighter1').fadeTo("fast", 0.001)
+        $('.projects-highlighter2').fadeTo("fast", 1)
+        $('.projects-highlighter3').fadeTo("fast", 0.001)
+        
+      }
+      function allShow() {
+        $('.apps').fadeIn(500)
+        $('.discordBots').fadeIn(500)
+        $('.projects-highlighter1').fadeTo("fast", 0.001)
+        $('.projects-highlighter2').fadeTo("fast", 0.001)
+        $('.projects-highlighter3').fadeTo("fast", 1)
+      }
+  window.onload = allShow
+    </script>
 
 
 
@@ -165,10 +191,25 @@
       <h2>Projects</h2>
       <hr>
     </div>
+    <div class="projects-selection">
+      <div class="projects-selector">
+    <h3><a href="javascript:botsShow()" >Discord Bots</a></h3> 
+    <hr class="projects-highlighter1">
+  </div>
+  <div class="projects-selector">
+      <h3><a href="javascript:appsShow()" >Apps</a></h3>
+      <hr class="projects-highlighter2">
+  </div>
+  <div class="projects-selector">
+      <h3><a href="javascript:allShow()" >All</a></h3>
+      <hr class="projects-highlighter3">
+  </div>
+    
+  </div>
     <div class="row center text-center">
         <div class="column">
 
-                <div class="my-2 mx-1 mobile-cards p-relative bg-white shadow-1 blue-hover">
+                <div class="discordBots my-2 mx-1 mobile-cards p-relative bg-white shadow-1 blue-hover">
                     <img src="img/portfolio/sunset.png" alt="Sunset"
                         class="d-block w-full">
             
@@ -194,7 +235,7 @@
         
             </div>
 
-                <div class="my-2 mx-1 mobile-cards p-relative bg-white shadow-1 blue-hover">
+                <div class="discordBots my-2 mx-1 mobile-cards p-relative bg-white shadow-1 blue-hover">
                     <img src="img/portfolio/alpexia.png" alt="AlpexiaSupport"
                         class="d-block w-full">
             
@@ -220,7 +261,7 @@
         
             </div>
 
-            <div class="my-2 mx-1 mobile-cards mobile-cards p-relative bg-white shadow-1 blue-hover">
+            <div class="discordBots my-2 mx-1 mobile-cards mobile-cards p-relative bg-white shadow-1 blue-hover">
                 <img src="img/portfolio/zucc.png" alt="The Zucc"
                     class="d-block w-full">
         
@@ -252,7 +293,7 @@
         </div>
         <div class="column">
 
-            <div class="my-2 mx-1 mobile-cards p-relative bg-white shadow-1 blue-hover">
+            <div class="apps my-2 mx-1 mobile-cards p-relative bg-white shadow-1 blue-hover">
                 <img src="img/portfolio/gamershubapp.png" alt="GamersHub Android App"
                     class="d-block w-full">
         
@@ -281,7 +322,7 @@
     
         </div>
 
-        <div class="my-2 mx-1 mobile-cards p-relative bg-white shadow-1 blue-hover">
+        <div class="apps my-2 mx-1 mobile-cards p-relative bg-white shadow-1 blue-hover">
             <img src="img/portfolio/nouapp.png" alt="No U Android App"
                 class="d-block w-full">
     
@@ -311,7 +352,7 @@
 
     </div>
 
-    <div class="my-2 mx-1 mobile-cards p-relative bg-white shadow-1 blue-hover">
+    <div class="discordBots my-2 mx-1 mobile-cards p-relative bg-white shadow-1 blue-hover">
         <img src="img/portfolio/exposex.png" alt="Expose X"
             class="d-block w-full">
 
@@ -337,7 +378,7 @@
 
 </div>
 
-<div class="my-2 mx-1 mobile-cards p-relative bg-white shadow-1 blue-hover">
+<div class="discordBots my-2 mx-1 mobile-cards p-relative bg-white shadow-1 blue-hover">
   <img src="img/portfolio/cleverbot.jpg" alt="CleverBot"
       class="d-block w-full">
 
@@ -363,7 +404,7 @@ READ MORE
 
 </div>
         </div>
-        <div class="column">
+        <div class="apps column">
             <div class="my-2 mx-1 mobile-cards p-relative bg-white shadow-1 blue-hover">
                 <img src="img/hacker.jpg" alt="HackerHub WebApp"
                     class="d-block w-full">
@@ -392,7 +433,7 @@ READ MORE
           </a>
     
         </div>
-          <div class="my-2 mx-1 mobile-cards p-relative bg-white shadow-1 blue-hover">
+          <div class="apps my-2 mx-1 mobile-cards p-relative bg-white shadow-1 blue-hover">
               <img src="img/portfolio/amoled.png" alt="AMOLED Calculator"
                   class="d-block w-full">
       
@@ -418,7 +459,7 @@ READ MORE
   
       </div>
 
-        <div class="my-2 mx-1 mobile-cards p-relative bg-white shadow-1 blue-hover">
+        <div class="discordBots my-2 mx-1 mobile-cards p-relative bg-white shadow-1 blue-hover">
             <img src="img/portfolio/ageapprove.png" alt="AgeApprove"
                 class="d-block w-full">
     
@@ -444,7 +485,7 @@ READ MORE
     
     </div>
 
-    <div class="my-2 mx-1 mobile-cards p-relative bg-white shadow-1 blue-hover">
+    <div class="discordBots my-2 mx-1 mobile-cards p-relative bg-white shadow-1 blue-hover">
       <img src="img/portfolio/thotblaster.png" alt="AgeApprove"
           class="d-block w-full">
 

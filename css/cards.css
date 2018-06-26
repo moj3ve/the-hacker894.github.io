@@ -17,6 +17,19 @@ body::after {
   display: table;
   clear: both;
 }
+.projects-selector {
+  display: inline-block;
+  margin-left: 1%;
+  margin-right: 1%;
+  font-size: 20pt;
+  box-shadow: 1000%;
+  padding: 1%;
+  
+
+}
+.projects-selection {
+  text-align: center;
+}
 body * {
   box-sizing: inherit;
 }
