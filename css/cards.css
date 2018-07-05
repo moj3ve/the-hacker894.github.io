@@ -113,6 +113,9 @@ p, h1 {
 .small {
   font-size: 0.75rem;
 }
+.medium {
+  font-size: 1.0rem;
+}
 .card-heading {
   font-size: 2.25rem;
 }
