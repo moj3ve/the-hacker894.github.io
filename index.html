@@ -33,10 +33,10 @@
   gtag('config', 'UA-117081817-2');
 </script>
 
-    <link href="css/spop.css" rel="stylesheet">
+<link href="src/spop/styles.css" rel="stylesheet">
 <!-- Even better, SamallPop is made with scss,
      @import to your style.scss -->
-<script src="js/spop.min.js"></script>
+<script src="src/spop/scripts.js"></script>
     <script>
         function myFunction() {
   /* Get the text field */
@@ -46,10 +46,16 @@
   copyText.select();
 
   /* Copy the text inside the text field */
-  document.execCommand("copy");
+  document.execCommand("copy").then( () => {
+    spop({
+	template: 'Email Copied',
+	position  : 'bottom-right',
+	style: 'success'
+});
+  })
 
   /* Alert the copied text */
-  spop('Email Copied to Clipboard', 'success');
+  
 }
     </script>
     <script>
