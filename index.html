@@ -88,7 +88,73 @@
         $('.projects-highlighter2').fadeTo("fast", 0.001)
         $('.projects-highlighter3').fadeTo("fast", 1)
       }
-  window.onload = allShow
+
+      // New Portfolio Section
+      
+      function changePage(p) {
+        // p = Page Number
+
+        // This is hardcoded to support 3 Pages
+        function cp() {
+          $(`.p2`).fadeOut(500)
+          $(`.p3`).fadeOut(500)
+          $(`.p1`).fadeIn(500)
+
+          $('.selector-1').fadeTo("fast", 1)
+          $('.selector-2').fadeTo("fast", 0.001)
+          $('.selector-3').fadeTo("fast", 0.001)
+          
+          return;
+        }
+        if(!p) {
+          cp()
+        }
+        if(p.length < 1) return cp()
+        p = parseInt(p)
+        
+        if(p <= 1) {
+          cp()
+          return;
+        }
+        if(p == 2) {
+          $(`.p1`).fadeOut(500)
+          $(`.p3`).fadeOut(500)
+          $(`.p2`).fadeIn(500)
+
+          $('.selector-1').fadeTo("fast", 0.001)
+          $('.selector-2').fadeTo("fast", 1)
+          $('.selector-3').fadeTo("fast", 0.001)
+
+          return;
+        }
+        if(p >= 3) {
+          $(`.p1`).fadeOut(500)
+          $(`.p2`).fadeOut(500)
+          $(`.p3`).fadeIn(500)
+
+          $('.selector-1').fadeTo("fast", 0.001)
+          $('.selector-2').fadeTo("fast", 0.001)
+          $('.selector-3').fadeTo("fast", 1)
+
+          return;
+        }
+      }
+      function resetPage() {
+
+        $(`.p2`).fadeOut(500)
+          $(`.p3`).fadeOut(500)
+          $(`.p1`).fadeIn(500)
+
+          $(`.pages`).fadeIn(500)
+          $(`.pages-loading`).fadeOut(500)
+
+          $('.selector-1').fadeTo("fast", 1)
+          $('.selector-2').fadeTo("fast", 0.001)
+          $('.selector-3').fadeTo("fast", 0.001)
+          
+          return;
+      }
+  window.onload = resetPage
     </script>
 
 
@@ -144,12 +210,12 @@
         <ul class="nav navbar-nav">
           <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
           <li class="hidden"> <a href="#page-top"></a> </li>
-          <li><div class="navbar-items" > <div class="navbar-icons"><i class="fas fa-home"></i></div></i><a class="page-scroll" href="#page-top">Home</a></div> </li>
-          <li> <div class="navbar-items"><div class="navbar-icons"><i class="fas fa-info-circle"></i></div><a class="page-scroll" href="#about">About</a></div> </li>
-          <li> <div class="navbar-items"><div class="navbar-icons"><i class="fas fa-suitcase"></i></div><a class="page-scroll" href="#skills">Skills</a> </div></li>
-          <li> <div class="navbar-items"><div class="navbar-icons"><i class="fas fa-code"></i></div><a class="page-scroll" href="#projects">Projects</a></div> </li>
-          <li> <div class="navbar-items"><div class="navbar-icons"><i class="fas fa-server"></i></div><a class="page-scroll" href="#websites">Websites</a></div> </li>
-          <li> <div class="navbar-items"><div class="navbar-icons"><i class="fas fa-user"></i></div><a class="page-scroll" href="#contact">Contact</a></div></li>
+          <li><div class="navbar-items" > <div class="navbar-icons"><i class="fas fa-home nb-i"></i></div></i><a class="page-scroll" href="#page-top">Home</a></div> </li>
+          <li> <div class="navbar-items"><div class="navbar-icons"><i class="fas fa-info-circle nb-i"></i></div><a class="page-scroll" href="#about">About</a></div> </li>
+          <li> <div class="navbar-items"><div class="navbar-icons"><i class="fas fa-suitcase nb-i"></i></div><a class="page-scroll" href="#skills">Skills</a> </div></li>
+          <li> <div class="navbar-items"><div class="navbar-icons"><i class="fas fa-code nb-i"></i></div><a class="page-scroll" href="#portfolio">Portfolio</a></div> </li>
+          <li> <div class="navbar-items"><div class="navbar-icons"><i class="fas fa-server nb-i"></i></div><a class="page-scroll" href="#websites">Websites</a></div> </li>
+          <li> <div class="navbar-items"><div class="navbar-icons"><i class="fas fa-user nb-i"></i></div><a class="page-scroll" href="#contact">Contact</a></div></li>
         </ul>
       </div>
     </div>
@@ -171,7 +237,7 @@
         <div class="about-text">
           <p>I create NodeJS applications such as Discord Bots and Twitter Bots. You can find them on my <a href="https://github.com/The-Hacker894/the-hacker894.github.io">GitHub Page</a></p>
           <p>I have also recently started making Android applications. They're very simple, but I hope to do more advanced coding in the future.</p>
-          <a href="#projects" class="btn btn-primary btn-lg page-scroll">My Portfolio</a> </div>
+          <a href="#portfolio" class="btn btn-primary btn-lg page-scroll">My Portfolio</a> </div>
       </div>
     </div>
   </div>
@@ -200,61 +266,235 @@
   </div>
 </div>
 <!-- Portfolio Section -->
-<div id="projects">
+<div id="portfolio">
   <div class="container">
     <div class="section-title text-center center">
-      <h2>Projects</h2>
+      <h2>Portfolio</h2>
       <hr>
     </div>
-    <div class="projects-selection">
-      <div class="projects-selector">
-    <h3><a href="javascript:botsShow()" >Discord Bots</a></h3> 
-    <hr class="projects-highlighter1">
-  </div>
-  <div class="projects-selector">
-      <h3><a href="javascript:appsShow()" >Apps</a></h3>
-      <hr class="projects-highlighter2">
-  </div>
-  <div class="projects-selector">
-      <h3><a href="javascript:allShow()" >All</a></h3>
-      <hr class="projects-highlighter3">
-  </div>
+    
+    <div class="page-selection" >
+
+            <div>
+          <h3>Pages</h3> 
+          <hr>
+
+          <div class="page-selector">
+            <div class="p-s-1">
+                <p class="p-s "><a onclick="changePage(1)" href="javascript:void(0);">1</a></p>
+                <hr class="selector-1">
+            </div>
+            <div class="p-s-2">
+                <p class="p-s"><a onclick="changePage(2)" href="javascript:void(0);">2</a></p>
+                <hr class="selector-2">
+            </div>
+            <div class="p-s-3">
+                <p class="p-s"><a onclick="changePage(3)" href="javascript:void(0);">3</a></p>
+                <hr class="selector-3">
+            </div>
+          </div>
+        </div>
     
   </div>
     <div class="row center text-center">
-        <div class="column">
 
-                <div class="discordBots my-2 mx-1 mobile-cards p-relative bg-white shadow-1 blue-hover">
-                    <img src="img/portfolio/sunset.png" alt="Sunset"
+      <div class="pages">
+          <div class="p1">
+              <div class="left column">
+                  <div class="discordBots my-2 mx-1 mobile-cards p-relative bg-white shadow-1 blue-hover">
+                      <img src="img/portfolio/cleverBotIconNew.png" alt="CleverBot"
+                          class="d-block w-full">
+                    
+                    <div class="px-2 py-2">
+                    <p class="mb-0 medium bigger-mobile font-weight-medium text-uppercase mb-1 text-muted lts-2px">
+                    NodeJS
+                    </p>
+                    
+                    <h1 class="ff-serif font-weight-normal text-black card-heading mt-0 mb-1" style="line-height: 1.25;">
+                    CleverBot
+                    </h1>
+                    
+                    <p class="mb-1 no-mobile">
+                    DiscordJS Bot using the cloud-based CleverBot service, CleverBot.io
+                    </p>
+                    
+                    </div>
+                    
+                    <a target="_blank" href="//hacker-hub.com/cleverbot/" class="text-uppercase d-inline-block font-weight-medium lts-2px ml-2 mb-2 text-center styled-link">
+                    READ MORE
+                    </a>
+      
+                    <a target="_blank" href="//hacker-hub.com/cleverbot/invite" class="text-uppercase d-inline-block font-weight-medium lts-2px ml-2 mb-2 text-center styled-link">
+                      INVITE
+                      </a>
+                    </div>
+    
+                    <div class="my-2 mx-1 mobile-cards p-relative bg-white shadow-1 blue-hover">
+                        <img src="img/hacker.jpg" alt="HackerHub WebApp"
+                            class="d-block w-full">
+                
+                  <div class="px-2 py-2">
+                    <p class="mb-0 medium bigger-mobile font-weight-medium text-uppercase mb-1 text-muted lts-2px">
+                      Various Languages
+                    </p>
+                
+                    <h1 class="ff-serif font-weight-normal text-black card-heading mt-0 mb-1" style="line-height: 1.25;">
+                      HackerHub WebApp
+                    </h1>
+                
+                    <p class="mb-1 no-mobile">
+                      WebApp available for macOS, Linux, Windows, and Android.
+                      </p>
+                
+                  </div>
+                
+                  <a target="_blank" href="https://github.com/The-Hacker894/HackerHub-WebApp" class="text-uppercase d-inline-block font-weight-medium lts-2px ml-2 mb-2 text-center styled-link">
+                    GitHub
+                  </a>
+                  <a target="_blank" href="https://play.google.com/store/apps/details?id=com.hackerlabs.sky.hackerhub" class="text-uppercase d-inline-block font-weight-medium lts-2px ml-2 mb-2 text-center styled-link">
+                    Google Play
+                  </a>    
+                </div>
+                </div>
+                <div class="right column">
+    
+                    <div class="discordBots my-2 mx-1 mobile-cards p-relative bg-white shadow-1 blue-hover">
+                        <img src="img/portfolio/sunset.png" alt="Sunset"
+                            class="d-block w-full">
+                
+                  <div class="px-2 py-2">
+                    <p class="mb-0 medium bigger-mobile font-weight-medium text-uppercase mb-1 text-muted lts-2px">
+                      NodeJS
+                    </p>
+                
+                    <h1 class="ff-serif font-weight-normal text-black card-heading mt-0 mb-1" style="line-height: 1.25;">
+                      Sunset
+                    </h1>
+                
+                    <p class="mb-1 no-mobile">
+                      The swiss-army knife of Discord Bots. Programmed in NodeJS
+                    </p>
+                
+                  </div>
+                
+                  <a target="_blank" href="//hacker-hub.com/sunset/" class="text-uppercase d-inline-block font-weight-medium lts-2px ml-2 mb-2 text-center styled-link">
+                    Read More
+                  </a>
+    
+                  <a target="_blank" href="//hacker-hub.com/sunset/invite" class="text-uppercase d-inline-block font-weight-medium lts-2px ml-2 mb-2 text-center styled-link">
+                    INVITE
+                    </a>
+            
+                </div>
+    
+    
+                    <div class="discordBots my-2 mx-1 mobile-cards p-relative bg-white shadow-1 blue-hover">
+                        <img src="img/portfolio/alpexia.png" alt="AlpexiaSupport"
+                            class="d-block w-full">
+                
+                  <div class="px-2 py-2">
+                    <p class="mb-0 medium bigger-mobile font-weight-medium text-uppercase mb-1 text-muted lts-2px">
+                      NodeJS
+                    </p>
+                
+                    <h1 class="ff-serif font-weight-normal text-black card-heading mt-0 mb-1" style="line-height: 1.25;">
+                      Alpexia Support
+                    </h1>
+                
+                    <p class="mb-1 no-mobile">
+                      The server-exclusive support bot for the Alpexia Discord Bot
+                      </p>
+                
+                  </div>
+                
+                  <a target="_blank"  href="//skylarmccauley.hacker-hub.com/projects/AlpexiaSupport.zip" class="text-uppercase d-inline-block font-weight-medium lts-2px ml-2 mb-2 text-center styled-link">
+                    Download
+                  </a>        
+                </div>
+                </div>
+          </div>
+           
+          <div class="p2">
+            <div class="left column">
+                <div class="apps my-2 mx-1 mobile-cards p-relative bg-white shadow-1 blue-hover">
+                    <img src="img/portfolio/nouapp.png" alt="No U Android App"
                         class="d-block w-full">
             
               <div class="px-2 py-2">
                 <p class="mb-0 medium bigger-mobile font-weight-medium text-uppercase mb-1 text-muted lts-2px">
-                  NodeJS
+                  Java &amp; XML
                 </p>
             
                 <h1 class="ff-serif font-weight-normal text-black card-heading mt-0 mb-1" style="line-height: 1.25;">
-                  Sunset
+                  No U App
                 </h1>
             
                 <p class="mb-1 no-mobile">
-                  The swiss-army knife of Discord Bots. Programmed in NodeJS
-                </p>
+                  The app for all of your comebacks. Available on Android.
+                  </p>
             
               </div>
+              
             
-              <a target="_blank" href="//hacker-hub.com/sunset/" class="text-uppercase d-inline-block font-weight-medium lts-2px ml-2 mb-2 text-center styled-link">
-                Read More
+              <a target="_blank" href="https://github.com/The-Hacker894/NoU-App/releases/tag/v1.0" class="text-uppercase d-inline-block font-weight-medium lts-2px ml-2 mb-2 text-center styled-link">
+                GitHub
               </a>
-
-              <a target="_blank" href="//hacker-hub.com/sunset/invite" class="text-uppercase d-inline-block font-weight-medium lts-2px ml-2 mb-2 text-center styled-link">
-                INVITE
-                </a>
-        
+              <a target="_blank" href="https://play.google.com/store/apps/details?id=com.hackerlabs.sky.nou" class="text-uppercase d-inline-block font-weight-medium lts-2px ml-2 mb-2 text-center styled-link">
+                Google Play
+              </a>
             </div>
-
-                <div class="discordBots my-2 mx-1 mobile-cards p-relative bg-white shadow-1 blue-hover">
-                    <img src="img/portfolio/alpexia.png" alt="AlpexiaSupport"
+        
+        <div class="discordBots my-2 mx-1 mobile-cards p-relative bg-white shadow-1 blue-hover">
+            <img src="img/portfolio/ageapprove.png" alt="AgeApprove"
+                class="d-block w-full">
+        
+        <div class="px-2 py-2">
+        <p class="mb-0 bigger-mobile small font-weight-medium text-uppercase mb-1 text-muted lts-2px">
+          NodeJS
+        </p>
+        
+        <h1 class="ff-serif font-weight-normal text-black card-heading mt-0 mb-1" style="line-height: 1.25;">
+          AgeApprove
+        </h1>
+        
+        <p class="mb-1 no-mobile">
+          The server-exclusive DiscordJS for approving the ages of the server's members. <br> (Requested by Korbs#0001.)
+          </p>
+        
+        </div>
+        
+        <a target="_blank" href="//skylarmccauley.hacker-hub.com/projects/AgeApprove.zip" class="text-uppercase d-inline-block font-weight-medium lts-2px ml-2 mb-2 text-center styled-link">
+        Download
+        </a>    
+        </div>
+        <div class="discordBots my-2 mx-1 mobile-cards p-relative bg-white shadow-1 blue-hover">
+        <img src="img/portfolio/exposex.png" alt="Expose X"
+            class="d-block w-full">
+        
+        <div class="px-2 py-2">
+        <p class="mb-0 medium bigger-mobile font-weight-medium text-uppercase mb-1 text-muted lts-2px">
+        NodeJS
+        </p>
+        
+        <h1 class="ff-serif font-weight-normal text-black card-heading mt-0 mb-1" style="line-height: 1.25;">
+        Expose X Bot
+        </h1>
+        
+        <p class="mb-1 no-mobile">
+        The server-exclusive support bot for the Expose X Bot <br> (Requested by Korbs#0001.)
+        </p>
+        
+        </div>
+        
+        <a target="_blank" href="//skylarmccauley.hacker-hub.com/projects/Expose_X.zip" class="text-uppercase d-inline-block font-weight-medium lts-2px ml-2 mb-2 text-center styled-link">
+        Download
+        </a>
+        
+        </div>
+            </div>
+            <div class="right column">
+                <div class="discordBots my-2 mx-1 mobile-cards mobile-cards p-relative bg-white shadow-1 blue-hover">
+                    <img src="img/portfolio/zucc.png" alt="The Zucc"
                         class="d-block w-full">
             
               <div class="px-2 py-2">
@@ -263,216 +503,69 @@
                 </p>
             
                 <h1 class="ff-serif font-weight-normal text-black card-heading mt-0 mb-1" style="line-height: 1.25;">
-                  Alpexia Support
+                  The Zucc
                 </h1>
             
                 <p class="mb-1 no-mobile">
-                  The server-exclusive support bot for the Alpexia Discord Bot
+                  A very simple DiscordJS bot based off of the Mark Zuckerburg memes.
                   </p>
             
               </div>
             
-              <a target="_blank"  href="//skylarmccauley.hacker-hub.com/projects/AlpexiaSupport.zip" class="text-uppercase d-inline-block font-weight-medium lts-2px ml-2 mb-2 text-center styled-link">
+              <a target="_blank" href="//skylarmccauley.hacker-hub.com/projects/zucc.zip" class="text-uppercase d-inline-block font-weight-medium lts-2px ml-2 mb-2 text-center styled-link">
                 Download
-              </a>        
-            </div>
-
-            <div class="discordBots my-2 mx-1 mobile-cards mobile-cards p-relative bg-white shadow-1 blue-hover">
-                <img src="img/portfolio/zucc.png" alt="The Zucc"
-                    class="d-block w-full">
-        
-          <div class="px-2 py-2">
-            <p class="mb-0 medium bigger-mobile font-weight-medium text-uppercase mb-1 text-muted lts-2px">
-              NodeJS
-            </p>
-        
-            <h1 class="ff-serif font-weight-normal text-black card-heading mt-0 mb-1" style="line-height: 1.25;">
-              The Zucc
-            </h1>
-        
-            <p class="mb-1 no-mobile">
-              A very simple DiscordJS bot based off of the Mark Zuckerburg memes.
-              </p>
-        
-          </div>
-        
-          <a target="_blank" href="//skylarmccauley.hacker-hub.com/projects/zucc.zip" class="text-uppercase d-inline-block font-weight-medium lts-2px ml-2 mb-2 text-center styled-link">
-            Download
-          </a>
-    
-        </div>
-    
-        </div>
-        <div class="column">
-
-            <div class="discordBots my-2 mx-1 mobile-cards p-relative bg-white shadow-1 blue-hover">
-                <img src="img/portfolio/cleverBotIconNew.png" alt="CleverBot"
-                    class="d-block w-full">
-              
-              <div class="px-2 py-2">
-              <p class="mb-0 medium bigger-mobile font-weight-medium text-uppercase mb-1 text-muted lts-2px">
-              NodeJS
-              </p>
-              
-              <h1 class="ff-serif font-weight-normal text-black card-heading mt-0 mb-1" style="line-height: 1.25;">
-              CleverBot
-              </h1>
-              
-              <p class="mb-1 no-mobile">
-              DiscordJS Bot using the cloud-based CleverBot service, CleverBot.io
-              </p>
-              
-              </div>
-              
-              <a target="_blank" href="//hacker-hub.com/cleverbot/" class="text-uppercase d-inline-block font-weight-medium lts-2px ml-2 mb-2 text-center styled-link">
-              READ MORE
               </a>
-
-              <a target="_blank" href="//hacker-hub.com/cleverbot/invite" class="text-uppercase d-inline-block font-weight-medium lts-2px ml-2 mb-2 text-center styled-link">
-                INVITE
-                </a>
+        
+    
+        
+            </div>
+    
+                <div class="apps my-2 mx-1 mobile-cards p-relative bg-white shadow-1 blue-hover">
+                    <img src="img/portfolio/gamershubapp.png" alt="GamersHub Android App"
+                        class="d-block w-full">
+            
+              <div class="px-2 py-2">
+                <p class="mb-0 medium bigger-mobile font-weight-medium text-uppercase mb-1 text-muted lts-2px">
+                  Java &amp; XML
+                </p>
+            
+                <h1 class="ff-serif font-weight-normal text-black card-heading mt-0 mb-1" style="line-height: 1.25;">
+                  GamersHub App
+                </h1>
+            
+                <p class="mb-1 no-mobile">
+                  A small app for GamersHub <br>(Requested by GamersHub).
+                </p>
+            
               </div>
-
-            <div class="apps my-2 mx-1 mobile-cards p-relative bg-white shadow-1 blue-hover">
-                <img src="img/portfolio/gamershubapp.png" alt="GamersHub Android App"
-                    class="d-block w-full">
+            
+              <a target="_blank" href="https://github.com/The-Hacker894/GamersHub-App/releases/" class="text-uppercase d-inline-block font-weight-medium lts-2px ml-2 mb-2 text-center styled-link">
+                GitHub
+              </a>
+              <a target="_blank" href="https://play.google.com/store/apps/details?id=com.hackerlabs.sky.gamershub" class="text-uppercase d-inline-block font-weight-medium lts-2px ml-2 mb-2 text-center styled-link">
+                Google Play
+              </a>
         
-          <div class="px-2 py-2">
-            <p class="mb-0 medium bigger-mobile font-weight-medium text-uppercase mb-1 text-muted lts-2px">
-              Java &amp; XML
-            </p>
-        
-            <h1 class="ff-serif font-weight-normal text-black card-heading mt-0 mb-1" style="line-height: 1.25;">
-              GamersHub App
-            </h1>
-        
-            <p class="mb-1 no-mobile">
-              A small app for GamersHub <br>(Requested by GamersHub).
-            </p>
-        
-          </div>
-        
-          <a target="_blank" href="https://github.com/The-Hacker894/GamersHub-App/releases/" class="text-uppercase d-inline-block font-weight-medium lts-2px ml-2 mb-2 text-center styled-link">
-            GitHub
-          </a>
-          <a target="_blank" href="https://play.google.com/store/apps/details?id=com.hackerlabs.sky.gamershub" class="text-uppercase d-inline-block font-weight-medium lts-2px ml-2 mb-2 text-center styled-link">
-            Google Play
-          </a>
+            </div>
+            </div>
     
+          </div>
+
+          <div class="p3">
+            <h4>There's nothing here yet, but my portfolio is ever-growing.</h4>
+          </div>
+      </div>
+      <div class="pages-loading">
+        <h4>Loading...</h4>
+        <p><i class="fas fa-sync"></i></p>
+      </div>
         </div>
 
-        <div class="apps my-2 mx-1 mobile-cards p-relative bg-white shadow-1 blue-hover">
-            <img src="img/portfolio/nouapp.png" alt="No U Android App"
-                class="d-block w-full">
-    
-      <div class="px-2 py-2">
-        <p class="mb-0 medium bigger-mobile font-weight-medium text-uppercase mb-1 text-muted lts-2px">
-          Java &amp; XML
-        </p>
-    
-        <h1 class="ff-serif font-weight-normal text-black card-heading mt-0 mb-1" style="line-height: 1.25;">
-          No U App
-        </h1>
-    
-        <p class="mb-1 no-mobile">
-          The app for all of your comebacks. Available on Android.
-          </p>
-    
       </div>
+   
       
-    
-      <a target="_blank" href="https://github.com/The-Hacker894/NoU-App/releases/tag/v1.0" class="text-uppercase d-inline-block font-weight-medium lts-2px ml-2 mb-2 text-center styled-link">
-        GitHub
-      </a>
-      <a target="_blank" href="https://play.google.com/store/apps/details?id=com.hackerlabs.sky.nou" class="text-uppercase d-inline-block font-weight-medium lts-2px ml-2 mb-2 text-center styled-link">
-        Google Play
-      </a>
-    </div>
-
-    
-
-        </div>
-        <div class="apps column">
-            <div class="my-2 mx-1 mobile-cards p-relative bg-white shadow-1 blue-hover">
-                <img src="img/hacker.jpg" alt="HackerHub WebApp"
-                    class="d-block w-full">
-        
-          <div class="px-2 py-2">
-            <p class="mb-0 medium bigger-mobile font-weight-medium text-uppercase mb-1 text-muted lts-2px">
-              Various Languages
-            </p>
-        
-            <h1 class="ff-serif font-weight-normal text-black card-heading mt-0 mb-1" style="line-height: 1.25;">
-              HackerHub WebApp
-            </h1>
-        
-            <p class="mb-1 no-mobile">
-              WebApp available for macOS, Linux, Windows, and Android.
-              </p>
-        
-          </div>
-        
-          <a target="_blank" href="https://github.com/The-Hacker894/HackerHub-WebApp" class="text-uppercase d-inline-block font-weight-medium lts-2px ml-2 mb-2 text-center styled-link">
-            GitHub
-          </a>
-          <a target="_blank" href="https://play.google.com/store/apps/details?id=com.hackerlabs.sky.hackerhub" class="text-uppercase d-inline-block font-weight-medium lts-2px ml-2 mb-2 text-center styled-link">
-            Google Play
-          </a>    
-        </div>
-
-        <div class="discordBots my-2 mx-1 mobile-cards p-relative bg-white shadow-1 blue-hover">
-            <img src="img/portfolio/ageapprove.png" alt="AgeApprove"
-                class="d-block w-full">
-    
-      <div class="px-2 py-2">
-        <p class="mb-0 bigger-mobile small font-weight-medium text-uppercase mb-1 text-muted lts-2px">
-          NodeJS
-        </p>
-    
-        <h1 class="ff-serif font-weight-normal text-black card-heading mt-0 mb-1" style="line-height: 1.25;">
-          AgeApprove
-        </h1>
-    
-        <p class="mb-1 no-mobile">
-          The server-exclusive DiscordJS for approving the ages of the server's members. <br> (Requested by Korbs#0001.)
-          </p>
-    
-      </div>
-    
-      <a target="_blank" href="//skylarmccauley.hacker-hub.com/projects/AgeApprove.zip" class="text-uppercase d-inline-block font-weight-medium lts-2px ml-2 mb-2 text-center styled-link">
-        Download
-      </a>    
-    </div>
-    <div class="discordBots my-2 mx-1 mobile-cards p-relative bg-white shadow-1 blue-hover">
-        <img src="img/portfolio/exposex.png" alt="Expose X"
-            class="d-block w-full">
-
-  <div class="px-2 py-2">
-    <p class="mb-0 medium bigger-mobile font-weight-medium text-uppercase mb-1 text-muted lts-2px">
-      NodeJS
-    </p>
-
-    <h1 class="ff-serif font-weight-normal text-black card-heading mt-0 mb-1" style="line-height: 1.25;">
-      Expose X Bot
-    </h1>
-
-    <p class="mb-1 no-mobile">
-      The server-exclusive support bot for the Expose X Bot <br> (Requested by Korbs#0001.)
-      </p>
-
-  </div>
-
-  <a target="_blank" href="//skylarmccauley.hacker-hub.com/projects/Expose_X.zip" class="text-uppercase d-inline-block font-weight-medium lts-2px ml-2 mb-2 text-center styled-link">
-    Download
-  </a>
-
 </div>
 
-        </div>
-      </div>
-   
-   
-</div>
 </div>
   <div id="websites">
     <div class="container">

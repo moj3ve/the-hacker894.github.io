@@ -242,8 +242,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d96b4da8', e
 	margin-top: 20px;
 	margin-bottom: 30px;
 }
-#websites {
-	padding: 100px 0;
+#websites, #portfolio {
+	padding: 100px 0 1;
 	background: #f6f6f6;
 }
 #websites img {
@@ -648,8 +648,9 @@ header .intro-text {
 .fa-github {
 	font-size: 25pt;
 }
-i.fas, i.fab {
+.nb-i {
 	color: white;
+	font-size: 12pt;
 }
 .white {
 	color: white !important;
@@ -669,4 +670,69 @@ i.fas, i.fab {
 }
 .navbar-items {
 	font-size: 18px;
+	margin-top: 0;
+	margin-bottom: 0;
+	
+}
+
+.page-selection {
+	text-align: center !important;
+
+}
+.page-selector {
+	display: flex;
+	text-align: center;
+}
+div.page-selector {
+	text-align: center;
+	margin: 0 1% 0 39%;
+}
+.p-s {
+	font-size: 16pt;
+
+}
+div.p-s-1 {
+	margin: 0 5pt 0 5pt;
+
+}
+div.p-s-2 {
+	margin: 0 5pt 0 5pt;
+
+}
+div.p-s-3 {
+	margin: 0 5pt 0 5pt;
+
+}
+.pages {
+	display: none
+}
+.pages-loading {
+	display: block;
+}
+.fa-sync {
+	-webkit-animation-name: spin;
+	-webkit-animation-duration: 1400ms;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-timing-function: linear;
+	-moz-animation-name: spin;
+	-moz-animation-duration: 1400ms;
+	-moz-animation-iteration-count: infinite;
+	-moz-animation-timing-function: linear;
+	-ms-animation-name: spin;
+	-ms-animation-duration: 1400ms;
+	-ms-animation-iteration-count: infinite;
+	-ms-animation-timing-function: linear;
+	-o-transition: rotate(3600deg);
+}
+@-moz-keyframes spin {
+	from { -moz-transform: rotate(0deg); }
+	to { -moz-transform: rotate(360deg); }
+}
+@-webkit-keyframes spin {
+	from { -webkit-transform: rotate(0deg); }
+	to { -webkit-transform: rotate(360deg); }
+}
+@keyframes spin {
+	from {transform:rotate(0deg);}
+	to {transform:rotate(360deg);}
 }
