@@ -30,6 +30,7 @@
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-117081817-2"></script>
 <script src="js/copyEmail.js"></script>
+
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
@@ -96,7 +97,8 @@
 
 <!-- Bootstrap -->
 <link rel="stylesheet" type="text/css"  href="css/bootstrap.css">
-<link rel="stylesheet" type="text/css" href="fonts/font-awesome/css/font-awesome.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+
 
 <!-- Stylesheet
     ================================================== -->
@@ -142,12 +144,12 @@
         <ul class="nav navbar-nav">
           <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
           <li class="hidden"> <a href="#page-top"></a> </li>
-          <li> <a class="page-scroll" href="#page-top">Home</a> </li>
-          <li> <a class="page-scroll" href="#about">About</a> </li>
-          <li> <a class="page-scroll" href="#skills">Skills</a> </li>
-          <li> <a class="page-scroll" href="#projects">Projects</a> </li>
-          <li> <a class="page-scroll" href="#websites">Websites</a> </li>
-          <li> <a class="page-scroll" href="#contact">Contact</a> </li>
+          <li><div class="navbar-items" > <div class="navbar-icons"><i class="fas fa-home"></i></div></i><a class="page-scroll" href="#page-top">Home</a></div> </li>
+          <li> <div class="navbar-items"><div class="navbar-icons"><i class="fas fa-info-circle"></i></div><a class="page-scroll" href="#about">About</a></div> </li>
+          <li> <div class="navbar-items"><div class="navbar-icons"><i class="fas fa-suitcase"></i></div><a class="page-scroll" href="#skills">Skills</a> </div></li>
+          <li> <div class="navbar-items"><div class="navbar-icons"><i class="fas fa-code"></i></div><a class="page-scroll" href="#projects">Projects</a></div> </li>
+          <li> <div class="navbar-items"><div class="navbar-icons"><i class="fas fa-server"></i></div><a class="page-scroll" href="#websites">Websites</a></div> </li>
+          <li> <div class="navbar-items"><div class="navbar-icons"><i class="fas fa-user"></i></div><a class="page-scroll" href="#contact">Contact</a></div></li>
         </ul>
       </div>
     </div>
@@ -161,6 +163,9 @@
       <hr>
     </div>
     <div class="row">
+
+
+      
       <div class="col-xs-12 col-md-6"> <img width="25%" src="img/hacker.jpg" class="img-responsive" alt=""> </div>
       <div class="col-xs-12 col-md-6">
         <div class="about-text">
@@ -296,34 +301,6 @@
           </a>
     
         </div>
- 
-        <div class="discordBots my-2 mx-1 mobile-cards mobile-cards p-relative bg-white shadow-1 blue-hover">
-          <img src="img/portfolio/log.svg" alt="LOG-A-PING"
-              class="d-block w-full">
-  
-    <div class="px-2 py-2">
-      <p class="mb-0 medium bigger-mobile font-weight-medium text-uppercase mb-1 text-muted lts-2px">
-        NodeJS
-      </p>
-  
-      <h1 class="ff-serif font-weight-normal text-black card-heading mt-0 mb-1" style="line-height: 1.25;">
-        LOG-A-PING
-      </h1>
-  
-      <p class="mb-1 no-mobile">
-       A DiscordJS self-bot that logs all pings made to the user (@everyone and @here pings also work) <br> (Requested by raizo#0001)
-        </p>
-  
-    </div>
-  
-    <a target="_blank" href="https://github.com/The-Hacker894/LOG-A-PING" class="text-uppercase d-inline-block font-weight-medium lts-2px ml-2 mb-2 text-center styled-link">
-      Source Code
-    </a>
-
-  </div>
-        
-        
-
     
         </div>
         <div class="column">
@@ -412,30 +389,7 @@
       </a>
     </div>
 
-    <div class="discordBots my-2 mx-1 mobile-cards p-relative bg-white shadow-1 blue-hover">
-        <img src="img/portfolio/exposex.png" alt="Expose X"
-            class="d-block w-full">
-
-  <div class="px-2 py-2">
-    <p class="mb-0 medium bigger-mobile font-weight-medium text-uppercase mb-1 text-muted lts-2px">
-      NodeJS
-    </p>
-
-    <h1 class="ff-serif font-weight-normal text-black card-heading mt-0 mb-1" style="line-height: 1.25;">
-      Expose X Bot
-    </h1>
-
-    <p class="mb-1 no-mobile">
-      The server-exclusive support bot for the Expose X Bot <br> (Requested by Korbs#0001.)
-      </p>
-
-  </div>
-
-  <a target="_blank" href="//skylarmccauley.hacker-hub.com/projects/Expose_X.zip" class="text-uppercase d-inline-block font-weight-medium lts-2px ml-2 mb-2 text-center styled-link">
-    Download
-  </a>
-
-</div>
+    
 
         </div>
         <div class="apps column">
@@ -466,54 +420,6 @@
           </a>    
         </div>
 
-        <div class="my-2 mx-1 mobile-cards p-relative bg-white shadow-1 blue-hover">
-          <img src="img/hackerstickers.png" alt="HackerHub WebApp"
-              class="d-block w-full">
-  
-    <div class="px-2 py-2">
-      <p class="mb-0 medium bigger-mobile font-weight-medium text-uppercase mb-1 text-muted lts-2px">
-        Swift
-      </p>
-  
-      <h1 class="ff-serif font-weight-normal text-black card-heading mt-0 mb-1" style="line-height: 1.25;">
-        HackerStickers
-      </h1>
-  
-      <p class="mb-1 no-mobile">
-        Sticker Pack for iMessage comaptible with iOS 11.2 and newer
-        </p>
-  
-    </div>
-  
-    <a target="_blank" href="https://github.com/The-Hacker894/HackerStickers" class="text-uppercase d-inline-block font-weight-medium lts-2px ml-2 mb-2 text-center styled-link">
-      GitHub
-    </a>
-  </div>
-
-          <div class="apps my-2 mx-1 mobile-cards p-relative bg-white shadow-1 blue-hover">
-              <img src="img/portfolio/amoled.png" alt="AMOLED Calculator"
-                  class="d-block w-full">
-      
-        <div class="px-2 py-2">
-          <p class="mb-0 medium bigger-mobile font-weight-medium text-uppercase mb-1 text-muted lts-2px">
-            Java &amp; XML
-          </p>
-      
-          <h1 class="ff-serif font-weight-normal text-black card-heading mt-0 mb-1" style="line-height: 1.25;">
-            AMOLED Calculator
-          </h1>
-      
-          <p class="mb-1 no-mobile">
-            Calculator made for AMOLED screens
-            </p>
-      
-        </div>
-      
-        <a target="_blank" href="https://play.google.com/store/apps/details?id=com.hackerlabs.sky.amoledcalculator" class="text-uppercase d-inline-block font-weight-medium lts-2px ml-2 mb-2 text-center styled-link">
-          Google Play
-        </a>  
-      </div>
-
         <div class="discordBots my-2 mx-1 mobile-cards p-relative bg-white shadow-1 blue-hover">
             <img src="img/portfolio/ageapprove.png" alt="AgeApprove"
                 class="d-block w-full">
@@ -537,6 +443,31 @@
         Download
       </a>    
     </div>
+    <div class="discordBots my-2 mx-1 mobile-cards p-relative bg-white shadow-1 blue-hover">
+        <img src="img/portfolio/exposex.png" alt="Expose X"
+            class="d-block w-full">
+
+  <div class="px-2 py-2">
+    <p class="mb-0 medium bigger-mobile font-weight-medium text-uppercase mb-1 text-muted lts-2px">
+      NodeJS
+    </p>
+
+    <h1 class="ff-serif font-weight-normal text-black card-heading mt-0 mb-1" style="line-height: 1.25;">
+      Expose X Bot
+    </h1>
+
+    <p class="mb-1 no-mobile">
+      The server-exclusive support bot for the Expose X Bot <br> (Requested by Korbs#0001.)
+      </p>
+
+  </div>
+
+  <a target="_blank" href="//skylarmccauley.hacker-hub.com/projects/Expose_X.zip" class="text-uppercase d-inline-block font-weight-medium lts-2px ml-2 mb-2 text-center styled-link">
+    Download
+  </a>
+
+</div>
+
         </div>
       </div>
    
@@ -605,7 +536,7 @@
         <a onClick="copyToClipboard('#emailLink')" id="copyEmail"class="btn btn-default btn-lg">Copy Email</a>
         <div class="social">
           <ul>
-            <li><a href="https://github.com/The-Hacker894"><i class="fa fa-github"></i></a></li>
+            <li><a href="https://github.com/The-Hacker894"><i class="fab fa-github black"></i></a></li>
 
           </ul>
         </div>
