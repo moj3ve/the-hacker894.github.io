@@ -433,7 +433,7 @@ ol.type li a:hover {
 }
 /* Achivements Section */
 #achievements {
-	padding: 100px 0;
+	padding: 25px 0;
 	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#6b4da8+0,4977c2+100 */
 	background: rgb(107,77,168); /* Old browsers */
 	background: -moz-linear-gradient(left, rgba(107,77,168,1) 0%, rgba(73,119,194,1) 100%); /* FF3.6-15 */
@@ -658,14 +658,14 @@ header .intro-text {
 .black {
 	color: black !important;
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
 	.navbar-icons {
 		display: none;
 	}
 	.navbar-items {
-		margin-top: 5pt;
-		margin-bottom: 5pt;
-		font-size: 20px;
+		margin-top: 6.7pt !important;
+		margin-bottom: 0.5pt !important;
+		font-size: 15px !important;
 	}
 }
 .navbar-items {
@@ -685,21 +685,133 @@ header .intro-text {
 }
 div.page-selector {
 	text-align: center;
+}
+@media (min-width: 1200px) {
+	div.page-selector {
 	margin: 0 1% 0 39%;
+	}
+}
+@media (max-width: 1199px) and (min-width: 996px) {
+	div.page-selector {
+	margin: 0 1% 0 37%;
+	}
+}
+@media (max-width: 995px) and (min-width: 768px) {
+	div.page-selector {
+	margin: 0 1% 0 33%;
+	}
+}
+@media (max-width: 767px) and (min-width: 741px) {
+	div.page-selector {
+	margin: 0 1% 0 32.5%;
+	}
+}
+@media (max-width: 741px) and (min-width: 683px) {
+	div.page-selector {
+	margin: 0 1% 0 31.5%;
+	}
+}
+@media (max-width: 683px) and (min-width: 660px) {
+	div.page-selector {
+	margin: 0 1% 0 30.5%;
+	}
+}
+@media (max-width: 660px) and (min-width: 640px) {
+	div.page-selector {
+	margin: 0 1% 0 29.5%;
+	}
+}
+@media (min-width: 640px) {
+	.screenSmall {
+		display: none
+	}
+	.pages-loading {
+		display: block
+	}
+}
+@media (max-width: 640px) {
+
+div.page-selection {
+	display: none
+}
+div.page-selector {
+	display: none
+}
+
+.screenSmall {
+	display: block
+}
+.turnPhoneContainer {
+	margin-top: 5%;
+}
+
+}
+@media (max-width: 780px) {
+	a.text-uppercase.d-inline-block.font-weight-medium.lts-2px.ml-2.mb-2.text-center.styled-link {
+		margin-left: 5.5px;
+	}
+}
+.turnPhone {
+	width: 50pt !important;
+	transition: all 1s;
+  transition-timing: ease-in-out;
+  width: 100px;
+  -webkit-animation: rotating 1.7s  infinite;
+  -moz-animation: rotating 1.7s  infinite;
+  -ms-animation: rotating 1.7s  infinite;
+  -o-animation: rotating 1.7s  infinite;
+  animation: rotating 1.7s  infinite;
+}
+
+@-webkit-keyframes rotating /* Safari and Chrome */ {
+	33% {
+	  -webkit-transform: rotate(0deg);
+	  -o-transform: rotate(0deg);
+	  transform: rotate(0deg);
+	}
+	66% {
+	  -webkit-transform: rotate(-91deg);
+	  -o-transform: rotate(-91deg);
+	  transform: rotate(-91deg);
+	}
+	100% {
+	  -webkit-transform: rotate(0deg);
+	  -o-transform: rotate(0deg);
+	  transform: rotate(0deg);
+	}
+  }
+  @keyframes rotating {
+	33% {
+	  -ms-transform: rotate(0deg);
+	  -moz-transform: rotate(0deg);
+	  -webkit-transform: rotate(0deg);
+	  -o-transform: rotate(0deg);
+	  transform: rotate(0deg);
+	}
+	66% {
+	  -ms-transform: rotate(-91deg);
+	  -moz-transform: rotate(-91deg);
+	  -webkit-transform: rotate(-91deg);
+	  -o-transform: rotate(-91deg);
+	  transform: rotate(-91deg);
+	}
+	100% {
+	  -ms-transform: rotate(0deg);
+	  -moz-transform: rotate(0deg);
+	  -webkit-transform: rotate(0deg);
+	  -o-transform: rotate(0deg);
+	  transform: rotate(0deg);
+	}
+  }
+
+.screenSmall {
+	margin-bottom: 2pt;
 }
 .p-s {
 	font-size: 16pt;
 
 }
-div.p-s-1 {
-	margin: 0 5pt 0 5pt;
-
-}
-div.p-s-2 {
-	margin: 0 5pt 0 5pt;
-
-}
-div.p-s-3 {
+div.p-s-1, div.p-s-2, div.p-s-3 {
 	margin: 0 5pt 0 5pt;
 
 }
@@ -708,6 +820,10 @@ div.p-s-3 {
 }
 .pages-loading {
 	display: block;
+}
+.fa-bars:before {
+	content: "\f0c9";
+	margin-right: 45px;
 }
 .fa-sync {
 	-webkit-animation-name: spin;
@@ -735,4 +851,49 @@ div.p-s-3 {
 @keyframes spin {
 	from {transform:rotate(0deg);}
 	to {transform:rotate(360deg);}
+}
+
+.p1 {
+	display: none;
+}
+.p2 {
+	display: none;
+}
+.p3 {
+	display: none;
+}
+.pages {
+	display: none;
+}
+div.left.column {
+	display: none;
+}
+div.right.column {
+	display: none;
+}
+.left {
+	display: none;
+}
+.right {
+	display: none;
+}
+.pages-loading {
+	display: block;
+	margin-bottom: 5%;
+}
+.turnPhoneContainer {
+	display: none;
+}
+.screenSmall {
+	display: none;
+}
+
+.show {
+	display: block !important;
+}
+.hide {
+	display: none !important;
+}
+.ex {
+	text-align: center;
 }

@@ -18,14 +18,14 @@
 
 
 <!-- Favicons -->
-<link rel="shortcut icon" href="img/suitcase512.png">
-<link rel="apple-touch-icon" sizes="512x512" href="img/suitcase512.png">
-<link rel="apple-touch-icon" sizes="256x256" href="img/suitcase256.png">
-<link rel="apple-touch-icon" sizes="128x128" href="img/suitcase128.png">
-<link rel="apple-touch-icon" sizes="64x64" href="img/suitcase64.png">
-<link rel="apple-touch-icon" sizes="32x32" href="img/suitcase32.png">
-<link rel="apple-touch-icon" sizes="24x24" href="img/suitcase24.png">
-<link rel="apple-touch-icon" sizes="16x16" href="img/suitcase16.png">
+<link rel="shortcut icon" href="img/resume512.png">
+<link rel="apple-touch-icon" sizes="512x512" href="img/resume512.png">
+<link rel="apple-touch-icon" sizes="256x256" href="img/resume256.png">
+<link rel="apple-touch-icon" sizes="128x128" href="img/resume128.png">
+<link rel="apple-touch-icon" sizes="64x64" href="img/resume64.png">
+<link rel="apple-touch-icon" sizes="32x32" href="img/resume32.png">
+<link rel="apple-touch-icon" sizes="24x24" href="img/resume24.png">
+<link rel="apple-touch-icon" sizes="16x16" href="img/resume16.png">
 
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-117081817-2"></script>
@@ -64,38 +64,24 @@
   
 }
     </script>
-    <script>
-      function botsShow() {
-        $('.discordBots').fadeIn(500)
-        $('.apps').fadeOut(500)
-        $('.projects-highlighter1').fadeTo("fast", 1)
-        $('.projects-highlighter2').fadeTo("fast", 0.001)
-        $('.projects-highlighter3').fadeTo("fast", 0.001)
 
-      }
-      function appsShow() {
-        $('.apps').fadeIn(500)
-        $('.discordBots').fadeOut(500)
-        $('.projects-highlighter1').fadeTo("fast", 0.001)
-        $('.projects-highlighter2').fadeTo("fast", 1)
-        $('.projects-highlighter3').fadeTo("fast", 0.001)
-        
-      }
-      function allShow() {
-        $('.apps').fadeIn(500)
-        $('.discordBots').fadeIn(500)
-        $('.projects-highlighter1').fadeTo("fast", 0.001)
-        $('.projects-highlighter2').fadeTo("fast", 0.001)
-        $('.projects-highlighter3').fadeTo("fast", 1)
-      }
+    <script>
+
 
       // New Portfolio Section
-      
+      var orientation = parseInt(window.orientation)
+
+      function JSExists() {
+        $(`.noJS`).fadeOut(500)
+        return;
+      }
+
       function changePage(p) {
         // p = Page Number
 
         // This is hardcoded to support 3 Pages
         function cp() {
+          
           $(`.p2`).fadeOut(500)
           $(`.p3`).fadeOut(500)
           $(`.p1`).fadeIn(500)
@@ -103,7 +89,6 @@
           $('.selector-1').fadeTo("fast", 1)
           $('.selector-2').fadeTo("fast", 0.001)
           $('.selector-3').fadeTo("fast", 0.001)
-          
           return;
         }
         if(!p) {
@@ -141,22 +126,84 @@
       }
       function resetPage() {
 
+        $(`.turnPhoneContainer`).fadeOut(500)
+        $(`.screenSmall`).fadeOut(500)
+
         $(`.p2`).fadeOut(500)
           $(`.p3`).fadeOut(500)
           $(`.p1`).fadeIn(500)
 
           $(`.pages`).fadeIn(500)
+          $(`.pages-selector`).fadeIn(500)
+          $(`div.pages-selector`).fadeIn(500)
+          $(`.pages-selection`).addClass("show")
+          $(`.pages-selector`).addClass("show")
+
+          $(`div.left.column`).fadeIn(500)
+          $(`div.right.column`).fadeIn(500)
+          $(`.left`).fadeIn(500)
+          $(`.right`).fadeIn(500)
+          $(`.pages-selection`).fadeIn(500)
           $(`.pages-loading`).fadeOut(500)
+          
 
           $('.selector-1').fadeTo("fast", 1)
           $('.selector-2').fadeTo("fast", 0.001)
           $('.selector-3').fadeTo("fast", 0.001)
-          
           return;
       }
-  window.onload = resetPage
-    </script>
+      function checkTooSmall() {
+        
+        function e() {
+          $(`.pages`).fadeOut(500)
+          $(`div.pages-selector`).fadeOut(500)
+          $(`div.left.column`).fadeOut(500)
+          $(`div.right.column`).fadeOut(500)
+          $(`.left`).fadeOut(500)
+          $(`.right`).fadeOut(500)
+          $(`div.pages-selection`).fadeOut(500)
+          $(`.pages-loading`).fadeOut(500)
 
+          $(`.screenSmall`).fadeIn(500)
+          if(orientation == 0) {
+            // If device is in portrait
+            $(`.turnPhoneContainer`).fadeIn(500)
+
+            
+          }
+          if(orientation == 180) {
+            // If device is in portrait (upside down)
+            $(`.turnPhoneContainer`).fadeIn(500)
+
+            
+          }
+          if(parseInt($(window).width()) < parseInt($(window).height())) {
+            // If window width is less than height
+            // This usally indicates portrait mode
+            $(`.turnPhoneContainer`).fadeIn(500)
+
+            
+          }
+          
+          return;
+        }
+
+        
+        console.log("Checking")
+        
+        if(parseInt($(window).width()) <= 640) {
+          e()
+          return;
+        } else return resetPage()
+      }
+
+      function init() {
+        JSExists()
+        checkTooSmall()
+      }
+      window.onload = init
+      window.addEventListener("resize", init);
+    </script>
 
 
 
@@ -262,6 +309,11 @@
       <div class="col-md-3 col-sm-6 skill"> <span class="chart" data-percent="10"> <span class="percent">10</span> </span>
         <h4>Java</h4>
       </div> 
+      <div class="wow ex" data-wow-delay="50ms">
+        <div class="achievement-box"> <span class="count">3.5</span>
+          <h4>Years of Programming Experience</h4>
+        </div>
+      </div>
     </div>
   </div>
 </div>
@@ -301,7 +353,7 @@
       <div class="pages">
           <div class="p1">
               <div class="left column">
-                  <div class="discordBots my-2 mx-1 mobile-cards p-relative bg-white shadow-1 blue-hover">
+                  <div class="my-2 mx-1 mobile-cards p-relative bg-white shadow-1 blue-hover">
                       <img src="img/portfolio/cleverBotIconNew.png" alt="CleverBot"
                           class="d-block w-full">
                     
@@ -322,7 +374,7 @@
                     
                     <a target="_blank" href="//hacker-hub.com/cleverbot/" class="text-uppercase d-inline-block font-weight-medium lts-2px ml-2 mb-2 text-center styled-link">
                     READ MORE
-                    </a>
+                    </a> <strong>|</strong>
       
                     <a target="_blank" href="//hacker-hub.com/cleverbot/invite" class="text-uppercase d-inline-block font-weight-medium lts-2px ml-2 mb-2 text-center styled-link">
                       INVITE
@@ -350,7 +402,7 @@
                 
                   <a target="_blank" href="https://github.com/The-Hacker894/HackerHub-WebApp" class="text-uppercase d-inline-block font-weight-medium lts-2px ml-2 mb-2 text-center styled-link">
                     GitHub
-                  </a>
+                  </a> <strong>|</strong>
                   <a target="_blank" href="https://play.google.com/store/apps/details?id=com.hackerlabs.sky.hackerhub" class="text-uppercase d-inline-block font-weight-medium lts-2px ml-2 mb-2 text-center styled-link">
                     Google Play
                   </a>    
@@ -358,7 +410,7 @@
                 </div>
                 <div class="right column">
     
-                    <div class="discordBots my-2 mx-1 mobile-cards p-relative bg-white shadow-1 blue-hover">
+                    <div class="my-2 mx-1 mobile-cards p-relative bg-white shadow-1 blue-hover">
                         <img src="img/portfolio/sunset.png" alt="Sunset"
                             class="d-block w-full">
                 
@@ -379,7 +431,7 @@
                 
                   <a target="_blank" href="//hacker-hub.com/sunset/" class="text-uppercase d-inline-block font-weight-medium lts-2px ml-2 mb-2 text-center styled-link">
                     Read More
-                  </a>
+                  </a> <strong>|</strong>
     
                   <a target="_blank" href="//hacker-hub.com/sunset/invite" class="text-uppercase d-inline-block font-weight-medium lts-2px ml-2 mb-2 text-center styled-link">
                     INVITE
@@ -388,7 +440,7 @@
                 </div>
     
     
-                    <div class="discordBots my-2 mx-1 mobile-cards p-relative bg-white shadow-1 blue-hover">
+                    <div class="my-2 mx-1 mobile-cards p-relative bg-white shadow-1 blue-hover">
                         <img src="img/portfolio/alpexia.png" alt="AlpexiaSupport"
                             class="d-block w-full">
                 
@@ -438,13 +490,13 @@
             
               <a target="_blank" href="https://github.com/The-Hacker894/NoU-App/releases/tag/v1.0" class="text-uppercase d-inline-block font-weight-medium lts-2px ml-2 mb-2 text-center styled-link">
                 GitHub
-              </a>
+              </a> <strong>|</strong>
               <a target="_blank" href="https://play.google.com/store/apps/details?id=com.hackerlabs.sky.nou" class="text-uppercase d-inline-block font-weight-medium lts-2px ml-2 mb-2 text-center styled-link">
                 Google Play
               </a>
             </div>
         
-        <div class="discordBots my-2 mx-1 mobile-cards p-relative bg-white shadow-1 blue-hover">
+        <div class="my-2 mx-1 mobile-cards p-relative bg-white shadow-1 blue-hover">
             <img src="img/portfolio/ageapprove.png" alt="AgeApprove"
                 class="d-block w-full">
         
@@ -467,7 +519,7 @@
         Download
         </a>    
         </div>
-        <div class="discordBots my-2 mx-1 mobile-cards p-relative bg-white shadow-1 blue-hover">
+        <div class="my-2 mx-1 mobile-cards p-relative bg-white shadow-1 blue-hover">
         <img src="img/portfolio/exposex.png" alt="Expose X"
             class="d-block w-full">
         
@@ -493,7 +545,7 @@
         </div>
             </div>
             <div class="right column">
-                <div class="discordBots my-2 mx-1 mobile-cards mobile-cards p-relative bg-white shadow-1 blue-hover">
+                <div class="my-2 mx-1 mobile-cards mobile-cards p-relative bg-white shadow-1 blue-hover">
                     <img src="img/portfolio/zucc.png" alt="The Zucc"
                         class="d-block w-full">
             
@@ -520,7 +572,7 @@
         
             </div>
     
-                <div class="apps my-2 mx-1 mobile-cards p-relative bg-white shadow-1 blue-hover">
+                <div class="my-2 mx-1 mobile-cards p-relative bg-white shadow-1 blue-hover">
                     <img src="img/portfolio/gamershubapp.png" alt="GamersHub Android App"
                         class="d-block w-full">
             
@@ -541,7 +593,7 @@
             
               <a target="_blank" href="https://github.com/The-Hacker894/GamersHub-App/releases/" class="text-uppercase d-inline-block font-weight-medium lts-2px ml-2 mb-2 text-center styled-link">
                 GitHub
-              </a>
+              </a> <strong>|</strong>
               <a target="_blank" href="https://play.google.com/store/apps/details?id=com.hackerlabs.sky.gamershub" class="text-uppercase d-inline-block font-weight-medium lts-2px ml-2 mb-2 text-center styled-link">
                 Google Play
               </a>
@@ -558,6 +610,16 @@
       <div class="pages-loading">
         <h4>Loading...</h4>
         <p><i class="fas fa-sync"></i></p>
+        <p>If this keeps loading, try enabling JavaScript</p>
+      </div>
+      <div class="screenSmall">
+          <h4>Display Too Small</h4>
+          <p>Sorry, but your display size is too small to view my portfolio; try using a Desktop.</p>
+        </div>
+      <div class="turnPhoneContainer">
+        <img class="turnPhone" src="img/glyph/iphone/iphone-solid.svg" alt="iPhone Glyph">
+        <p>Try putting your device in landscape to view my portfolio.</p>
+
       </div>
         </div>
 
@@ -596,19 +658,6 @@
 </div>
 <!-- Achievements Section -->
 <div id="achievements" class="text-center">
-  <div class="container">
-    <div class="section-title center">
-      <h2>Some Stats</h2>
-      <hr>
-    </div>
-    <div style="display:flex;justify-content:center;align-items:center;">
-      <div class="col-md-3 col-sm-3 wow fadeInDown" data-wow-delay="50ms">
-        <div class="achievement-box"> <span class="count">3.5</span>
-          <h4>Years of Programming Experience</h4>
-        </div>
-      </div>
-      </div>
-    </div>
   </div>
 
 
@@ -619,17 +668,17 @@
   <div class="overlay">
     <div class="container">
       <div class="section-title center">
-        <h2>Get In Touch</h2>
+        <h2>Contact</h2>
         <hr>
       </div>
-      <div class="col-md-8 col-md-offset-2">
-        <a href="mailto:skylarmccauley864@gmail.com" class="btn btn-default btn-lg">Email Me</a>         <br>
-        <a href="https://mail.google.com/mail/u/0/?view=cm&fs=1&tf=1&to=skylarmccauley864@gmail.com&su=" class="btn btn-default btn-lg">Email Me (GMail)</a> <br>
+      <div style="margin-left:auto;margin-right:auto;" class="text-center center">
+        <a target="_blank" href="mailto:skylarmccauley864@gmail.com" class="btn btn-default btn-lg">Email Me</a>         <br>
+        <a target="_blank" href="https://mail.google.com/mail/u/0/?view=cm&fs=1&tf=1&to=skylarmccauley864@gmail.com&su=" class="btn btn-default btn-lg">Email Me (GMail)</a> <br>
         <p id="emailLink" style="display: none"><strong>skylarmccauley864@gmail.com</strong></p>
         <a onClick="copyToClipboard('#emailLink')" id="copyEmail"class="btn btn-default btn-lg">Copy Email</a>
         <div class="social">
           <ul>
-            <li><a href="https://github.com/The-Hacker894"><i class="fab fa-github black"></i></a></li>
+            <li><a target="_blank" href="https://github.com/The-Hacker894"><i class="fab fa-github black"></i></a></li>
 
           </ul>
         </div>
@@ -640,8 +689,8 @@
 <div id="footer">
   <div class="container text-center">
     <div class="fnav">
-      <p>Copyright &copy; 2018 Skylar McCauley. Designed inspired by <a href="http://www.templatewire.com" rel="nofollow">TemplateWire</a><br>
-        <div>Favicon made by <a href="https://www.flaticon.com/authors/roundicons" title="Roundicons">Roundicons</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div></p>
+      <p>Copyright &copy; 2018 Skylar McCauley. Designed inspired by <a target="_blank" href="http://www.templatewire.com" rel="nofollow">TemplateWire</a><br>
+        <div>Favicon made by <a target="_blank" href="https://www.flaticon.com/authors/roundicons" title="Roundicons">Roundicons</a> from <a target="_blank" href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a target="_blank" href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div></p>
     </div>
   </div>
 </div>
