@@ -39,34 +39,10 @@
   gtag('config', 'UA-117081817-2');
 </script>
 
-<link href="src/spop/styles.css" rel="stylesheet">
-<!-- Even better, SamallPop is made with scss,
-     @import to your style.scss -->
-<script src="src/spop/scripts.js"></script>
-    <script>
-        function myFunction() {
-  /* Get the text field */
-  var copyText = document.getElementById("email");
-
-  /* Select the text field */
-  copyText.select();
-
-  /* Copy the text inside the text field */
-  document.execCommand("copy").then( () => {
-    spop({
-	template: 'Email Copied',
-	position  : 'bottom-right',
-	style: 'success'
-});
-  })
-
-  /* Alert the copied text */
-  
-}
-    </script>
+<link href="https://raw.githubusercontent.com/needim/noty/master/lib/noty.css" rel="stylesheet">
+<script src="https://raw.githubusercontent.com/needim/noty/master/lib/noty.js" type="text/javascript"></script>
 
     <script>
-
 
       // New Portfolio Section
       var orientation = parseInt(window.orientation)
@@ -86,9 +62,9 @@
           $(`.p3`).fadeOut(500)
           $(`.p1`).fadeIn(500)
 
-          $('.selector-1').fadeTo("fast", 1)
-          $('.selector-2').fadeTo("fast", 0.001)
-          $('.selector-3').fadeTo("fast", 0.001)
+          $('.selector-1').css({opacity: 1.0})
+          $('.selector-2').css({opacity: 0.1})
+          $('.selector-3').css({opacity: 0.1})
           return;
         }
         if(!p) {
@@ -106,9 +82,9 @@
           $(`.p3`).fadeOut(500)
           $(`.p2`).fadeIn(500)
 
-          $('.selector-1').fadeTo("fast", 0.001)
-          $('.selector-2').fadeTo("fast", 1)
-          $('.selector-3').fadeTo("fast", 0.001)
+          $('.selector-1').css({opacity: 0.1})
+          $('.selector-2').css({opacity: 1.0})
+          $('.selector-3').css({opacity: 0.1})
 
           return;
         }
@@ -117,91 +93,20 @@
           $(`.p2`).fadeOut(500)
           $(`.p3`).fadeIn(500)
 
-          $('.selector-1').fadeTo("fast", 0.001)
-          $('.selector-2').fadeTo("fast", 0.001)
-          $('.selector-3').fadeTo("fast", 1)
+          $('.selector-1').css({opacity: 0.1})
+          $('.selector-2').css({opacity: 0.1})
+          $('.selector-3').css({opacity: 1.0})
 
           return;
         }
       }
-      function resetPage() {
 
-        $(`.turnPhoneContainer`).fadeOut(500)
-        $(`.screenSmall`).fadeOut(500)
-
-        $(`.p2`).fadeOut(500)
-          $(`.p3`).fadeOut(500)
-          $(`.p1`).fadeIn(500)
-
-          $(`.pages`).fadeIn(500)
-          $(`.pages-selector`).fadeIn(500)
-          $(`div.pages-selector`).fadeIn(500)
-          $(`.pages-selection`).addClass("show")
-          $(`.pages-selector`).addClass("show")
-
-          $(`div.left.column`).fadeIn(500)
-          $(`div.right.column`).fadeIn(500)
-          $(`.left`).fadeIn(500)
-          $(`.right`).fadeIn(500)
-          $(`.pages-selection`).fadeIn(500)
-          $(`.pages-loading`).fadeOut(500)
-          
-
-          $('.selector-1').fadeTo("fast", 1)
-          $('.selector-2').fadeTo("fast", 0.001)
-          $('.selector-3').fadeTo("fast", 0.001)
-          return;
-      }
-      function checkTooSmall() {
-        
-        function e() {
-          $(`.pages`).fadeOut(500)
-          $(`div.pages-selector`).fadeOut(500)
-          $(`div.left.column`).fadeOut(500)
-          $(`div.right.column`).fadeOut(500)
-          $(`.left`).fadeOut(500)
-          $(`.right`).fadeOut(500)
-          $(`div.pages-selection`).fadeOut(500)
-          $(`.pages-loading`).fadeOut(500)
-
-          $(`.screenSmall`).fadeIn(500)
-          if(orientation == 0) {
-            // If device is in portrait
-            $(`.turnPhoneContainer`).fadeIn(500)
-
-            
-          }
-          if(orientation == 180) {
-            // If device is in portrait (upside down)
-            $(`.turnPhoneContainer`).fadeIn(500)
-
-            
-          }
-          if(parseInt($(window).width()) < parseInt($(window).height())) {
-            // If window width is less than height
-            // This usally indicates portrait mode
-            $(`.turnPhoneContainer`).fadeIn(500)
-
-            
-          }
-          
-          return;
-        }
-
-        
-        console.log("Checking")
-        
-        if(parseInt($(window).width()) <= 640) {
-          e()
-          return;
-        } else return resetPage()
-      }
 
       function init() {
         JSExists()
-        checkTooSmall()
+       
       }
-      window.onload = init
+      window.onpageshow = init
       window.addEventListener("resize", init);
     </script>
 
@@ -379,35 +284,35 @@
                       INVITE
                       </a>
                     </div>
-    
-                    <div class="my-2 mx-1 mobile-cards p-relative bg-white shadow-1 blue-hover">
-                        <img src="img/portfolio/sunset.png" alt="Sunset"
-                            class="d-block w-full">
-                
-                  <div class="px-2 py-2">
-                    <p class="mb-0 medium bigger-mobile font-weight-medium text-uppercase mb-1 text-muted lts-2px">
-                      NodeJS
-                    </p>
-                
-                    <h1 class="ff-serif font-weight-normal text-black card-heading mt-0 mb-1" style="line-height: 1.25;">
-                      Sunset
-                    </h1>
-                
-                    <p class="mb-1 no-mobile">
-                      The swiss-army knife of Discord Bots. Programmed in NodeJS
-                    </p>
-                
-                  </div>
-                
-                  <a target="_blank" href="//hacker-hub.com/sunset/" class="text-uppercase d-inline-block font-weight-medium lts-2px ml-2 mb-2 text-center styled-link">
-                    Read More
-                  </a> <strong>|</strong>
-    
-                  <a target="_blank" href="//hacker-hub.com/sunset/invite" class="text-uppercase d-inline-block font-weight-medium lts-2px ml-2 mb-2 text-center styled-link">
-                    INVITE
-                    </a>
+                    
+                    <div class="apps my-2 mx-1 mobile-cards p-relative bg-white shadow-1 blue-hover">
+                    <img src="img/portfolio/nouapp.png" alt="No U Android App"
+                        class="d-block w-full">
             
-                </div>
+              <div class="px-2 py-2">
+                <p class="mb-0 medium bigger-mobile font-weight-medium text-uppercase mb-1 text-muted lts-2px">
+                  Java &amp; XML
+                </p>
+            
+                <h1 class="ff-serif font-weight-normal text-black card-heading mt-0 mb-1" style="line-height: 1.25;">
+                  No U App
+                </h1>
+            
+                <p class="mb-1 no-mobile">
+                  The app for all of your comebacks. Available on Android.
+                  </p>
+            
+              </div>
+              
+            
+              <a target="_blank" href="https://github.com/The-Hacker894/NoU-App/releases/tag/v1.0" class="text-uppercase d-inline-block font-weight-medium lts-2px ml-2 mb-2 text-center styled-link">
+                GitHub
+              </a> <strong>|</strong>
+              <a target="_blank" href="https://play.google.com/store/apps/details?id=com.hackerlabs.sky.nou" class="text-uppercase d-inline-block font-weight-medium lts-2px ml-2 mb-2 text-center styled-link">
+                Google Play
+              </a>
+            </div>
+             
                 </div>
                 <div class="right column">
     
@@ -473,33 +378,7 @@
           <div class="p2">
             <div class="left column">
 
-                <div class="apps my-2 mx-1 mobile-cards p-relative bg-white shadow-1 blue-hover">
-                    <img src="img/portfolio/nouapp.png" alt="No U Android App"
-                        class="d-block w-full">
-            
-              <div class="px-2 py-2">
-                <p class="mb-0 medium bigger-mobile font-weight-medium text-uppercase mb-1 text-muted lts-2px">
-                  Java &amp; XML
-                </p>
-            
-                <h1 class="ff-serif font-weight-normal text-black card-heading mt-0 mb-1" style="line-height: 1.25;">
-                  No U App
-                </h1>
-            
-                <p class="mb-1 no-mobile">
-                  The app for all of your comebacks. Available on Android.
-                  </p>
-            
-              </div>
-              
-            
-              <a target="_blank" href="https://github.com/The-Hacker894/NoU-App/releases/tag/v1.0" class="text-uppercase d-inline-block font-weight-medium lts-2px ml-2 mb-2 text-center styled-link">
-                GitHub
-              </a> <strong>|</strong>
-              <a target="_blank" href="https://play.google.com/store/apps/details?id=com.hackerlabs.sky.nou" class="text-uppercase d-inline-block font-weight-medium lts-2px ml-2 mb-2 text-center styled-link">
-                Google Play
-              </a>
-            </div>
+                
         
         <div class="my-2 mx-1 mobile-cards p-relative bg-white shadow-1 blue-hover">
             <img src="img/portfolio/ageapprove.png" alt="AgeApprove"
@@ -673,7 +552,7 @@
             <a href="//jailbreakguide.me" class="btn btn-primary btn-lg page-scroll">Jailbreak Guide</a> 
             <a href="//www.hacker-hub.com/partner/cabooshy" class="btn btn-primary btn-lg page-scroll">Cabooshy (Partner)</a> 
             <a href="//www.hacker-hub.com/partner/korbs" class="btn btn-primary btn-lg page-scroll">KorbsStudio (Partner)</a> 
-             <a href="//xiphermedia.xyz" class="btn btn-primary btn-lg page-scroll">XipherMedia (Partner)</a> kl
+             <a href="//xiphermedia.xyz" class="btn btn-primary btn-lg page-scroll">XipherMedia (Partner)</a>
 
 
 
@@ -685,7 +564,18 @@
   <br>
 
 </div>
+<script>
 
+document.getElementById("copyEmail").addEventListener("click", function(){
+8
+ 	new Noty({
+    type: 'success',
+    layout: 'bottomRight',
+    text: 'Successfully copied email!'
+}).show();
+
+});
+</script>
 <!-- Contact Section -->
 <div id="contact" class="text-center">
   <div class="overlay">
@@ -697,8 +587,9 @@
       <div style="margin-left:auto;margin-right:auto;" class="text-center center">
         <a target="_blank" href="mailto:skylarmccauley864@gmail.com" class="btn btn-default btn-lg">Email Me</a>         <br>
         <a target="_blank" href="https://mail.google.com/mail/u/0/?view=cm&fs=1&tf=1&to=skylarmccauley864@gmail.com&su=" class="btn btn-default btn-lg">Email Me (GMail)</a> <br>
-        <p id="emailLink" style="display: none"><strong>skylarmccauley864@gmail.com</strong></p>
-        <a onClick="copyToClipboard('#emailLink')" id="copyEmail"class="btn btn-default btn-lg">Copy Email</a>
+        <a onClick="Clipboard.copy('skylarmccauley864@gmail.com')" id="copyEmail"class="btn btn-default btn-lg">Copy Email</a>
+         <div>
+       
         <div class="social">
           <ul>
             <li><a target="_blank" href="https://github.com/The-Hacker894"><i class="fab fa-github black"></i></a></li>

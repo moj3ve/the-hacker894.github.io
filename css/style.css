@@ -704,29 +704,71 @@ div.page-selector {
 	div.page-selector {
 	margin: 0 1% 0 29.5%;
 	}
+	
+	
 }
 @media (min-width: 640px) {
 	.screenSmall {
-		display: none
+		display: none !important;
 	}
 	.pages-loading {
-		display: block
+		display: none !important;
+	}
+	.p1 {
+		display: block;
+	}
+	.turnPhoneContainer,  .screenSmall{
+		display: none !important;
+	}
+	.p2{
+		display: none;
+	}
+	.p3 {
+		display: none;
+	}
+	.pages, .pages-selector, .pages-selection, .pages-selector, div.left.column, div.right.column {
+		display: block !important;
+	}
+	.turnPhoneContainer {
+		display: none !important;
+	}
+	.selector-1 {
+		display: block !important;
+		opacity: 1.0 
+	}
+	.selector-2 {
+		display: block !important;
+		opacity: 0.1
+	}
+	.selector-3 {
+	display: block !important;
+	opacity: 0.1
 	}
 }
-@media (max-width: 640px) {
+@media only screen and (orientation: portrait) and (max-width: 640px){
+	.turnPhoneContainer {
+		display: block !important;
+	}
+}
+@media only screen and (max-width: 640px) {
 
 div.page-selection {
-	display: none
+	display: none !important;
 }
 div.page-selector {
-	display: none
+	display: none !important;
 }
-
+.pages {
+	display: none !important;
+}
+.pages-loading {
+	display: none !important;
+}
 .screenSmall {
-	display: block
+	display: block !important;
 }
 .turnPhoneContainer {
-	margin-top: 5%;
+	margin-top: 5% !important;
 }
 
 }
@@ -836,40 +878,8 @@ div.p-s-1, div.p-s-2, div.p-s-3 {
 	from {transform:rotate(0deg);}
 	to {transform:rotate(360deg);}
 }
-
-.p1 {
-	display: none;
-}
-.p2 {
-	display: none;
-}
-.p3 {
-	display: none;
-}
-.pages {
-	display: none;
-}
-div.left.column {
-	display: none;
-}
-div.right.column {
-	display: none;
-}
-.left {
-	display: none;
-}
-.right {
-	display: none;
-}
-.pages-loading {
-	display: block;
+.pages-loading {	
 	margin-bottom: 5%;
-}
-.turnPhoneContainer {
-	display: none;
-}
-.screenSmall {
-	display: none;
 }
 
 .show {
@@ -878,9 +888,24 @@ div.right.column {
 .hide {
 	display: none !important;
 }
+.op-01 {
+	opacity: 0.1 !important;
+}
+.op-10 {
+	opacity: 1.0 !important;
+}
 .ex {
 	text-align: center;
 }
 .content-credits {
 	font-size: 10pt;
+}
+#footer {
+	margin-bottom: 0;
+	}
+.emailCopy-left: {
+	float: left;
+}
+.emailCopy-right {
+	float: right;
 }
