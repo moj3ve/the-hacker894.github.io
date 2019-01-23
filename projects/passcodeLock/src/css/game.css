@@ -1,0 +1,58 @@
+@media screen and (max-wdith: 500px) {
+    .game-snake {
+        width: 200px;
+        height: 100px;
+      }
+      .game-placeholder {
+      	width: 200px;
+      	height: 100px;
+      }
+    
+}
+@media screen and (min-width: 524px) {
+    .game-snake {
+        width: 400px;
+        height: 200px;
+      }
+    .game-placeholder {
+      	width: 400px;
+      	height: 200px;
+      }
+}
+.gameBtn {
+	color: black;
+	background-color: white;
+	width: 200px;
+	height: 50px;
+}
+.bLeft {
+	width: 90px !important;
+	
+	display: inline-block;
+	margin-right: 9px; 
+}
+.bRight {
+	width: 90px !important;
+	display: inline-block;
+	margin-left: 9px; 
+}
+.bDown {
+	display: block;
+	text-align: center;
+	margin: 0 auto;
+	position: relative;
+}
+.controller-sideways-button {
+	overflow: hidden;
+}
+.game {
+	text-align: center !important;
+}
+.controller {
+	text-align: center !important;
+}
+.game * img {
+	width: 128px;
+	height: 128px;
+	text-align: center;
+}

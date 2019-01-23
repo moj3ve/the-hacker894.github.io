@@ -1,0 +1,395 @@
+@font-face {
+    font-family: Product Sans;
+    src: url("https://skylarmccauley.xyz/fonts/fonts/ProductSans/regular.ttf");
+}
+body, html, p, p1, p2, p3, p4, h1, h2, h3, h4, h6, b, strong, i, em, mark, small, del, ins, sub, sup, ul, li, ol, a, div {
+    font-family: 'Product Sans';
+    -moz-transition: width 1s ease-in-out, left 1.5s ease-in-out;
+    -webkit-transition: width 1s ease-in-out, left 1.5s ease-in-out;
+    -moz-transition: width 1s ease-in-out, left 1.5s ease-in-out;
+    -o-transition: width 1s ease-in-out, left 1.5s ease-in-out;
+    transition: width 1s ease-in-out, left 1.5s ease-in-out;
+    background-color: black;
+    color: white;
+  }
+.title-container {
+    text-align: center;
+    color: white;
+}
+.title, .subtitle {
+    margin-bottom: 0;
+    margin-top: 0;
+    color: white;
+}
+ .button-container {
+    margin-top: 13%;
+    outline: 5px solid grey;
+    padding-left: 35px;
+    padding-right: 35px;
+    padding-top: 35px;
+    padding-bottom: 35px;
+    margin-left: 10%;
+    margin-right: 10%;
+    text-align: center;
+    color: white;
+    
+}
+.button {
+    margin: 4px 4px 4px 4px;
+    font-family: 'Product Sans';
+    outline: 1px solid black;    
+    width: 72px;
+    height: 30px;
+    font-size: 12pt;
+   
+}
+.button-wide {
+    width: 135px;
+    height: 32px;
+    font-size: 12pt;
+    margin: 4px 4px 4px 4px;
+    font-family: 'Product Sans';
+    outline: 1px solid black;    
+    
+}
+.button-wide2x {
+	width: 195px;
+    height: 32px;
+    font-size: 12pt;
+    margin: 4px 4px 4px 4px;
+    font-family: 'Product Sans';
+    outline: 1px solid black;    
+    
+}
+.button-lock {
+    image-orientation: 90deg;
+}
+
+@media screen and (min-width: 1024px){
+.button {
+    width: 84px;
+    height: 42px;
+    font-size: 14pt;
+   }
+.button-wide {
+    width: 125px;
+    height: 32px;
+    font-size: 12pt;
+}
+.button-wide2x {
+	width: 180px;
+    height: 32px;
+    font-size: 12pt;
+
+}
+  .button-container {
+    margin-top: 13%;
+    outline: 5px solid grey;
+    padding-left: 42px;
+    padding-right: 42px;
+    padding-top: 42px;
+    padding-bottom: 42px;
+    margin-left: 10%;
+    margin-right: 10%;
+    }
+.app > a > p {
+	font-size: 6.5pt;
+	letter-spacing: 0.8px
+}
+.app {
+	height: 128px;
+	width: 128px;
+	margin: 7px 7px 7px 7px;
+	display: inline-block;
+}
+}
+@media screen and (min-width: 768px) and (max-width: 1023) {
+.button {
+    width: 72px;
+    height: 30px;
+    font-size: 12pt;
+   }
+.button-wide {
+    width: 118px;
+    height: 32px;
+    font-size: 12pt;
+}
+.button-wide2x {
+	width: 160px;
+    height: 32px;
+    font-size: 12pt;
+}
+ .button-container {
+    margin-top: 13%;
+    outline: 5px solid grey;
+    padding-left: 35px;
+    padding-right: 35px;
+    padding-top: 35px;
+    padding-bottom: 35px;
+    margin-left: 5% !important;
+    margin-right: 5% !important;
+}
+.app > a > p {
+	font-size: 6pt;
+	letter-spacing: 0.76px
+}
+.app {
+	height: 96px;
+	width: 96px;
+	margin: 6px 6px 6px 6px;
+	display: inline-block;
+}
+}
+@media screen and (min-width: 512px) and (max-width: 767) {
+.button {
+    width: 74px;
+    height: 32px;
+    font-size: 15pt;
+   }
+.button-wide {
+    width: 114px;
+    height: 32px;
+    font-size: 12pt;
+}
+.button-wide2x {
+	width: 156px;
+    height: 32px;
+    font-size: 12pt;
+}
+
+ .button-container {
+    margin-top: 15%;
+    outline: 5px solid grey;
+    padding-left: 29px;
+    padding-right: 29px;
+    padding-top: 29px;
+    padding-bottom: 29px;
+    margin-left: 10% !important;
+    margin-right: 10% !important;
+}
+.app > a > p {
+	font-size: 5.8pt;
+	letter-spacing: 0.7px
+}
+.app {
+	height: 74px;
+	width: 74px;
+	margin: 5.2px 5.2px 5.2px 5.2px;
+	display: inline-block;
+}
+}
+@media screen and (max-width: 511) {
+.button {
+    width: 74px;
+    height: 32px;
+    font-size: 12pt;
+   }
+.button-wide {
+    width: 110px;
+    height: 32px;
+    font-size: 12pt;
+}
+.button-wide2x {
+	width: 158px;
+    height: 32px;
+    font-size: 12pt;
+}
+
+.button-container {
+    margin-top: 18%;
+    outline: 5px solid grey;
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    margin-left: 11% !important;
+    margin-right: 11% !important;
+}
+.app > a > p {
+	font-size: 5.6pt;
+	letter-spacing: 0.72px
+}
+.app {
+	height: 70px;
+	width: 70px;
+	margin: 5.1px 5.1px 5.1px 5.1px;
+	display: inline-block;
+}
+
+.home > .container {
+    text-align: center;
+    margin-top: 5%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.snake > .container {
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+}
+
+.button:focus {
+	outline: none;
+}
+.debug-container {
+	display: none;
+	margin-top: 4%;
+	outline: 2px solid grey;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    
+}
+.b1 {
+   background-color: red;
+   color: white;
+}
+.b2 {
+    background-color: orange;
+    color: white;
+}
+.b3 {
+    background-color: yellowgreen;
+    
+    color: white;
+
+}
+.b4 {
+    background-color: green;
+    color: white;
+}
+.b5 {
+    background-color: blue;
+    color: white;
+}
+.b6 {
+    background-color: indigo;
+    color: white;
+}
+.b7 {
+    background-color: violet;
+    color: white;
+}
+.b8 {
+    background-color: royalblue;
+    color: white;
+}
+.b9 {
+    background-color: orangered;
+    color: white;
+}
+.b0 {
+    background-color: aquamarine;
+    color: white;
+}
+.bDel {
+    background-color: palevioletred;
+    color: white;
+    text-align: left !important;
+}
+.bEnt {
+    background-color: goldenrod;
+    color: white;
+    text-align: left !important;
+}
+.bDebug {
+
+    background-color: black;
+    color: white;
+    text-align: left !important;
+    display: none;
+
+}
+.bHideDebug {
+
+    background-color: black;
+    color: white;
+    display: none;
+}
+.bShowData {
+
+    background-color: black;
+    color: white;
+}
+
+.passcodeCheck {
+	margin-top: 20%;
+}
+.bPasswdCheck {
+	background-color: black;
+	color: white;
+	display: block;
+	text-align: center;
+	margin: 0 auto;
+	position: relative;
+
+}
+.data {
+	display: none !important;
+}
+.colorCodeData {
+    display: none !important;
+}
+.pressColor {
+    font-size: 20pt;
+    margin-bottom: 5%;
+    color: white;
+
+}
+.center {
+	text-align: center;
+	align-content: center;
+}
+.home  {
+    display: none;
+    text-align: center;
+}
+.application > .snake{
+    display: none;
+}
+.application > .placeholder {
+	display: none;
+}
+.application > .credits {
+	display: none;
+}
+.snake > .container, .placeholder > .container, .credits > .container {
+    outline: 5px grey solid;
+    padding: 4px 4px 4px 4px;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+.snake * .game, .placeholder * .game, .credits * .game {
+    margin: 5px 5px 5px 5px;
+    padding: 5px 5px 5px 5px;
+}
+.home > .container {
+    text-align: center;
+    margin-top: 5%;
+}
+.home > .title {
+    font-size: 24pt;
+    text-align: center;
+}
+.home > .container > .row {
+	text-align: center;
+	/*outline: 2px solid white; */
+}
+.app > a > p {
+	font-size: 5.7pt;
+	letter-spacing: 0.7px
+}
+.app {
+	height: 80px;
+	width: 80px;
+	margin: 3px 3px 3px 3px;
+	display: inline-block;
+}
+.btnNum, .row-passwdCheck {
+	display: none;
+}
