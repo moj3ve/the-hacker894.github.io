@@ -9,6 +9,44 @@
   gtag('js', new Date());
   gtag('config', 'UA-117081817-2');
 	</script>
+	
+	<script>
+		var upPress= new KeyboardEvent('keydown', {'keyCode':119, 'which':119});
+		var leftPress= new KeyboardEvent('keydown', {'keyCode':97, 'which':97});
+		var rightPress= new KeyboardEvent('keydown', {'keyCode':100, 'which':100});
+		var downPress= new KeyboardEvent('keydown', {'keyCode':115, 'which':115});
+		function up() {
+			document.dispatchEvent (upPress); 
+		}
+		function left() {
+			document.dispatchEvent (leftPress); 
+		}
+		function right() {
+			document.dispatchEvent (rightPress); 
+		}
+		function down() {
+			document.dispatchEvent (downPress); 
+		}
+		
+		document.onkeypress = function (e) {
+	    e = e || window.event;
+	    // use e.keyCode
+			if(e.keyCode == 38) {
+				up()
+			}
+			if(e.keyCode == 37) {
+				left()	
+			}
+			if(e.keyCode == 39) {
+			   right()
+			}
+			if(e.keyCode == 40) {
+			  down()
+			}
+			  
+			
+};
+	</script>
   </head>
 <title>Snake</title>
 <script src = "snake.js"></script>
