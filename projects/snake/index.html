@@ -10,7 +10,8 @@
   gtag('config', 'UA-117081817-2');
 	</script>
 	
-	<script>
+<!--	<script>
+	
 		var upPress= new KeyboardEvent('keydown', {'keyCode':119, 'which':119});
 		var leftPress= new KeyboardEvent('keydown', {'keyCode':97, 'which':97});
 		var rightPress= new KeyboardEvent('keydown', {'keyCode':100, 'which':100});
@@ -27,29 +28,31 @@
 		function down() {
 			document.dispatchEvent (downPress); 
 		}
-		window.addEventListener("keydown", translateKeyPress, false);
-		function translateKeyPress() {
-			console.log("Not ready yet")	
-		}
-		document.onkeypress = function (e) {
-	    e = e || window.event;
-	    // use e.keyCode
-			if(e.keyCode == 38) {
-				up()
-			}
-			if(e.keyCode == 37) {
-				left()	
-			}
-			if(e.keyCode == 39) {
-			   right()
-			}
-			if(e.keyCode == 40) {
-			  down()
-			}
-			  
+		document.onkeydown = checkKey;
+
+		function checkKey(e) {
 			
-};
-	</script>
+		    e = e || window.event;
+			console.log(e.keyCode)
+		    if (e.keyCode == '38') {
+		        // up arrow
+		        up()
+		    }
+		    else if (e.keyCode == '40') {
+		        // down arrow
+		        down()
+		    }
+		    else if (e.keyCode == '37') {
+		       // left arrow
+		       left()
+		    }
+		    else if (e.keyCode == '39') {
+		       // right arrow
+		       right()
+		    }
+		
+		}
+	</script> -->
   </head>
 <title>Snake</title>
 <script src = "snake.js"></script>

@@ -107,6 +107,29 @@ function onKeyPress(e) {
 			} 
 			break;
 	}
+/*	switch (e.keyCode) {
+		case 38:
+		// up arrow
+		velX = 0;
+		velY = -1;
+			
+		break;
+		case 37:
+		// left arrow
+		velX = -1;
+		velY = 0;
+		break;
+		case 39:
+		// right arrow
+		velX = 1;
+		velY = 0;
+		break;
+		case 40:
+		// down arrow
+		velX = 0;
+		velY = 1;
+		break;
+	} */
 }
 
 function updateSnake() {
