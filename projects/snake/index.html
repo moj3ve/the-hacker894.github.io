@@ -27,7 +27,10 @@
 		function down() {
 			document.dispatchEvent (downPress); 
 		}
-		
+		window.addEventListener("keydown", translateKeyPress, false);
+		function translateKeyPress() {
+			console.log("Not ready yet")	
+		}
 		document.onkeypress = function (e) {
 	    e = e || window.event;
 	    // use e.keyCode
