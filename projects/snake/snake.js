@@ -272,7 +272,10 @@ function getAIDir(headX, headY, foodX, foodY) {
 
 function askQuestion() {
 	if(window.location.hash) {
-		if(window.location.hash.includes('noQuestion')) return;
+		if(window.location.hash.includes('noQuestion')) {
+			correctAns = undefined;
+			return true;
+		}
 	}
 	if (Math.random() > .45)
 		return true;
