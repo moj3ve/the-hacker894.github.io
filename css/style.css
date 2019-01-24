@@ -663,47 +663,31 @@ header .intro-text {
 	text-align: center !important;
 
 }
-.page-selector {
-	display: flex;
-	text-align: center;
-}
-div.page-selector {
+.page-selector, div.page-selector  {
+	display: block;
 	text-align: center;
 }
 @media (min-width: 1200px) {
-	div.page-selector {
-	margin: 0 1% 0 39%;
-	}
+	
+	
 }
 @media (max-width: 1199px) and (min-width: 996px) {
-	div.page-selector {
-	margin: 0 1% 0 37%;
-	}
+	
 }
 @media (max-width: 995px) and (min-width: 768px) {
-	div.page-selector {
-	margin: 0 1% 0 33%;
-	}
+	
 }
 @media (max-width: 767px) and (min-width: 741px) {
-	div.page-selector {
-	margin: 0 1% 0 32.5%;
-	}
+	
 }
 @media (max-width: 741px) and (min-width: 683px) {
-	div.page-selector {
-	margin: 0 1% 0 31.5%;
-	}
+	
 }
 @media (max-width: 683px) and (min-width: 660px) {
-	div.page-selector {
-	margin: 0 1% 0 30.5%;
-	}
+	
 }
 @media (max-width: 660px) and (min-width: 640px) {
-	div.page-selector {
-	margin: 0 1% 0 29.5%;
-	}
+	
 	
 	
 }
@@ -837,9 +821,13 @@ div.page-selector {
 	font-size: 16pt;
 
 }
-div.p-s-1, div.p-s-2, div.p-s-3 {
+button.p-s-1, button.p-s-2, button.p-s-3 {
 	margin: 0 5pt 0 5pt;
-
+	background-color: #f6f6f6;
+	color: black;
+	
+	outline: none;
+	border: none;
 }
 .pages {
 	display: none
