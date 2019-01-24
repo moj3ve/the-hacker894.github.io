@@ -667,30 +667,6 @@ header .intro-text {
 	display: block;
 	text-align: center;
 }
-@media (min-width: 1200px) {
-	
-	
-}
-@media (max-width: 1199px) and (min-width: 996px) {
-	
-}
-@media (max-width: 995px) and (min-width: 768px) {
-	
-}
-@media (max-width: 767px) and (min-width: 741px) {
-	
-}
-@media (max-width: 741px) and (min-width: 683px) {
-	
-}
-@media (max-width: 683px) and (min-width: 660px) {
-	
-}
-@media (max-width: 660px) and (min-width: 640px) {
-	
-	
-	
-}
 @media (min-width: 640px) {
 	.screenSmall {
 		display: none !important;
