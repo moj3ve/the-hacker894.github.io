@@ -309,7 +309,7 @@ function getAIDir(headX, headY, foodX, foodY) {
 function askQuestion() {
 
 	if(window.location.hash) {
-		if(window.location.hash.includes('noQuestion')) {
+		if(!window.location.hash.includes('mathQuestion')) {
 			correctAns = undefined;
 			return true;
 		}
