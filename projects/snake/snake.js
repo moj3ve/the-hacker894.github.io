@@ -83,62 +83,44 @@ function onClick(e) {
 }
 
 function onKeyPress(e) {
-ctx.font = "30px Retro";
+console.log(e.key);
+	if (aiOn) return;
 	switch (e.key) {
-		case "w":
+	case "w":
+		case "ArrowUp":
 			velX = 0;
 			velY = -1;
-			break;
-		case "s":
-			velX = 0;
-			velY = 1;
-			break;
-		case "a":
-			velX = -1;
-			velY = 0;
-			break;
-		case "d":
-			velX = 1;
-			velY = 0;
-			break;
-		case " ":
-			if (gameOver) {
-				pixelWidth = 25;
-				start();
-				aiOn = false;
-			}
-			break;
-		case "i":
-			if (gameOver) {
-				pixelWidth = 25;
-				start();
-				aiOn = true;
-			} 
-			break;
-	}
-/*	switch (e.keyCode) {
-		case 38:
-		// up arrow
-		velX = 0;
-		velY = -1;
-			
 		break;
-		case 37:
-		// left arrow
-		velX = -1;
-		velY = 0;
-		break;
-		case 39:
-		// right arrow
-		velX = 1;
-		velY = 0;
-		break;
-		case 40:
-		// down arrow
+	case "s":
+		case "ArrowDown":
 		velX = 0;
 		velY = 1;
-		break;
-	} */
+	break;
+	case "a":
+		case "ArrowLeft":
+		velX = -1;
+		velY = 0;
+	break;
+	case "d":
+		case "ArrowRight":
+			velX = 1;
+			velY = 0;
+	break;
+	case " ":
+if (gameOver) {
+start();
+aiOn = false;
+gameOver = false;
+}
+break;
+case "i":
+if (gameOver) {
+start();
+aiOn = true;
+gameOver = false;
+} 
+break;
+}
 }
 
 function updateSnake() {
