@@ -7,12 +7,16 @@ class Node {
 	}
 	
 	drawNode(width, height) {
+		
 		if (this.state == 0) {
+		ctx.font = "30px Retro";
 			ctx.fillStyle = "rgb(" + score % 255 + "," + score % 255 + "," + score % 255 + ")";
 			//ctx.fillStyle = "rgb(0, 0, 0)";
 		} else if (this.state == 1) {
+		ctx.font = "30px Retro";
 			ctx.fillStyle = "rgb(200, 0, 0)";
 		} else {
+		ctx.font = "30px Retro";
 			ctx.fillStyle = "rgb(0, 200, 0)";
 		}
 		ctx.fillRect(this.x * width, this.y * height, width, height);
@@ -20,6 +24,7 @@ class Node {
 }
 
 function start() {
+
 	canvas = document.getElementById("canvas");
 	//	window.requestAnimationFrame(loop);
 	canvas = document.getElementById("canvas");
@@ -28,7 +33,7 @@ function start() {
 	ctx = canvas.getContext("2d");
 	lastRender = 0;
 	ctx.textAlign = "center";
-	ctx.font = "50px Calibri";
+	ctx.font = "30px Retro";
 	if (pixelWidth == undefined)
 		pixelWidth = 25;
 	x = 0;
@@ -55,7 +60,9 @@ function start() {
 }
 
 function draw() {
+
 	if (gameOver) {
+		ctx.font = "30px Retro";
 		ctx.fillStyle = "rgb(255, 255, 255)";
 		ctx.fillText("Game Over", canvas.width * .5, canvas.height * .45);
 		ctx.fillText("Your Score Was: " + (score - startScore), canvas.width * .5, canvas.height * .45 + 50);
@@ -64,6 +71,7 @@ function draw() {
 		if (correctAns != undefined)
 			ctx.fillText("The Correct Answer Was: " + correctAns, canvas.width * .5, canvas.height * .45 + 200);
 	} else {
+		ctx.font = "30px Retro";
 		ctx.fillStyle = "rgb(255, 255, 255)";
 		ctx.fillText(score - startScore, canvas.width/2, canvas.height * .1);
 	}
@@ -75,6 +83,7 @@ function onClick(e) {
 }
 
 function onKeyPress(e) {
+ctx.font = "30px Retro";
 	switch (e.key) {
 		case "w":
 			velX = 0;
@@ -133,6 +142,7 @@ function onKeyPress(e) {
 }
 
 function updateSnake() {
+ctx.font = "30px Retro";
 	for (let i = 0; i < grid.length; i++) {
 		for (let j = 0; j < grid[i].length; j++) {
 			grid[i][j].age--;
@@ -182,6 +192,7 @@ function updateSnake() {
 }
 
 function makeFood() {
+
 	foodX = Math.floor(Math.random() * grid.length);
 	foodY = Math.floor(Math.random() * grid[0].length);
 	while (grid[foodX][foodY].state == 2) {
@@ -193,12 +204,14 @@ function makeFood() {
 }
 
 function endGame() {
+
 	console.log("game over");
 	gameOver = true;
 	draw();
 }
 
 function getAIDir(headX, headY, foodX, foodY) {
+
 	let ret = {"velX": 0, "velY": 0};
 	let i = 1;
 	if (grid[headX + i] != undefined) {
@@ -294,6 +307,7 @@ function getAIDir(headX, headY, foodX, foodY) {
 }
 
 function askQuestion() {
+
 	if(window.location.hash) {
 		if(window.location.hash.includes('noQuestion')) {
 			correctAns = undefined;
