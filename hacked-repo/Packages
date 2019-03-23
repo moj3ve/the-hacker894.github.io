@@ -157,6 +157,7 @@ SHA256: 259592a51bd40d88c4e1263c61f56e1b75c048ac99d6ee060b359c5bec169984
 Section: Emulator
 Description: iOS Multplatform emulator for iOS. Emulate NES, SNES, Sega Genenis, GameBoy (Color/Advance), and much more.
 Author: TheHacker
+Depiction: http://skylarmccauley.xyz/hacked-repo/depictions/?p=com.provenance-emu.provenance
 Name: Provenance
 
 Package: com.provenance-emu.provenance
@@ -173,6 +174,7 @@ Section: Emulator
 Description: iOS Multplatform emulator for iOS. Emulate NES, SNES, Sega Genenis, GameBoy (Color/Advance), and much more.
 Author: TheHacker
 Icon: file:///Applications/Provenance.app/AppIcon40x40@2x.png
+Depiction: http://skylarmccauley.xyz/hacked-repo/depictions/?p=com.provenance-emu.provenance
 Name: Provenance
 
 Package: com.rpetrich.cacheclearer
@@ -289,6 +291,7 @@ Section: Apps
 Description: Change the aspects of your display like Temperature, Brightness, and Color.
 Author: TheHacker
 Dev: developer
+Depiction: http://skylarmccauley.xyz/hacked-repo/depictions/?p=xyz.skylarmccauley.goodnight
 Name: Goodnight
 
 Package: xyz.xninja.dopesettings
