@@ -1,8 +1,8 @@
 Origin: Hacker's Repo
 Label: Hacked Repo
 Suite: stable 
-Version: 0.1
+Version: 1.0
 Codename: hack 
 Architectures: iphoneos-arm 
 Components: main
-Description: A repo with some neat apps
+Description: Repository with rare tweaks and sideloaded iPAs converted to debs

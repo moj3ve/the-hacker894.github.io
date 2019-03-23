@@ -164,14 +164,15 @@ Version: 1.5
 Architecture: iphoneos-arm
 Maintainer: TheHacker
 Depends: firmware (>= 9.0)
-Filename: ./debs/com.provenance-emu.provenance.deb
-Size: 42560872
-MD5sum: 13bbd650be8cf433585e5d011a25ed41
-SHA1: 6dcaee2f6c632774e8669df5ff4a363c05fba24b
-SHA256: 259592a51bd40d88c4e1263c61f56e1b75c048ac99d6ee060b359c5bec169984
+Filename: ./debs/com.provenance-emu.provenance .deb
+Size: 42562712
+MD5sum: 334153d1ce7811f80659b75c6d3f8e7a
+SHA1: 5d60133c89d4dd7463dcd0ed3e2ee72d5bd36b1b
+SHA256: 552ba02fe731956f04c340ade93011469a169f6f944b862885048871f1a4c231
 Section: Emulator
 Description: iOS Multplatform emulator for iOS. Emulate NES, SNES, Sega Genenis, GameBoy (Color/Advance), and much more.
 Author: TheHacker
+Icon: file:///Applications/Provenance.app/AppIcon40x40@2x.png
 Name: Provenance
 
 Package: com.rpetrich.cacheclearer
