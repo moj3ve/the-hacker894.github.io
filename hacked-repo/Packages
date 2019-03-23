@@ -138,22 +138,6 @@ Description: Facedown to lock devices
 Author: Soh Satoh
 Name: DownLocker
 
-Package: xyz.skylarmccauley.fargoal
-Version: 1.8
-Architecture: iphoneos-arm
-Maintainer: TheHacker
-Depends: firmware (>= 9.0)
-Filename: ./debs/xyz.skylarmccauley.fargoal.deb
-Size: 69037312
-MD5sum: 1fed4243fa8747a5810e2fbfde355814
-SHA1: d7d76d851eaf27f5394a612971edb9effcac8d2e
-SHA256: 1159eab62327b5ded9f6ffb4a08e525092d0a9c2d56af44363c7210a2334ed3c
-Section: Games
-Description: Incredibly challenging dungeon crawler
-Author: TheHacker
-Depiction: http://skylarmccauley.xyz/hacked-repo/depictions/?p=xyz.skylarmccauley.fargoal
-Name: Fargoal
-
 Package: xyz.skylarmccauley.goodnight
 Version: 1.0
 Architecture: iphoneos-arm
@@ -170,22 +154,6 @@ Author: TheHacker
 Depiction: http://skylarmccauley.xyz/hacked-repo/depictions/?p=xyz.skylarmccauley.goodnight
 Dev: developer
 Name: Goodnight
-
-Package: xyz.skylarmccauley.hookchamp
-Version: 1.8.3
-Architecture: iphoneos-arm
-Maintainer: TheHacker
-Depends: firmware (>= 9.0)
-Filename: ./debs/xyz.skylarmccauley.hookchamp.deb
-Size: 25193768
-MD5sum: addcae820dfae299e609122f63944dfe
-SHA1: eddf381f947793998c7afc1a7d3cd6b4d7dbc988
-SHA256: 0901a0085dd10bb2318a311b5cec3fe10c9f864a9e9f40ede037be1b3b621ffd
-Section: Games
-Description: A retro sidescrolling platformer for iOS makes a comeback.
-Author: TheHacker
-Depiction: http://skylarmccauley.xyz/hacked-repo/depictions/?p=xyz.skylarmccauley.hookchamp
-Name: Hook Champ
 
 Package: xyz.xninja.dopesettings
 Version: 0.0.4
