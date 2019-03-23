@@ -1,0 +1,40 @@
+<package>
+	<id>xyz.skylarmccauley.hookchamp</id>
+	<name>Hook Champ</name>
+	<version>1.8.3</version>
+	<compatibility>
+		<firmware>
+			<miniOS>9.0</miniOS>
+      <maxiOS>12.0+</maxiOS>
+		</firmware>
+	</compatibility>
+	<dependencies>
+		<package></package>
+	</dependencies>
+	<descriptionlist>
+		<description>A retro sidescrolling platformer for iOS makes a comeback.</description>
+		
+	</descriptionlist>
+	<screenshots>
+		<screenshot>
+			<description>Retro artstyle</description>
+			<image>title.png</image>
+		</screenshot>
+		<screenshot>
+			<description>Solve puzzles</description>
+			<image>game.png</image>
+		</screenshot>
+		
+	</screenshots>
+	<changelog>
+		<change>Initial release</change>
+		<change></change>
+		<change></change>
+	</changelog>
+<!--	<links>
+		<link>
+			<name>Nrepo NsB Theme</name>
+			<url>https://youtu.be/lxIToc40pWM</url>
+		</link>
+	</links> -->
+</package>

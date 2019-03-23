@@ -294,6 +294,17 @@ Dev: developer
 Depiction: http://skylarmccauley.xyz/hacked-repo/depictions/?p=xyz.skylarmccauley.goodnight
 Name: Goodnight
 
+Package: xyz.skylarmccauley.hookchamp
+Depends: firmware (>= 9.0)
+Name: Hook Champ
+Version: 1.8.3 
+Architecture: iphoneos-arm
+Description: A retro sidescrolling platformer for iOS makes a comeback.
+Maintainer: TheHacker
+Author: TheHacker
+Section: Games
+Depiction: http://skylarmccauley.xyz/hacked-repo/depictions/?p=xyz.skylarmccauley.hookchamp
+
 Package: xyz.xninja.dopesettings
 Version: 0.0.4
 Architecture: iphoneos-arm
