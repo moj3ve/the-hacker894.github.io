@@ -1,0 +1,45 @@
+<package>
+	<id>xyz.skylarmccauley.fargoal</id>
+	<name>Fargoal</name>
+	<version>1.8</version>
+	<compatibility>
+		<firmware>
+			<miniOS>9.0</miniOS>
+      <maxiOS>12.1.2</maxiOS>
+		</firmware>
+	</compatibility>
+	<dependencies>
+		<package></package>
+	</dependencies>
+	<descriptionlist>
+		<description>The goal of Sword of Fargoal is to fight your way through increasingly difficult floors of this randomized dungeon to find the Sword of Fargoal, and then make your way back up to the exit. It sounds simple enough, but at normal difficulty levels, it is incredibly challenging. Thankfully, the mobile version features a “squire mode,” which makes finishing the game significantly easier, so be sure to give that a try if you’re having trouble.
+
+	Additionally, another neat thing about Sword of Fargoal is that the mobile port was developed with the help of Paul Pridham (Madgarden). He’d later go on to work on games like Punch Quest, Death Road to Canada, and other titles. When you play this modern version of Sword of Fargoal, you can see all kinds of hints of Paul’s style that become even more apparent in those later games.</description>
+		
+	</descriptionlist>
+	<screenshots>
+		<screenshot>
+			<description>Retro Dungeon Crawler</description>
+			<image>title.png</image>
+		</screenshot>
+		<screenshot>
+			<description>Solve puzzles</description>
+			<image>game.png</image>
+		</screenshot>
+		<screenshot>
+			
+			<image>game2.png</image>
+		</screenshot>
+		
+		
+	</screenshots>
+	<changelog>
+		<change>Initial release</change>
+	</changelog>
+<!--	<links>
+		<link>
+			<name>Nrepo NsB Theme</name>
+			<url>https://youtu.be/lxIToc40pWM</url>
+		</link>
+	</links> -->
+</package>

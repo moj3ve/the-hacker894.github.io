@@ -77,15 +77,15 @@ Architecture: iphoneos-arm
 Maintainer: TheHacker
 Depends: firmware (>= 9.0)
 Filename: ./debs/com.provenance-emu.provenance.deb
-Size: 42562712
-MD5sum: 334153d1ce7811f80659b75c6d3f8e7a
-SHA1: 5d60133c89d4dd7463dcd0ed3e2ee72d5bd36b1b
-SHA256: 552ba02fe731956f04c340ade93011469a169f6f944b862885048871f1a4c231
+Size: 42563460
+MD5sum: 25b88efb3a33c9e6c4f7194da50f9df3
+SHA1: b2fc90a378ee6c63430b77b6f3ddc2677066d76b
+SHA256: 0337f5f779ca19fdc9d690a314b2bb6f51e70ec59c80cd31f4a02b27cca9df5b
 Section: Emulator
 Description: iOS Multplatform emulator for iOS. Emulate NES, SNES, Sega Genenis, GameBoy (Color/Advance), and much more.
 Author: TheHacker
-Icon: file:///Applications/Provenance.app/AppIcon40x40@2x.png
 Depiction: http://skylarmccauley.xyz/hacked-repo/depictions/?p=com.provenance-emu.provenance
+Icon: file:///Applications/Provenance.app/AppIcon40x40@2x.png
 Name: Provenance
 
 Package: com.rpetrich.cacheclearer
@@ -138,33 +138,54 @@ Description: Facedown to lock devices
 Author: Soh Satoh
 Name: DownLocker
 
+Package: xyz.skylarmccauley.fargoal
+Version: 1.8
+Architecture: iphoneos-arm
+Maintainer: TheHacker
+Depends: firmware (>= 9.0)
+Filename: ./debs/xyz.skylarmccauley.fargoal.deb
+Size: 69037312
+MD5sum: 1fed4243fa8747a5810e2fbfde355814
+SHA1: d7d76d851eaf27f5394a612971edb9effcac8d2e
+SHA256: 1159eab62327b5ded9f6ffb4a08e525092d0a9c2d56af44363c7210a2334ed3c
+Section: Games
+Description: Incredibly challenging dungeon crawler
+Author: TheHacker
+Depiction: http://skylarmccauley.xyz/hacked-repo/depictions/?p=xyz.skylarmccauley.fargoal
+Name: Fargoal
+
 Package: xyz.skylarmccauley.goodnight
 Version: 1.0
 Architecture: iphoneos-arm
 Maintainer: Skylar McCauley
 Installed-Size: 2800000
 Filename: ./debs/xyz.skylarmccauley.goodnight.deb
-Size: 1981234
-MD5sum: c9719506e00ece502e51a0b3af295706
-SHA1: a36b621b1dabfb8882861192c87354316e26d8b4
-SHA256: 17366417188e48488ba76d0367a8f5bdf9e24ae5fa749e47b414220edb05f334
+Size: 1919320
+MD5sum: 41bcdcb0826d28d63cee239ac702e251
+SHA1: be4eb29b11a6160739631c1150ebe2b35cd9d9b1
+SHA256: 346bfa78d86b317e45d6ac05bd801b1da9ca67538d2e20768931630a654586eb
 Section: Apps
 Description: Change the aspects of your display like Temperature, Brightness, and Color.
 Author: TheHacker
-Dev: developer
 Depiction: http://skylarmccauley.xyz/hacked-repo/depictions/?p=xyz.skylarmccauley.goodnight
+Dev: developer
 Name: Goodnight
 
 Package: xyz.skylarmccauley.hookchamp
-Depends: firmware (>= 9.0)
-Name: Hook Champ
-Version: 1.8.3 
+Version: 1.8.3
 Architecture: iphoneos-arm
-Description: A retro sidescrolling platformer for iOS makes a comeback.
 Maintainer: TheHacker
-Author: TheHacker
+Depends: firmware (>= 9.0)
+Filename: ./debs/xyz.skylarmccauley.hookchamp.deb
+Size: 25193768
+MD5sum: addcae820dfae299e609122f63944dfe
+SHA1: eddf381f947793998c7afc1a7d3cd6b4d7dbc988
+SHA256: 0901a0085dd10bb2318a311b5cec3fe10c9f864a9e9f40ede037be1b3b621ffd
 Section: Games
+Description: A retro sidescrolling platformer for iOS makes a comeback.
+Author: TheHacker
 Depiction: http://skylarmccauley.xyz/hacked-repo/depictions/?p=xyz.skylarmccauley.hookchamp
+Name: Hook Champ
 
 Package: xyz.xninja.dopesettings
 Version: 0.0.4
