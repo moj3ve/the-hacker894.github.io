@@ -1,0 +1,123 @@
+{
+  "minVersion": "0.1",
+  "headerImage": "https://jamesaddyman.com/images/provenance.jpg",
+  "tintColor": "",
+  "tabs": [
+    {
+      "tabname": "Details",
+      "views": [
+        {
+          "title": "com.provenance-emu.provenance",
+          "useBoldText": true,
+          "useBottomMargin": false,
+          "class": "DepictionSubheaderView"
+        },
+        {
+          "itemCornerRadius": 6,
+          "itemSize": "{160, 275.41333333333336}",
+          "screenshots": [
+            {
+              "accessibilityText": "Screenshot",
+              "url": "https://skylarmccauley.xyz/hacked-repo/depictions/com.provenance-emu.provenance/screenshots/provenance.jpeg",
+              "fullSizeURL": "https://skylarmccauley.xyz/hacked-repo/depictions/com.provenance-emu.provenance/screenshots/provenance.jpeg"
+            }
+          ],
+          "ipad": {
+            "itemCornerRadius": 9,
+            "itemSize": "{320, 550.8266666666667}",
+            "screenshots": [
+              {
+                "accessibilityText": "Screenshot",
+                "url": "https://skylarmccauley.xyz/hacked-repo/depictions/com.provenance-emu.provenance/screenshots/provenance.jpeg?size=640",
+                "fullSizeURL": "https://skylarmccauley.xyz/hacked-repo/depictions/com.provenance-emu.provenance/screenshots/provenance.jpeg"
+              }
+            ],
+            "class": "DepictionScreenshotView"
+          },
+          "class": "DepictionScreenshotsView"
+        },
+        {
+          "markdown": "iOS Multplatform emulator for iOS. Emulate NES, SNES, Sega Genenis, GameBoy (Color/Advance), and much more.",
+          "useSpacing": true,
+          "class": "DepictionMarkdownView"
+        },
+        {
+          "class": "DepictionSeparatorView"
+        },
+        {
+          "title": "Known Issues",
+          "class": "DepictionHeaderView"
+        },
+        {
+          "markdown": "",
+          "useSpacing": true,
+          "class": "DepictionMarkdownView"
+        },
+        {
+          "class": "DepictionSeparatorView"
+        },
+        {
+          "title": "Latest Version",
+          "class": "DepictionHeaderView"
+        },
+        {
+          "title": "Version",
+          "text": "1.5",
+          "class": "DepictionTableTextView"
+        },
+        {
+          "title": "Released",
+          "text": "2019/02/22",
+          "class": "DepictionTableTextView"
+        },
+        {
+          "title": "Price",
+          "text": "Free",
+          "class": "DepictionTableTextView"
+        },
+        {
+          "title": "Developer",
+          "text": "TheHacker",
+          "class": "DepictionTableTextView"
+        },
+        {
+          "title": "Contact Support",
+          "action": "https://skylarmccauley.xyz/#contact",
+          "class": "DepictionTableButtonView"
+        },
+        {
+          "spacing": 16,
+          "class": "DepictionSpacerView"
+        },
+        {
+          "spacing": 20,
+          "class": "DepictionSpacerView"
+        }
+      ],
+      "class": "DepictionStackView"
+    },
+    {
+      "tabname": "Changelog",
+      "views": [
+		{
+          "title": "1.4",
+          "useBoldText": true,
+          "useBottomMargin": true,
+          "class": "DepictionSubheaderView"
+        },
+        {
+          "markdown": "\t\n\u2022 Initial Release",
+          "useSpacing": false,
+          "class": "DepictionMarkdownView"
+        },
+        {
+          "markdown": "<small style=\"color: #999; margin-top: -8px;\">Released 2018/11/07</small>",
+          "useRawFormat": true,
+          "class": "DepictionMarkdownView"
+        }
+      ],
+      "class": "DepictionStackView"
+    }
+  ],
+  "class": "DepictionTabView"
+}

@@ -77,16 +77,17 @@ Architecture: iphoneos-arm
 Maintainer: TheHacker
 Depends: firmware (>= 9.0)
 Filename: ./debs/com.provenance-emu.provenance.deb
-Size: 42563460
-MD5sum: 25b88efb3a33c9e6c4f7194da50f9df3
-SHA1: b2fc90a378ee6c63430b77b6f3ddc2677066d76b
-SHA256: 0337f5f779ca19fdc9d690a314b2bb6f51e70ec59c80cd31f4a02b27cca9df5b
+Size: 42562140
+MD5sum: a46650ee0ad761ed3ecc10600dc3de31
+SHA1: 14ca3d54a71ce6d3e8a4f92db8cb4776896a0dd9
+SHA256: 471fcf631e77d809a91f6fc1d842e79f487224f0caeaa5eca1c8e1e8c6af19bb
 Section: Emulator
 Description: iOS Multplatform emulator for iOS. Emulate NES, SNES, Sega Genenis, GameBoy (Color/Advance), and much more.
 Author: TheHacker
 Depiction: http://skylarmccauley.xyz/hacked-repo/depictions/?p=com.provenance-emu.provenance
 Icon: file:///Applications/Provenance.app/AppIcon40x40@2x.png
 Name: Provenance
+SileoDepiction: http://skylarmccauley.xyz/hacked-repo/native-depictions/com.provenance-emu.provenance
 
 Package: com.rpetrich.cacheclearer
 Version: 0.1a
@@ -144,16 +145,17 @@ Architecture: iphoneos-arm
 Maintainer: Skylar McCauley
 Installed-Size: 2800000
 Filename: ./debs/xyz.skylarmccauley.goodnight.deb
-Size: 1919320
-MD5sum: 41bcdcb0826d28d63cee239ac702e251
-SHA1: be4eb29b11a6160739631c1150ebe2b35cd9d9b1
-SHA256: 346bfa78d86b317e45d6ac05bd801b1da9ca67538d2e20768931630a654586eb
+Size: 1919324
+MD5sum: e593d554590501d96e0a64e357d5a0bf
+SHA1: 620f908b26af75d83e2620b9ddff861d2d39d7ab
+SHA256: d38be1c78976331687360019b221b843cba63f63687daee8858ca44160d301e9
 Section: Apps
 Description: Change the aspects of your display like Temperature, Brightness, and Color.
 Author: TheHacker
 Depiction: http://skylarmccauley.xyz/hacked-repo/depictions/?p=xyz.skylarmccauley.goodnight
 Dev: developer
 Name: Goodnight
+SileoDepiction: http://skylarmccauley.xyz/hacked-repo/native-depictions/xyz.skylarmccauley.goodnight
 
 Package: xyz.xninja.dopesettings
 Version: 0.0.4
