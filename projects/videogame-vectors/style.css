@@ -34,6 +34,11 @@ body {
 		color: white !important;
 		
 	}
+	.note {
+		margin-top:25px;
+		font-size: 15pt;
+		color: red !important;
+	}
 	h2 {
 		margin-top: 1%;
 	}
@@ -50,4 +55,12 @@ body {
 	.credits {
 		font-size: 9pt;
 		margin-bottom: 5%;
+	}
+	.previews {
+		outline: solid 2px white;
+		margin-left: 30%;
+		margin-right: 30%;
+		margin-bottom: 5%;
+		padding-top: 15px;
+		padding-bottom: 15px;
 	}
