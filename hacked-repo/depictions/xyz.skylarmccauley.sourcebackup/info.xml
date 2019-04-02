@@ -1,6 +1,6 @@
 <package>
 	<id>xyz.skylarmccauley.sourcebackup</id>
-	<name>Goodnight</name>
+	<name>sourcebackup</name>
 	<version>0.1</version>
 	<compatibility>
 		<firmware>
