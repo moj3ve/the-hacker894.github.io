@@ -27,6 +27,7 @@
 	</screenshots>
 	<changelog>
 		<change>Fixed issues with .DS_STORE files</change>
+		<change>Added option to purge .DS_STORE files from previous version</change>
 	</changelog>
 	<links>
 		<link>
