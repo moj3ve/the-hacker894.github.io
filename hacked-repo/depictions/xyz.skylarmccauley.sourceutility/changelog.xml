@@ -1,5 +1,7 @@
 <changelog>
 	<changes>
+		<version>0.2-1</version>
+		<change>Fixed issues with .DS_STORE files</change>
 		<version>0.2</version>
 		<change>Initial Release</change>
 		<change>Backup your Cydia and Sileo sources.</change>
