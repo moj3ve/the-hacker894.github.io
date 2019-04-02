@@ -9,7 +9,9 @@
 		</firmware>
 	</compatibility>
 	<descriptionlist>
-		<description>Backup your Cydia and Sileo resources to a zip file. Requires root permissions.
+		<description>THIS PACKAGE IS DEPRICATED. INSTALL SOURCEUTILITY
+		
+		Backup your Cydia and Sileo resources to a zip file. Requires root permissions.
 		
 		Run sourcebackup in the terminal to make a backup. The backup can be found in /</description>
 		
