@@ -8,9 +8,6 @@
       <maxiOS>12.1.3</maxiOS>
 		</firmware>
 	</compatibility>
-	<dependencies>
-		<package></package>
-	</dependencies>
 	<descriptionlist>
 		<description>Backup your Cydia and Sileo resources to a zip file. Requires root permissions.
 		
