@@ -1,6 +1,7 @@
 <changelog>
 	<changes>
-		<version>0.2-1</version>
+		<version>0.2-2</version>
+		<change>Fixed a syntax error</change>
 		<change>Fixed issues with .DS_STORE files</change>
 		<change>Added option to purge .DS_STORE files from previous version</change>
 		<version>0.2</version>
