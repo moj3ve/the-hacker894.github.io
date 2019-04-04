@@ -1,6 +1,11 @@
 iframe {
   border:0
 }
+ul:after,ul:before {
+  content:"";
+  display:block !important;
+  height:1px;
+}
 
 a,button {
   color:#007aff;
@@ -113,17 +118,8 @@ ul {
   color: rgb(197, 202, 201);
 }
 
-ul:after,ul:before {
-  content:"";
-  display:block;
-  height:1px;
-}
 
-@media (min-width:708px) {
-ul:after,ul:before {
-  display:none
-}
-}
+
 
 ul li {
   border-bottom:1px solid #141414;
