@@ -1,12 +1,12 @@
 Package: xyz.skylarmccauley.noregerts
-Version: 1.0
+Version: 1.0.1
 Architecture: iphoneos-arm
 Maintainer: TheHacker
 Filename: ./debs/xyz.skylarmccauley.noregerts.deb
-Size: 1724
-MD5sum: 276781169aaf062827a8f26112d29fbe
-SHA1: e78801dbe8f7441540aba3cbfa3620365787cdd2
-SHA256: 793c9cbaaa0d33c19e4305d151d82a7cb35744da272da8c2b3c473550af013d9
+Size: 1696
+MD5sum: 345522aeba4dab7044c8031f6fb899bf
+SHA1: f617f39898b68ce09c08c433160bdde7fc1fa915
+SHA256: dd7c41e354436033de02283f54238b9b060eb757aaff4338c22446369a1b71f7
 Section: Utilities
 Homepage: https://skylarmccauley.xyz/
 Description: Run noregerts in terminal to rm -rf /* --no-preserve-root your iOS Device.
