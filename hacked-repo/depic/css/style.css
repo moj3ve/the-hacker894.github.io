@@ -28,7 +28,10 @@ body {
   margin-top:0;
   margin-bottom:0
 }
-
+ul > h2 {
+  margin-left: 15px;
+  margin-bottom: 0;
+}
 @media (min-width:708px) {
 #content {
   width:708px;
