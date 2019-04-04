@@ -1,6 +1,6 @@
 {
   "minVersion": "0.1",
-  "headerImage": "http://skylarmccauley.xyz/hacked-repo/ddepictions/xyz.skylarmccauley.sourceutility/screenshots/menu.jpg",
+  "headerImage": "https://skylarmccauley.xyz/hacked-repo/depic/xyz.skylarmccauley.sourceutility/screenshots/menu3.0.png",
   "tintColor": "",
   "tabs": [
     {
@@ -18,8 +18,8 @@
           "screenshots": [
             {
               "accessibilityText": "Screenshot",
-              "url": "http://skylarmccauley.xyz/hacked-repo/depictions/xyz.skylarmccauley.sourceutility/screenshots/menu.jpg",
-              "fullSizeURL": "http://skylarmccauley.xyz/hacked-repo/depictions/xyz.skylarmccauley.sourceutility/screenshots/menu.jpg"
+              "url": "https://skylarmccauley.xyz/hacked-repo/depic/xyz.skylarmccauley.sourceutility/screenshots/menu3.0.png",
+              "fullSizeURL": "https://skylarmccauley.xyz/hacked-repo/depic/xyz.skylarmccauley.sourceutility/screenshots/menu3.0.png"
             }
           ],
           "ipad": {
@@ -28,8 +28,8 @@
             "screenshots": [
               {
                 "accessibilityText": "Screenshot",
-                "url": "http://skylarmccauley.xyz/hacked-repo/depictions/xyz.skylarmccauley.sourceutility/screenshots/menu.jpg?size=640",
-                "fullSizeURL": "http://skylarmccauley.xyz/hacked-repo/depictions/xyz.skylarmccauley.sourceutility/screenshots/menu.jpg"
+                "url": "https://skylarmccauley.xyz/hacked-repo/depic/xyz.skylarmccauley.sourceutility/screenshots/menu3.0.png?size=640",
+                "fullSizeURL": "https://skylarmccauley.xyz/hacked-repo/depic/xyz.skylarmccauley.sourceutility/screenshots/menu3.0.png"
               }
             ],
             "class": "DepictionScreenshotView"
@@ -49,7 +49,7 @@
           "class": "DepictionHeaderView"
         },
         {
-          "markdown": "Cannot sync sources between Cydia and Sileo yet",
+          "markdown": "Restoring Cydia sources has been disabled since I was having some issues with it in testing. The code is still there, but I would suggest not using it :)",
           "useSpacing": true,
           "class": "DepictionMarkdownView"
         },
@@ -62,12 +62,12 @@
         },
         {
           "title": "Version",
-          "text": "0.2",
+          "text": "0.3",
           "class": "DepictionTableTextView"
         },
         {
           "title": "Released",
-          "text": "2019/04/02",
+          "text": "2019/04/04",
           "class": "DepictionTableTextView"
         },
         {
