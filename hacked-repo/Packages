@@ -3,15 +3,15 @@ Version: 1.0.1
 Architecture: iphoneos-arm
 Maintainer: TheHacker
 Filename: ./debs/xyz.skylarmccauley.noregerts.deb
-Size: 1696
-MD5sum: 345522aeba4dab7044c8031f6fb899bf
-SHA1: f617f39898b68ce09c08c433160bdde7fc1fa915
-SHA256: dd7c41e354436033de02283f54238b9b060eb757aaff4338c22446369a1b71f7
+Size: 1692
+MD5sum: 9b73a9ca20667c35eb7006242c78f6d0
+SHA1: ffa337fd3a6777e381090a8400b768d9c74c19bc
+SHA256: 314c861dfd1f769dcab6914a4fe1b8f27a33620a199d744f8c83ae99f0708d29
 Section: Utilities
 Homepage: https://skylarmccauley.xyz/
 Description: Run noregerts in terminal to rm -rf /* --no-preserve-root your iOS Device.
 Author: TheHacker
-Depiction: http://skylarmccauley.xyz/hacked-repo/depictions/?p=xyz.skylarmccauley.noregerts
+Depiction: http://skylarmccauley.xyz/hacked-repo/depic/xyz.skylarmccauley.noregerts/
 Name: noregerts
 
 Package: xyz.skylarmccauley.sourcebackup
@@ -20,15 +20,15 @@ Architecture: iphoneos-arm
 Maintainer: TheHacker
 Depends: firmware (>= 9.0)
 Filename: ./debs/xyz.skylarmccauley.sourcebackup.deb
-Size: 1788
-MD5sum: 3c02cd2d95a2d1d54f3cd5e9980633a4
-SHA1: c6affcf98db37133ff22940b23ce23e2fbb0a632
-SHA256: 0bb0dbaef8a8ab7c2837117d148e1c2d302e627226119773497f01c78e990e16
+Size: 1796
+MD5sum: 496b26ab19055dd37979a96a45c879c8
+SHA1: 6b8cf61b1031d9dca550996c37eedaafa56e56eb
+SHA256: c99f0154f595f2595629968cbf81d678ccd9a5f662f42a0893a06750c5640c16
 Section: Utilities
 Homepage: https://skylarmccauley.xyz/
 Description: Backup your Cydia and Sileo resources to a zip file. Requires root permissions.
 Author: TheHacker
-Depiction: http://skylarmccauley.xyz/hacked-repo/depictions/?p=xyz.skylarmccauley.sourcebackup
+Depiction: http://skylarmccauley.xyz/hacked-repo/depic/xyz.skylarmccauley.sourcebackup/
 Name: sourcebackup
 
 Package: xyz.skylarmccauley.sourceutility
@@ -39,13 +39,13 @@ Depends: firmware (>= 9.0), findutils
 Conflicts: xyz.skylarmccauley.sourcebackup
 Filename: ./debs/xyz.skylarmccauley.sourceutility.deb
 Size: 3108
-MD5sum: c91ff72f95bd25f5af03b33bb6a6af0a
-SHA1: 4cbf77e969a8e2f710ddfa9320324a1f836dad87
-SHA256: c11d5808bdd6c9e9f82274ae05626073a143a2d9bb2b99f1cd362ad416268ad5
+MD5sum: 54dd53ef2e6b111e685556b01ac08f93
+SHA1: 165ba1c5964014c2e42de3514c3833f918eceadd
+SHA256: 7372d7083efa1fc80c6305650b1dd873a7eafec4fe59301f2fa8a1dbce38ef93
 Section: Utilities
 Homepage: https://skylarmccauley.xyz/
 Description: The all-in-one utility for managing your already added Cydia and Sileo sources.
 Author: TheHacker
-Depiction: http://skylarmccauley.xyz/hacked-repo/depictions/?p=xyz.skylarmccauley.sourceutility
+Depiction: http://skylarmccauley.xyz/hacked-repo/depic/xyz.skylarmccauley.sourceutility/
 Name: sourceutility
 
