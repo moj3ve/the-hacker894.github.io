@@ -1,6 +1,6 @@
 {
   "minVersion": "0.1",
-  "headerImage": "https://skylarmccauley.xyz/hacked-repo/depic/xyz.skylarmccauley.sourceutility/screenshots/menu3.0.png",
+  "headerImage": "https://skylarmccauley.xyz/hacked-repo/depic/xyz.skylarmccauley.sourceutility/screenshots/menu.png",
   "tintColor": "",
   "tabs": [
     {
@@ -18,8 +18,8 @@
           "screenshots": [
             {
               "accessibilityText": "Screenshot",
-              "url": "https://skylarmccauley.xyz/hacked-repo/depic/xyz.skylarmccauley.sourceutility/screenshots/menu3.0.png",
-              "fullSizeURL": "https://skylarmccauley.xyz/hacked-repo/depic/xyz.skylarmccauley.sourceutility/screenshots/menu3.0.png"
+              "url": "https://skylarmccauley.xyz/hacked-repo/depic/xyz.skylarmccauley.sourceutility/screenshots/menu.png",
+              "fullSizeURL": "https://skylarmccauley.xyz/hacked-repo/depic/xyz.skylarmccauley.sourceutility/screenshots/menu.png"
             }
           ],
           "ipad": {
@@ -28,8 +28,8 @@
             "screenshots": [
               {
                 "accessibilityText": "Screenshot",
-                "url": "https://skylarmccauley.xyz/hacked-repo/depic/xyz.skylarmccauley.sourceutility/screenshots/menu3.0.png?size=640",
-                "fullSizeURL": "https://skylarmccauley.xyz/hacked-repo/depic/xyz.skylarmccauley.sourceutility/screenshots/menu3.0.png"
+                "url": "https://skylarmccauley.xyz/hacked-repo/depic/xyz.skylarmccauley.sourceutility/screenshots/menu.png?size=640",
+                "fullSizeURL": "https://skylarmccauley.xyz/hacked-repo/depic/xyz.skylarmccauley.sourceutility/screenshots/menu.png"
               }
             ],
             "class": "DepictionScreenshotView"
