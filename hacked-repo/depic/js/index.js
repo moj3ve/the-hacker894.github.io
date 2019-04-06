@@ -4,13 +4,13 @@ function iOSVersion() {
 
     var iOSVer = navigator.appVersion.match(/CPU( iPhone)? OS (\d+)_(\d+)(_(\d+))? like/i);
     if(!iOSVer) {
-        return `<p style="color: red;">iOS version not detected<p>`;
+        return `<li><p style="color: red;">iOS version not detected</p></li>`;
     }
     var osVersion = [ iOSVer[2], iOSVer[3], iOSVer[4] ? iOSVer[5] : 0 ]
     var osString = osVersion[0] + "." + osVersion[1] + (osVersion[2] && osVersion[2] != 0 ? "." + osVersion[2] : "")
 
     
-        return `<p>You are running iOS <strong>${osString}</strong><p>`
+        return `<li><p>You are running iOS <strong>${osString}</strong></p></li>`
     
     
 }
