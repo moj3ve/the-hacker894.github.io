@@ -32,16 +32,16 @@ Depiction: http://skylarmccauley.xyz/hacked-repo/depic/xyz.skylarmccauley.source
 Name: sourcebackup
 
 Package: xyz.skylarmccauley.sourceutility
-Version: 0.4-3
+Version: 0.5
 Architecture: iphoneos-arm
 Maintainer: TheHacker
-Depends: firmware (>= 9.0), findutils
+Depends: firmware (>= 11.0), findutils, curl
 Conflicts: xyz.skylarmccauley.sourcebackup
 Filename: ./debs/xyz.skylarmccauley.sourceutility.deb
-Size: 7204
-MD5sum: cf58f82dfb5b6e9d78393f0ef833bfcf
-SHA1: c2a44f124a5bfd24840fc6b11100f9b26601214e
-SHA256: 72e05fe0f58150e8f26d879a5a934df8760443041be7bbb9c402a0035ab2e628
+Size: 7924
+MD5sum: c873c71a8e566f60b72c1c683ad856b8
+SHA1: bda5215ed9ef90ef2eef72926ab269a9e7359059
+SHA256: 4a7ecce6d7bf66bbaf0b0b3ba8d1e5dbd12895f32dce217dde11995d142aa07d
 Section: Utilities
 Homepage: https://skylarmccauley.xyz/
 Description: The all-in-one utility for managing your already added Cydia and Sileo sources. Run sourceutility in MobileTerminal, NewTerm2, or over SSH.

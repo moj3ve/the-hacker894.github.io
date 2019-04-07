@@ -1,8 +1,8 @@
-Origin: Hacker's Repo
+Origin: Hacked Repo
 Label: Hacked Repo
 Suite: stable 
 Version: 1.0
 Codename: hack
 Architectures: iphoneos-arm 
 Components: main
-Description: Hacked repository
+Description: Hacked repository with leet hacker scripts

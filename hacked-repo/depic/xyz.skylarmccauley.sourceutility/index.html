@@ -38,17 +38,17 @@
     <ul>
       <img src="screenshots/menu.png">
       <img src="screenshots/menu_u.png">
-      <img src="screenshots/menu_k.png">
+      <img src="screenshots/menu_p.png">
     </ul>
     <ul>
         <li>
-        <a href="../../debs/xyz.skylarmccauley.sourceutility.deb">Download DEB (Does not download through Cydia)</a>
+        <a href="../../debs/xyz.skylarmccauley.sourceutility.deb">Download DEB (Does not download through Cydia or Sileo)</a>
         </li>
       </ul>
     <h2 id="compatibility">Compatibility</h2>
     <ul>
       <li>
-        <p>Supports iOS 9 - 12.1.2</p>
+        <p>Supports iOS 11 - 12.1.2</p>
       </li>
         <script>document.write(iOSVersion())</script>
     </ul>
@@ -58,7 +58,10 @@
         <p>findutils</p>
       </li>
       <li>
-        <p>firmware (>= 9.0)</p>
+        <p>firmware (>= 11.0)</p>
+      </li>
+      <li>
+        <p>curl</p>
       </li>
     </ul>
     <h2 id="conflicts">Conflicts</h2>
@@ -69,38 +72,35 @@
     </ul>
     <h2 id="in-this-version">In this version</h2>
     <ul> 
-        <h2>April 6, 2019</h2>
+        <h2>April 7, 2019</h2>
         <li>
-          <p>0.4-3</p><br>
+        <p>0.5</p><br>
+        <p>- Improved how the Cydia patching works after restoring a backup</p>
+        <p>- After restoring a backup, the user will be prompted to reinstall Cydia</p>
+        <p>- After reinstalling Cydia, the user will be prompted to run Diatrus's Cydia Patch from installsileo (installsileo not included)</p>
+        <p>- Now depends on curl for reinstalling Cydia (downloads from apt.bingner.com)</p>
+        <p>- Removed Kill Menu</p>
+        <p>- Added Patches Menu</p>
+        <p>- Patches Menu includes options such as Reinstalling Cydia, Killing Sileo, and running the Cydia Patch</p>
+        <p>- Changed firmware dependency to iOS 11 and above (this may be changed in a future update) </p>
+        </li>
+    </ul>
+    <h2 id="other-versions">Previous Releases</h2>
+    <ul>
+        <h2>April 5/6, 2019</h2>
+        <li>
+          <p>0.4-X</p><br>
           <p>- Added some small improvements to the menus</p>
           <p>- Added option to kill Cydia and Sileo</p>
           <p>- Sileo and Cydia are now killed when attempting to restore or make a backup</p>
-          
-        </li>
-        <h2>April 6, 2019</h2>
-        <li>
-          <p>0.4-2</p><br>
           <p>- Added a patch that fixes Cydia after a restore. (From Diatrus' Sileo Installer for unc0ver).</p>
-          
-        </li>
-        <h2>April 5, 2019</h2>
-        <li>
-          <p>0.4-1</p><br>
           <p>- After restoring a backup, users will be prompted to run installsileo to fix some small issues</p>
-          
-        </li>
-        <h2>April 5, 2019</h2>
-        <li>
-          <p>0.4</p><br>
           <p>- Rewrote how backups are made and restored. Old backups are now incompatible</p>
           <p>- Readded ability to restore Cydia sources</p>
           <p>- Now compatible with source lists installed to /etc/apt/sources.list.d/</p>
           <p>- All backups made with versions prior to v0.4 <strong>MUST</strong> be converted</p>
           <p>- General improvements to how some things work</p>
         </li>
-    </ul>
-    <h2 id="other-versions">Previous Releases</h2>
-    <ul>
 
         <h2>April 4, 2019</h2>
         <li>
