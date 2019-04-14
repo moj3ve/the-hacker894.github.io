@@ -3,3 +3,24 @@
 dpkg-scanpackages -m . /dev/null >Packages
 
 bzip2 -fskz Packages
+
+touch ./releasetmp
+
+MD5_PACKAGES="$(md5 ./Packages)"
+MD5_PACKAGES_CONDENSED=${MD5_PACKAGES#'MD5 (./Packages) ='}
+PACKAGES_SIZE="$(stat -f%z Packages)"
+
+MD5_PACKAGESBZ="$(md5 ./Packages.bz2)"
+MD5_PACKAGESBZ_CONDENSED=${MD5_PACKAGESBZ#'MD5 (./Packages.bz2) ='}
+PACKAGESBZ_SIZE="$(stat -f%z Packages.bz2)"
+
+echo "MD5Sum:
+$MD5_PACKAGES_CONDENSED $PACKAGES_SIZE Packages
+$MD5_PACKAGESBZ_CONDENSED $PACKAGESBZ_SIZE Packages.bz2" >> ./Release
+
+
+
+
+
+
+
