@@ -18,6 +18,7 @@ echo "MD5Sum:
 $MD5_PACKAGES_CONDENSED $PACKAGES_SIZE Packages
 $MD5_PACKAGESBZ_CONDENSED $PACKAGESBZ_SIZE Packages.bz2" >> ./Release
 
+gpg -abs -o Release.gpg Release
 
 
 
