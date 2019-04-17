@@ -15,15 +15,15 @@ Depiction: http://skylarmccauley.xyz/hacked-repo/depic/xyz.skylarmccauley.norege
 Name: noregerts
 
 Package: xyz.skylarmccauley.sileopirate
-Version: 0.1.1
+Version: 0.1.2
 Architecture: iphoneos-arm
 Maintainer: TheHacker
 Depends: firmware (>= 11.0), org.coolstar.sileo
 Filename: ./debs/xyz.skylarmccauley.sileopirate.deb
-Size: 6844
-MD5sum: 859ec32b9d05fc4c076b4e0a65d137ef
-SHA1: b941ec63be6d652c16a37ba746635e4a11d7c518
-SHA256: 73b6998d6596c63fe6510efbb588aa34f3d02288e32175747abaf789aee2f47b
+Size: 6836
+MD5sum: 76c2dd50a7e49033e49593ae1df7cc61
+SHA1: 673d44ed9c7f9964859511fdcee9a7d0210fed21
+SHA256: 3e30c1ada8d7443970bd68d2f5fce0deb1d55c87c0ed9fd00469d2e989078e72
 Section: Tweaks
 Homepage: https://skylarmccauley.xyz/
 Description: Raid ye Sileo package manager will me Pirate Speak
