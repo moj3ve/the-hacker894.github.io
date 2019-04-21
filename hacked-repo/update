@@ -6,6 +6,15 @@ bzip2 -fskz Packages
 
 touch ./releasetmp
 
+echo "Origin: Hacked Repo
+Label: Hacked Repo
+Suite: stable 
+Version: 1.0
+Codename: hack
+Architectures: iphoneos-arm 
+Components: main
+Description: Hacked repository with leet hacker scripts"  > ./Release
+
 MD5_PACKAGES="$(md5 ./Packages)"
 MD5_PACKAGES_CONDENSED=${MD5_PACKAGES#'MD5 (./Packages) ='}
 PACKAGES_SIZE="$(stat -f%z Packages)"
