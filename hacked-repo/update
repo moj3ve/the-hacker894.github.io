@@ -27,7 +27,12 @@ echo "MD5Sum:
 $MD5_PACKAGES_CONDENSED $PACKAGES_SIZE Packages
 $MD5_PACKAGESBZ_CONDENSED $PACKAGESBZ_SIZE Packages.bz2" >> ./Release
 
+read -p "Would create a new Release.gpg? [Y/N] " -n 1 -r
+        echo    # (optional) move to a new line
+    if [[ $REPLY =~ ^[Yy]$ ]]; then
 gpg -abs -o Release.gpg Release
+
+fi
 
 
 
