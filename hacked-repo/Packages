@@ -1,3 +1,20 @@
+Package: xyz.skylarmccauley.haptickeyboard
+Version: 2.0.0
+Architecture: iphoneos-arm
+Maintainer: TheHacker
+Depends: firmware (>= 9.0), preferenceloader, mobilesubstrate
+Filename: ./debs/xyz.skylarmccauley.haptickeyboard.deb
+Size: 8652
+MD5sum: e9ad9d2c32626572c29ebe8479336cfe
+SHA1: fe1d59b25c6117b236babc073ff4fd84be4644e6
+SHA256: 5b87edbb6f42166a0dc01ee300f6decd195f4b38a9e7e758a59d85b0bb7657d0
+Section: Tweaks
+Homepage: https://skylarmccauley.xyz/
+Description: Haptic Feedback for keyboard presses. Devices must already support Haptic Feedback. (iPhone 6S and newer, excluding SE)
+Author: TheHacker
+Depiction: https://skylarmccauley.xyz/hacked-repo/depic/xyz.skylarmccauley.haptickeyboard/
+Name: HapticKeyboard
+
 Package: xyz.skylarmccauley.noregerts
 Version: 1.0.1
 Architecture: iphoneos-arm
