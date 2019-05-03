@@ -1,0 +1,151 @@
+{
+    "minVersion": "0.1",
+    "headerImage": "",
+    "tintColor": "",
+    "tabs": [
+      {
+        "tabname": "Details",
+        "views": [
+          {
+            "title": "sourceutility",
+            "useBoldText": true,
+            "useBottomMargin": false,
+            "class": "DepictionSubheaderView"
+          },
+          {
+            "itemCornerRadius": 6,
+            "itemSize": "{160, 275.41333333333336}",
+            "screenshots": [
+              {
+                "accessibilityText": "Screenshot",
+                "url": "https://skylarmccauley.xyz/hacked-repo/depic/xyz.skylarmccauley.sourceutility/screenshots/main_menu.jpg",
+                "fullSizeURL": "https://skylarmccauley.xyz/hacked-repo/depic/xyz.skylarmccauley.sourceutility/screenshots/main_menu.jpg"
+              }
+            ],
+            "ipad": {
+              "itemCornerRadius": 9,
+              "itemSize": "{320, 550.8266666666667}",
+              "screenshots": [
+                {
+                  "accessibilityText": "Screenshot",
+                  "url": "https://skylarmccauley.xyz/hacked-repo/depic/xyz.skylarmccauley.sourceutility/screenshots/main_menu.jpg?size=640",
+                  "fullSizeURL": "https://skylarmccauley.xyz/hacked-repo/depic/xyz.skylarmccauley.sourceutility/screenshots/main_menu.jpg"
+                }
+              ],
+              "class": "DepictionScreenshotView"
+            },
+            "class": "DepictionScreenshotsView"
+          },
+          {
+            "markdown": "ewfc",
+            "useSpacing": true,
+            "class": "DepictionMarkdownView"
+          },
+          {
+            "class": "DepictionSeparatorView"
+          },
+          {
+            "title": "Known Issues",
+            "class": "DepictionHeaderView"
+          },
+          {
+            "markdown": "Does not work with Sileo 1.0",
+            "useSpacing": true,
+            "class": "DepictionMarkdownView"
+          },
+          {
+            "class": "DepictionSeparatorView"
+          },
+          {
+            "title": "Latest Version",
+            "class": "DepictionHeaderView"
+          },
+          {
+            "title": "Version",
+            "text": "0.8",
+            "class": "DepictionTableTextView"
+          },
+          {
+            "title": "Released",
+            "text": "4/28/2019",
+            "class": "DepictionTableTextView"
+          },
+          {
+            "title": "Price",
+            "text": "Free",
+            "class": "DepictionTableTextView"
+          },
+          {
+            "title": "Developer",
+            "text": "TheHacker",
+            "class": "DepictionTableTextView"
+          },
+          {
+            "title": "Email",
+            "text": "skylarmccauley864@gmail.com",
+            "class": "DepictionTableTextView"
+          },
+          {
+            "title": "Reddit",
+            "text": "u/TheHacker_",
+            "class": "DepictionTableTextView"
+          },
+          {
+            "title": "Discord",
+            "text": "TheHacker#9367",
+            "class": "DepictionTableTextView"
+          },
+          {
+            "spacing": 16,
+            "class": "DepictionSpacerView"
+          },
+          {
+            "spacing": 20,
+            "class": "DepictionSpacerView"
+          }
+        ],
+        "class": "DepictionStackView"
+      },
+      {
+        "tabname": "Changelog",
+        "views": [
+          {
+            "title": "sourceutility",
+            "useBoldText": true,
+            "useBottomMargin": true,
+            "class": "DepictionSubheaderView"
+          },
+          {
+            "markdown": "\t\n\u2022 Initial Release - 0.3-X",
+            "useSpacing": false,
+            "class": "DepictionMarkdownView"
+          },
+          {
+            "markdown": "- - Adjusted Select Menus for notched devices\n- - Added Utilities Menu\n- - Cleaned up the menus some more\n- Added option to purge Cydia Lists & Sources (left over from debugging)\n- Renamed Utilities Menu to Other Utilities Menu\n- Added a reboot option in the Other Utilities Menu\n- Added some red text here and there so you know which options are dangerous",
+            "class": "DepictionMarkdownView"
+          },
+          {
+            "markdown": "<small style=\"color: #999; margin-top: -8px;\">Released 4/4/2019</small>",
+            "useRawFormat": true,
+            "class": "DepictionMarkdownView"
+          },
+          {
+            "markdown": "\t\n\u2022 Initial Release - 0.2-X",
+            "useSpacing": false,
+            "class": "DepictionMarkdownView"
+          },
+          {
+            "markdown": "- Fixed a syntax error\n- Fixed issues with .DS_STORE files\n- Added option to purge .DS_STORE files from previous version\n- Backup your Cydia and Sileo sources.\n- Restore your Cydia and Sileo source backups.",
+            "class": "DepictionMarkdownView"
+          },
+          {
+            "markdown": "<small style=\"color: #999; margin-top: -8px;\">Released 4/2/2019</small>",
+            "useRawFormat": true,
+            "class": "DepictionMarkdownView"
+          }
+        ],
+        "class": "DepictionStackView"
+      }
+    ],
+    "class": "DepictionTabView"
+  }

@@ -1,0 +1,111 @@
+{
+    "minVersion": "1.0.0",
+    "headerImage": "",
+    "tintColor": "#C0C0C0",
+    "tabs": [
+      {
+        "tabname": "Details",
+        "views": [
+          {
+            "title": "Haptic Keyboard",
+            "useBoldText": true,
+            "useBottomMargin": false,
+            "class": "DepictionSubheaderView"
+          },
+
+          {
+            "markdown": "ewfc",
+            "useSpacing": true,
+            "class": "DepictionMarkdownView"
+          },
+          {
+            "class": "DepictionSeparatorView"
+          },
+          {
+            "title": "Known Issues",
+            "class": "DepictionHeaderView"
+          },
+          {
+            "markdown": "",
+            "useSpacing": true,
+            "class": "DepictionMarkdownView"
+          },
+          {
+            "class": "DepictionSeparatorView"
+          },
+          {
+            "title": "Latest Version",
+            "text":"2.0.0",
+            "class": "DepictionHeaderView"
+          },
+          {
+            "title": "Version",
+            "text": "2.0.0",
+            "class": "DepictionTableTextView"
+          },
+          {
+            "title": "Released",
+            "text": "5/3/2019",
+            "class": "DepictionTableTextView"
+          },
+          {
+            "title": "Price",
+            "text": "Free",
+            "class": "DepictionTableTextView"
+          },
+          {
+            "title": "Developer",
+            "text": "TheHacker",
+            "class": "DepictionTableTextView"
+          },
+          {
+            "title": "Email",
+            "text": "skylarmccauley864@gmail.com",
+            "class": "DepictionTableTextView"
+          },
+          {
+            "title": "Reddit",
+            "text": "u/TheHacker_",
+            "class": "DepictionTableTextView"
+          },
+          {
+            "title": "Discord",
+            "text": "TheHacker#9367",
+            "class": "DepictionTableTextView"
+          },
+          {
+            "spacing": 16,
+            "class": "DepictionSpacerView"
+          },
+          {
+            "spacing": 20,
+            "class": "DepictionSpacerView"
+          }
+        ],
+        "class": "DepictionStackView"
+      },
+      {
+        "tabname": "Changelog",
+        "views": [
+          {
+            "title": "Haptic Keyboard",
+            "useBoldText": true,
+            "useBottomMargin": true,
+            "class": "DepictionSubheaderView"
+          },
+          {
+            "markdown": "\t\n\u2022 Initial Release",
+            "useSpacing": false,
+            "class": "DepictionMarkdownView"
+          },
+          {
+            "markdown": "<small style=\"color: #999; margin-top: -8px;\">Released 5/3/2019</small>",
+            "useRawFormat": true,
+            "class": "DepictionMarkdownView"
+          }
+        ],
+        "class": "DepictionStackView"
+      }
+    ],
+    "class": "DepictionTabView"
+  }

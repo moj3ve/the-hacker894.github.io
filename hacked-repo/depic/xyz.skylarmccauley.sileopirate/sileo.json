@@ -1,0 +1,156 @@
+{
+    "minVersion": "0.1",
+    "headerImage": "",
+    "tintColor": "",
+    "tabs": [
+      {
+        "tabname": "Details",
+        "views": [
+          {
+            "title": "efv",
+            "useBoldText": true,
+            "useBottomMargin": false,
+            "class": "DepictionSubheaderView"
+          },
+          {
+            "itemCornerRadius": 6,
+            "itemSize": "{160, 275.41333333333336}",
+            "screenshots": [
+              {
+                "accessibilityText": "Screenshot",
+                "url": "https://skylarmccauley.xyz/hacked-repo/depic/xyz.skylarmccauley.sileopirate/screenshots/def.png",
+                "fullSizeURL": "https://skylarmccauley.xyz/hacked-repo/depic/xyz.skylarmccauley.sileopirate/screenshots/def.png"
+              }
+            ],
+            "ipad": {
+              "itemCornerRadius": 9,
+              "itemSize": "{320, 550.8266666666667}",
+              "screenshots": [
+                {
+                  "accessibilityText": "Screenshot",
+                  "url": "?size=640",
+                  "fullSizeURL": "https://skylarmccauley.xyz/hacked-repo/depic/xyz.skylarmccauley.sileopirate/screenshots/def.png"
+                }
+              ],
+              "class": "DepictionScreenshotView"
+            },
+            "class": "DepictionScreenshotsView"
+          },
+          {
+            "markdown": "ewfc",
+            "useSpacing": true,
+            "class": "DepictionMarkdownView"
+          },
+          {
+            "class": "DepictionSeparatorView"
+          },
+          {
+            "title": "Known Issues",
+            "class": "DepictionHeaderView"
+          },
+          {
+            "markdown": "Not Compatible with Sileo 1.0",
+            "useSpacing": true,
+            "class": "DepictionMarkdownView"
+          },
+          {
+            "class": "DepictionSeparatorView"
+          },
+          {
+            "title": "Latest Version",
+            "class": "DepictionHeaderView"
+          },
+          {
+            "title": "Version",
+            "text": "0.1.5",
+            "class": "DepictionTableTextView"
+          },
+          {
+            "title": "Released",
+            "text": "4/24/2019",
+            "class": "DepictionTableTextView"
+          },
+          {
+            "title": "Price",
+            "text": "Free",
+            "class": "DepictionTableTextView"
+          },
+          {
+            "title": "Developer",
+            "text": "TheHacker",
+            "class": "DepictionTableTextView"
+          },
+          {
+            "title": "Email",
+            "text": "skylarmccauley864@gmail.com",
+            "class": "DepictionTableTextView"
+          },
+          {
+            "title": "Reddit",
+            "text": "u/TheHacker_",
+            "class": "DepictionTableTextView"
+          },
+          {
+            "title": "Discord",
+            "text": "TheHacker#9367",
+            "class": "DepictionTableTextView"
+          },
+          {
+            "spacing": 16,
+            "class": "DepictionSpacerView"
+          },
+          {
+            "spacing": 20,
+            "class": "DepictionSpacerView"
+          }
+        ],
+        "class": "DepictionStackView"
+      },
+      {
+        "tabname": "Changelog",
+        "views": [
+          {
+            "title": "SileoPirate",
+            "useBoldText": true,
+            "useBottomMargin": true,
+            "class": "DepictionSubheaderView"
+          },
+          {
+            "markdown": "\t\n\u2022 0.1.4 - 0.1.5",
+            "useSpacing": false,
+            "class": "DepictionMarkdownView"
+          },
+          {
+            "markdown": "Changed how backups are made and restored. Old backups will still work.",
+            "class": "DepictionMarkdownView"
+          },
+          {
+            "markdown": "\t\n\u2022 0.1.1 - 0.1.3",
+            "useSpacing": false,
+            "class": "DepictionMarkdownView"
+          },
+          {
+            "markdown": "Revised some strings",
+            "class": "DepictionMarkdownView"
+          },
+          {
+            "markdown": "<small style=\"color: #999; margin-top: -8px;\">Released 4/17/2019</small>",
+            "useRawFormat": true,
+            "class": "DepictionMarkdownView"
+          },
+          {
+            "markdown": "\t\n\u2022 Initial Release",
+            "useSpacing": false,
+            "class": "DepictionMarkdownView"
+          },
+          {
+            "markdown": "<small style=\"color: #999; margin-top: -8px;\">Released 4/17/2019</small>",
+            "useRawFormat": true,
+            "class": "DepictionMarkdownView"
+          }
+        ],
+        "class": "DepictionStackView"
+      }
+    ],
+    "class": "DepictionTabView"
+  }

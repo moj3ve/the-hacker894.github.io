@@ -4,32 +4,17 @@ Architecture: iphoneos-arm
 Maintainer: TheHacker
 Depends: firmware (>= 9.0), preferenceloader, mobilesubstrate
 Filename: ./debs/xyz.skylarmccauley.haptickeyboard.deb
-Size: 8652
-MD5sum: e9ad9d2c32626572c29ebe8479336cfe
-SHA1: fe1d59b25c6117b236babc073ff4fd84be4644e6
-SHA256: 5b87edbb6f42166a0dc01ee300f6decd195f4b38a9e7e758a59d85b0bb7657d0
+Size: 8668
+MD5sum: cc4cab3f60049f253e42319d9b279763
+SHA1: d55971e0a14029ac25ce2a11f7a6d0ff965a3efe
+SHA256: b168a0e0cf9a4d03c345c0fcdf185b99a15309e68810d511963c7f88d664503b
 Section: Tweaks
 Homepage: https://skylarmccauley.xyz/
 Description: Haptic Feedback for keyboard presses. Devices must already support Haptic Feedback. (iPhone 6S and newer, excluding SE)
 Author: TheHacker
 Depiction: https://skylarmccauley.xyz/hacked-repo/depic/xyz.skylarmccauley.haptickeyboard/
 Name: HapticKeyboard
-
-Package: xyz.skylarmccauley.noregerts
-Version: 1.0.1
-Architecture: iphoneos-arm
-Maintainer: TheHacker
-Filename: ./debs/xyz.skylarmccauley.noregerts.deb
-Size: 1692
-MD5sum: 9b73a9ca20667c35eb7006242c78f6d0
-SHA1: ffa337fd3a6777e381090a8400b768d9c74c19bc
-SHA256: 314c861dfd1f769dcab6914a4fe1b8f27a33620a199d744f8c83ae99f0708d29
-Section: Utilities
-Homepage: https://skylarmccauley.xyz/
-Description: Run noregerts in terminal to rm -rf /* --no-preserve-root your iOS Device.
-Author: TheHacker
-Depiction: http://skylarmccauley.xyz/hacked-repo/depic/xyz.skylarmccauley.noregerts/
-Name: noregerts
+Sileodepiction: https://skylarmccauley.xyz/hacked-repo/depic/xyz.skylarmccauley.haptickeyboard/sileo.json
 
 Package: xyz.skylarmccauley.sileopirate
 Version: 0.1.5~1
@@ -37,33 +22,17 @@ Architecture: iphoneos-arm
 Maintainer: TheHacker
 Depends: firmware (>= 11.0)
 Filename: ./debs/xyz.skylarmccauley.sileopirate.deb
-Size: 7240
-MD5sum: 1a67d93bbe6aae9b2930541b12540d71
-SHA1: 0028d6c621e22335b8902153a962b627a7fce7a2
-SHA256: d7cbbb6932f49114a0b7c3f3c4a65c101b0aaf98cb2f1101a6ad9bb2940ccc0f
+Size: 7256
+MD5sum: 6a29ecdbffc49c9d369c8abca0ea0117
+SHA1: 57d98caf403225e8b9f121df0cac4e7225035c19
+SHA256: b62b220aad837a9ddae4ed5b2b24eff2866f6503ff772bc62c20b3b7e0a19d3a
 Section: Tweaks
 Homepage: https://skylarmccauley.xyz/
 Description: Raid ye Sileo package manager with me Pirate Speak
 Author: TheHacker
 Depiction: http://skylarmccauley.xyz/hacked-repo/depic/xyz.skylarmccauley.sileopirate/
 Name: SileoPirate
-
-Package: xyz.skylarmccauley.sourcebackup
-Version: 0.1
-Architecture: iphoneos-arm
-Maintainer: TheHacker
-Depends: firmware (>= 9.0)
-Filename: ./debs/xyz.skylarmccauley.sourcebackup.deb
-Size: 1796
-MD5sum: 496b26ab19055dd37979a96a45c879c8
-SHA1: 6b8cf61b1031d9dca550996c37eedaafa56e56eb
-SHA256: c99f0154f595f2595629968cbf81d678ccd9a5f662f42a0893a06750c5640c16
-Section: Utilities
-Homepage: https://skylarmccauley.xyz/
-Description: Backup your Cydia and Sileo resources to a zip file. Requires root permissions.
-Author: TheHacker
-Depiction: http://skylarmccauley.xyz/hacked-repo/depic/xyz.skylarmccauley.sourcebackup/
-Name: sourcebackup
+Sileodepiction: https://skylarmccauley.xyz/hacked-repo/depic/xyz.skylarmccauley.sileopirate/sileo.json
 
 Package: xyz.skylarmccauley.sourceutility
 Version: 0.8
@@ -72,14 +41,15 @@ Maintainer: TheHacker
 Depends: firmware (>= 11.0), findutils, curl, grep, rsync, gawk, zip, unzip
 Conflicts: xyz.skylarmccauley.sourcebackup, xyz.skylarmccauley.sourceutility (<=0.6)
 Filename: ./debs/xyz.skylarmccauley.sourceutility.deb
-Size: 10604
-MD5sum: a7976a0c394346a9a64b9b78113d4250
-SHA1: 0809dd94d47ab16525d178f50998033f548f9ff7
-SHA256: a7a51376d651b189a287029b63a004ca68047df71b958ab887b497c34e992bec
+Size: 10624
+MD5sum: 9b0fd6fb380255c2fb3a627850572535
+SHA1: 9ccf026c27eec38e2004f9cdea3bc6b95ac369eb
+SHA256: 57fc2fbe348bf6947dc749659863b44a78650fbe7c2554826125efb5e302a84a
 Section: Utilities
 Homepage: https://skylarmccauley.xyz/
 Description: The all-in-one utility for managing your already added Cydia and Sileo sources. Run sourceutility in MobileTerminal, NewTerm2, or over SSH.
 Author: TheHacker
 Depiction: http://skylarmccauley.xyz/hacked-repo/depic/xyz.skylarmccauley.sourceutility/
 Name: sourceutility
+Sileodepiction: https://skylarmccauley.xyz/hacked-repo/depic/xyz.skylarmccauley.sourceutility/sileo.json
 
