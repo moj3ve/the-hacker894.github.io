@@ -91,6 +91,17 @@
             "class": "DepictionSeparatorView"
           },
           {
+            "title": "Dependencies",
+            "class": "DepictionHeaderView"
+          },
+          {
+            "markdown": "findutils\ncurl\nrsync\ngrep\ngawk\nzip, unzip",
+            "class": "DepictionMarkdownView"
+          },
+          {
+            "class": "DepictionSeparatorView"
+          },
+          {
             "title": "Known Issues",
             "class": "DepictionHeaderView"
           },
@@ -162,12 +173,78 @@
             "class": "DepictionSubheaderView"
           },
           {
-            "markdown": "\t\n\u2022 Initial Release - 0.3-X",
+            "markdown": "\t\n\u20220.8",
             "useSpacing": false,
             "class": "DepictionMarkdownView"
           },
           {
-            "markdown": "-Adjusted Select Menus for notched devices\n- Added Utilities Menu\n- Cleaned up the menus some more\n- Added option to purge Cydia Lists & Sources (left over from debugging)\n- Renamed Utilities Menu to Other Utilities Menu\n- Added a reboot option in the Other Utilities Menu\n- Added some red text here and there so you know which options are dangerous",
+            "markdown": "<small style=\"color: #999; margin-top: -8px;\">Released 4/16/2019</small>",
+            "useRawFormat": true,
+            "class": "DepictionMarkdownView"
+          },
+          {
+            "markdown": "- Restore scripts refined for compatibility\n- Electra detection added for compatibility\n- Refined downloading\n- Restore scripts now bundled\n- Added option to update bundled resources",
+            "class": "DepictionMarkdownView"
+          },
+          {
+            "markdown": "\t\n\u20220.7",
+            "useSpacing": false,
+            "class": "DepictionMarkdownView"
+          },
+          {
+            "markdown": "<small style=\"color: #999; margin-top: -8px;\">Released 4/16/2019</small>",
+            "useRawFormat": true,
+            "class": "DepictionMarkdownView"
+          },
+          {
+            "markdown": "- Added support for Zebra\n- Added support for unc0ver dark and Misceo\n- General improvements to overall experience\n- Took a break\n- Backups now include a restore script downloaded from GitHub\n- Added gawk and grep as a dependency\n- sourceutility-legacy removed",
+            "class": "DepictionMarkdownView"
+          },
+          {
+            "markdown": "\t\n\u20220.6",
+            "useSpacing": false,
+            "class": "DepictionMarkdownView"
+          },
+          {
+            "markdown": "<small style=\"color: #999; margin-top: -8px;\">Released 4/7/2019</small>",
+            "useRawFormat": true,
+            "class": "DepictionMarkdownView"
+          },
+          {
+            "markdown": "- Improved compatibility with different types of jailbreaks\n- New menus added\n- Can now choose whether to backup/restore Cydia backups, Sileo backups, or both\n- Each backup option generates a different file (they cannot be converted)\n- Added option to patch Sileo Sources\n- Added rsync as a dependency\n- Last update to include sourceutility-legacy",
+            "class": "DepictionMarkdownView"
+          },
+          {
+            "markdown": "\t\n\u20220.5",
+            "useSpacing": false,
+            "class": "DepictionMarkdownView"
+          },
+          {
+            "markdown": "<small style=\"color: #999; margin-top: -8px;\">Released 4/7/2019</small>",
+            "useRawFormat": true,
+            "class": "DepictionMarkdownView"
+          },
+          {
+            "markdown": "- Improved how the Cydia patching works after restoring a backup\n- After restoring a backup, the user will be prompted to reinstall Cydia\n- After reinstalling Cydia, the user will be prompted to run Diatrus's Cydia Patch from installsileo (installsileo not included)\n- Now depends on curl for reinstalling Cydia (downloads from apt.bingner.com)\n- Added new menus\n- Patches Menu includes options such as Reinstalling Cydia, Killing Sileo, and running the Cydia Patch\n- Changed firmware dependency to iOS 11 and above (this may be changed in a future update)",
+            "class": "DepictionMarkdownView"
+          },
+          {
+            "markdown": "\t\n\u20220.4",
+            "useSpacing": false,
+            "class": "DepictionMarkdownView"
+          },
+          {
+            "markdown": "<small style=\"color: #999; margin-top: -8px;\">Released 4/6/2019</small>",
+            "useRawFormat": true,
+            "class": "DepictionMarkdownView"
+          },
+          {
+            "markdown": "- Added some small improvements to the menus\n- Added option to kill Cydia and Sileo\n- Sileo and Cydia are now killed when attempting to restore or make a backup\n- Added a patch that fixes Cydia after a restore. (From Diatrus' Sileo Installer for unc0ver).\n- After restoring a backup, users will be prompted to run installsileo to fix some small issues\n- Rewrote how backups are made and restored. Old backups are now incompatible\n- Readded ability to restore Cydia sources.\n- Now compatible with source lists installed to /etc/apt/sources.list.d/\n- All backups made with versions prior to v0.4 MUST be converted\n- General improvements to how some things work",
+            "class": "DepictionMarkdownView"
+          },
+          {
+            "markdown": "\t\n\u20220.3",
+            "useSpacing": false,
             "class": "DepictionMarkdownView"
           },
           {
@@ -176,19 +253,25 @@
             "class": "DepictionMarkdownView"
           },
           {
-            "markdown": "\t\n\u2022 Initial Release - 0.2-X",
-            "useSpacing": false,
+            "markdown": "- Adjusted Select Menus for notched devices\n- Added Utilities Menu\n- Cleaned up the menus some more\n- Added option to purge Cydia Lists & Sources (left over from debugging)\n- Renamed Utilities Menu to Other Utilities Menu\n- Added a reboot option in the Other Utilities Menu\n- Added some red text here and there so you know which options are dangerous",
             "class": "DepictionMarkdownView"
           },
+          
           {
-            "markdown": "- Fixed a syntax error\n- Fixed issues with .DS_STORE files\n- Added option to purge .DS_STORE files from previous version\n- Backup your Cydia and Sileo sources.\n- Restore your Cydia and Sileo source backups.",
+            "markdown": "\t\n\u2022 Initial Release - 0.2",
+            "useSpacing": false,
             "class": "DepictionMarkdownView"
           },
           {
             "markdown": "<small style=\"color: #999; margin-top: -8px;\">Released 4/2/2019</small>",
             "useRawFormat": true,
             "class": "DepictionMarkdownView"
+          },
+          {
+            "markdown": "- Fixed a syntax error\n- Fixed issues with .DS_STORE files\n- Added option to purge .DS_STORE files from previous version\n- Backup your Cydia and Sileo sources.\n- Restore your Cydia and Sileo source backups.",
+            "class": "DepictionMarkdownView"
           }
+          
         ],
         "class": "DepictionStackView"
       }

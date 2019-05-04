@@ -71,6 +71,17 @@
             "class": "DepictionSeparatorView"
           },
           {
+            "title": "Dependencies",
+            "class": "DepictionHeaderView"
+          },
+          {
+            "markdown": "None",
+            "class": "DepictionMarkdownView"
+          },
+          {
+            "class": "DepictionSeparatorView"
+          },
+          {
             "title": "Known Issues",
             "class": "DepictionHeaderView"
           },

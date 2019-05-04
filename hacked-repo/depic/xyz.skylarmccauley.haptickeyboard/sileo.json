@@ -56,6 +56,18 @@
             "class": "DepictionSeparatorView"
           },
           {
+            "title": "Dependencies",
+            "class": "DepictionHeaderView"
+          },
+          {
+            "markdown": "mobilesubstrate",
+            "class": "DepictionMarkdownView"
+          },
+          {
+            "class": "DepictionSeparatorView"
+          },
+          
+          {
             "title": "Known Issues",
             "class": "DepictionHeaderView"
           },
