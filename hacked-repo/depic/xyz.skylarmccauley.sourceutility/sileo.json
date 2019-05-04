@@ -120,7 +120,7 @@
           },
           {
             "title": "Version",
-            "text": "0.8.3",
+            "text": "0.8.3.1",
             "class": "DepictionTableTextView"
           },
           {
@@ -174,6 +174,23 @@
             "class": "DepictionSubheaderView"
           },
           {
+            "markdown": "0.8.3.1",
+            "useSpacing": false,
+            "class": "DepictionMarkdownView"
+          },
+          {
+            "markdown": "<small style=\"color: #999; margin-top: -8px;\">Released 5/4/2019</small>",
+            "useRawFormat": true,
+            "class": "DepictionMarkdownView"
+          },
+          {
+            "markdown": "- Fixed a potential bug with backing up Cydia sources",
+            "class": "DepictionMarkdownView"
+          },
+          {
+            "class": "DepictionSeparatorView"
+          },
+          {
             "markdown": "0.8.3",
             "useSpacing": false,
             "class": "DepictionMarkdownView"
@@ -186,6 +203,9 @@
           {
             "markdown": "- Small bug fixes\n- Added diagnostic test for users having issues",
             "class": "DepictionMarkdownView"
+          },
+          {
+            "class": "DepictionSeparatorView"
           },
           {
             "markdown": "0.8.2",
@@ -202,6 +222,9 @@
             "class": "DepictionMarkdownView"
           },
           {
+            "class": "DepictionSeparatorView"
+          },
+          {
             "markdown": "0.8.1",
             "useSpacing": false,
             "class": "DepictionMarkdownView"
@@ -216,6 +239,9 @@
             "class": "DepictionMarkdownView"
           },
           {
+            "class": "DepictionSeparatorView"
+          },
+          {
             "markdown": "0.8",
             "useSpacing": false,
             "class": "DepictionMarkdownView"
@@ -224,6 +250,9 @@
             "markdown": "<small style=\"color: #999; margin-top: -8px;\">Released 4/28/2019</small>",
             "useRawFormat": true,
             "class": "DepictionMarkdownView"
+          },
+          {
+            "class": "DepictionSeparatorView"
           },
           {
             "markdown": "- Restore scripts refined for compatibility\n- Electra detection added for compatibility\n- Refined downloading\n- Restore scripts now bundled\n- Added option to update bundled resources",
@@ -244,6 +273,9 @@
             "class": "DepictionMarkdownView"
           },
           {
+            "class": "DepictionSeparatorView"
+          },
+          {
             "markdown": "0.6",
             "useSpacing": false,
             "class": "DepictionMarkdownView"
@@ -256,6 +288,9 @@
           {
             "markdown": "- Improved compatibility with different types of jailbreaks\n- New menus added\n- Can now choose whether to backup/restore Cydia backups, Sileo backups, or both\n- Each backup option generates a different file (they cannot be converted)\n- Added option to patch Sileo Sources\n- Added rsync as a dependency\n- Last update to include sourceutility-legacy",
             "class": "DepictionMarkdownView"
+          },
+          {
+            "class": "DepictionSeparatorView"
           },
           {
             "markdown": "0.5",
@@ -272,6 +307,9 @@
             "class": "DepictionMarkdownView"
           },
           {
+            "class": "DepictionSeparatorView"
+          },
+          {
             "markdown": "0.4",
             "useSpacing": false,
             "class": "DepictionMarkdownView"
@@ -284,6 +322,9 @@
           {
             "markdown": "- Added some small improvements to the menus\n- Added option to kill Cydia and Sileo\n- Sileo and Cydia are now killed when attempting to restore or make a backup\n- Added a patch that fixes Cydia after a restore. (From Diatrus' Sileo Installer for unc0ver).\n- After restoring a backup, users will be prompted to run installsileo to fix some small issues\n- Rewrote how backups are made and restored. Old backups are now incompatible\n- Readded ability to restore Cydia sources.\n- Now compatible with source lists installed to /etc/apt/sources.list.d/\n- All backups made with versions prior to v0.4 MUST be converted\n- General improvements to how some things work",
             "class": "DepictionMarkdownView"
+          },
+          {
+            "class": "DepictionSeparatorView"
           },
           {
             "markdown": "0.3",
@@ -299,7 +340,9 @@
             "markdown": "- Adjusted Select Menus for notched devices\n- Added Utilities Menu\n- Cleaned up the menus some more\n- Added option to purge Cydia Lists & Sources (left over from debugging)\n- Renamed Utilities Menu to Other Utilities Menu\n- Added a reboot option in the Other Utilities Menu\n- Added some red text here and there so you know which options are dangerous",
             "class": "DepictionMarkdownView"
           },
-          
+          {
+            "class": "DepictionSeparatorView"
+          },
           {
             "markdown": "Initial Release - 0.2",
             "useSpacing": false,
