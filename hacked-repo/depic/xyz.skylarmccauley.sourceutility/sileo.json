@@ -1,7 +1,7 @@
 {
     "minVersion": "0.1",
-    "headerImage": "",
-    "tintColor": "",
+    "headerImage": "https://skylarmccauley.xyz/hacked-repo/depic/xyz.skylarmccauley.sourceutility/screenshots/main_menu.jpg",
+    "tintColor": "#FFA500",
     "tabs": [
       {
         "tabname": "Details",
@@ -95,7 +95,7 @@
             "class": "DepictionHeaderView"
           },
           {
-            "markdown": "findutils\ncurl\nrsync\ngrep\ngawk\nzip, unzip",
+            "markdown": "- findutils\n- curl\n- rsync\n- grep\n- gawk\n- zip, unzip",
             "class": "DepictionMarkdownView"
           },
           {
@@ -173,7 +173,7 @@
             "class": "DepictionSubheaderView"
           },
           {
-            "markdown": "\t\n\u20220.8",
+            "markdown": "0.8",
             "useSpacing": false,
             "class": "DepictionMarkdownView"
           },
@@ -187,7 +187,7 @@
             "class": "DepictionMarkdownView"
           },
           {
-            "markdown": "\t\n\u20220.7",
+            "markdown": "0.7",
             "useSpacing": false,
             "class": "DepictionMarkdownView"
           },
@@ -201,7 +201,7 @@
             "class": "DepictionMarkdownView"
           },
           {
-            "markdown": "\t\n\u20220.6",
+            "markdown": "0.6",
             "useSpacing": false,
             "class": "DepictionMarkdownView"
           },
@@ -215,7 +215,7 @@
             "class": "DepictionMarkdownView"
           },
           {
-            "markdown": "\t\n\u20220.5",
+            "markdown": "0.5",
             "useSpacing": false,
             "class": "DepictionMarkdownView"
           },
@@ -229,7 +229,7 @@
             "class": "DepictionMarkdownView"
           },
           {
-            "markdown": "\t\n\u20220.4",
+            "markdown": "0.4",
             "useSpacing": false,
             "class": "DepictionMarkdownView"
           },
@@ -243,7 +243,7 @@
             "class": "DepictionMarkdownView"
           },
           {
-            "markdown": "\t\n\u20220.3",
+            "markdown": "0.3",
             "useSpacing": false,
             "class": "DepictionMarkdownView"
           },
@@ -258,7 +258,7 @@
           },
           
           {
-            "markdown": "\t\n\u2022 Initial Release - 0.2",
+            "markdown": "Initial Release - 0.2",
             "useSpacing": false,
             "class": "DepictionMarkdownView"
           },
