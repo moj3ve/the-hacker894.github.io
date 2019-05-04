@@ -80,11 +80,7 @@
             "class": "DepictionHeaderView"
           },
           {
-            "markdown": "iOS 11 - 12.1.2",
-            "class": "DepictionMarkdownView"
-          },
-          {
-            "markdown": "Sileo (org.coolstar.sileo)",
+            "markdown": "- iOS 11 - 12.1.2\n -Sileo (org.coolstar.sileo)",
             "class": "DepictionMarkdownView"
           },
           {
@@ -176,6 +172,9 @@
             "class": "DepictionMarkdownView"
           },
           {
+            "class": "DepictionSeparatorView"
+          },
+          {
             "markdown": "0.1.6",
             "useSpacing": false,
             "class": "DepictionMarkdownView"
@@ -190,6 +189,9 @@
             "class": "DepictionMarkdownView"
           },
           {
+            "class": "DepictionSeparatorView"
+          },
+          {
             "markdown": "0.1.4 - 0.1.5",
             "useSpacing": false,
             "class": "DepictionMarkdownView"
@@ -197,6 +199,9 @@
           {
             "markdown": "Changed how backups are made and restored. Old backups will still work.",
             "class": "DepictionMarkdownView"
+          },
+          {
+            "class": "DepictionSeparatorView"
           },
           {
             "markdown": "0.1.1 - 0.1.3",
@@ -211,6 +216,9 @@
             "markdown": "<small style=\"color: #999; margin-top: -8px;\">Released 4/17/2019</small>",
             "useRawFormat": true,
             "class": "DepictionMarkdownView"
+          },
+          {
+            "class": "DepictionSeparatorView"
           },
           {
             "markdown": "Initial Release",
