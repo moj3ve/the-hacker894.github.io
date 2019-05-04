@@ -41,10 +41,10 @@ Maintainer: TheHacker
 Depends: firmware (>= 11.0), findutils, curl, grep, rsync, gawk, zip, unzip
 Conflicts: xyz.skylarmccauley.sourcebackup, xyz.skylarmccauley.sourceutility (<=0.6)
 Filename: ./debs/xyz.skylarmccauley.sourceutility.deb
-Size: 10040
-MD5sum: dc56a53390c72c5ee70e31f357cd9f9f
-SHA1: fc016a0d36176fe2e66ca5bd53430ab2dec7fe39
-SHA256: d19bd15bb8d77d735d20ac65f154ff5f80a5c8d9f879ca27ce67b23856e8ac40
+Size: 10072
+MD5sum: 2b1b9d832a19b1979d904f820c5dc0e5
+SHA1: e33f6543e30865e83b48cd8be30448450bf603d1
+SHA256: 5d567d3fec95480491edd7395e79cf6bc470987f481e2bce5b0258521f63d594
 Section: Utilities
 Homepage: https://skylarmccauley.xyz/
 Description: The all-in-one utility for managing your already added Cydia and Sileo sources. Run sourceutility in MobileTerminal, NewTerm2, or over SSH.
