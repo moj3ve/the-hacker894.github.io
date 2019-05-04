@@ -173,6 +173,20 @@
             "class": "DepictionSubheaderView"
           },
           {
+            "markdown": "0.8.2",
+            "useSpacing": false,
+            "class": "DepictionMarkdownView"
+          },
+          {
+            "markdown": "<small style=\"color: #999; margin-top: -8px;\">Released 5/3/2019</small>",
+            "useRawFormat": true,
+            "class": "DepictionMarkdownView"
+          },
+          {
+            "markdown": "- Fixed issues with installation and updating bundled resources\n- Resources are now downloaded upon installation",
+            "class": "DepictionMarkdownView"
+          },
+          {
             "markdown": "0.8.1",
             "useSpacing": false,
             "class": "DepictionMarkdownView"

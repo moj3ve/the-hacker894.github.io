@@ -35,16 +35,16 @@ Name: SileoPirate
 Sileodepiction: https://skylarmccauley.xyz/hacked-repo/depic/xyz.skylarmccauley.sileopirate/sileo.json
 
 Package: xyz.skylarmccauley.sourceutility
-Version: 0.8.1
+Version: 0.8.2
 Architecture: iphoneos-arm
 Maintainer: TheHacker
 Depends: firmware (>= 11.0), findutils, curl, grep, rsync, gawk, zip, unzip
 Conflicts: xyz.skylarmccauley.sourcebackup, xyz.skylarmccauley.sourceutility (<=0.6)
 Filename: ./debs/xyz.skylarmccauley.sourceutility.deb
-Size: 10660
-MD5sum: 6e1ef06f47789a9131459a2240119f9a
-SHA1: ee0028fda14872fd2222ab158bebcb1669fea706
-SHA256: 088ff48794f379165a91d4ad002e4f7cf904f084a251fd554f1b09e568142cb3
+Size: 10040
+MD5sum: dc56a53390c72c5ee70e31f357cd9f9f
+SHA1: fc016a0d36176fe2e66ca5bd53430ab2dec7fe39
+SHA256: d19bd15bb8d77d735d20ac65f154ff5f80a5c8d9f879ca27ce67b23856e8ac40
 Section: Utilities
 Homepage: https://skylarmccauley.xyz/
 Description: The all-in-one utility for managing your already added Cydia and Sileo sources. Run sourceutility in MobileTerminal, NewTerm2, or over SSH.
