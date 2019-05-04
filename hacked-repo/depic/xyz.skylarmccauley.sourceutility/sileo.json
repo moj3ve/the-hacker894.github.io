@@ -65,6 +65,11 @@
             "class": "DepictionSeparatorView"
           },
           {
+            "markdown": "<p style='color: red;'>If you are having any issues with this tool run <code>sourceutility -t</code> and send me the file at <code>/sourceutility/sourceutility-diag.log</code>.</p>",
+            "useSpacing": true,
+            "class": "DepictionMarkdownView"
+          },
+          {
             "title": "Conflicts",
             "class": "DepictionHeaderView"
           },
@@ -80,11 +85,7 @@
             "class": "DepictionHeaderView"
           },
           {
-            "markdown": "iOS 11 - 12.1.2",
-            "class": "DepictionMarkdownView"
-          },
-          {
-            "markdown": "Cydia, Sileo, or Zebra package manager.",
+            "markdown": "- iOS 11 - 12.1.2\n - Cydia, Sileo, or Zebra package manager",
             "class": "DepictionMarkdownView"
           },
           {
@@ -106,7 +107,7 @@
             "class": "DepictionHeaderView"
           },
           {
-            "markdown": "- Does not work with Sileo 1.0\n- Restoring Cydia Sources breaks Electra",
+            "markdown": "None",
             "useSpacing": true,
             "class": "DepictionMarkdownView"
           },
@@ -119,12 +120,12 @@
           },
           {
             "title": "Version",
-            "text": "0.8.2",
+            "text": "0.8.3",
             "class": "DepictionTableTextView"
           },
           {
             "title": "Released",
-            "text": "5/3/2019",
+            "text": "5/4/2019",
             "class": "DepictionTableTextView"
           },
           {
@@ -171,6 +172,20 @@
             "useBoldText": true,
             "useBottomMargin": true,
             "class": "DepictionSubheaderView"
+          },
+          {
+            "markdown": "0.8.3",
+            "useSpacing": false,
+            "class": "DepictionMarkdownView"
+          },
+          {
+            "markdown": "<small style=\"color: #999; margin-top: -8px;\">Released 5/4/2019</small>",
+            "useRawFormat": true,
+            "class": "DepictionMarkdownView"
+          },
+          {
+            "markdown": "- Small bug fixes\n- Added diagnostic test for users having issues",
+            "class": "DepictionMarkdownView"
           },
           {
             "markdown": "0.8.2",
