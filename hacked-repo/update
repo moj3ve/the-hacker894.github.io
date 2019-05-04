@@ -4,8 +4,6 @@ dpkg-scanpackages -m . /dev/null >Packages
 
 bzip2 -fskz Packages
 
-touch ./releasetmp
-
 echo "Origin: Hacked Repo
 Label: Hacked Repo
 Suite: stable 

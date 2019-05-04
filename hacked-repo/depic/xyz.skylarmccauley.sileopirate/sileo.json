@@ -86,7 +86,7 @@
             "class": "DepictionHeaderView"
           },
           {
-            "markdown": "Not Compatible with Sileo 1.0",
+            "markdown": "None",
             "useSpacing": true,
             "class": "DepictionMarkdownView"
           },
@@ -99,7 +99,7 @@
           },
           {
             "title": "Version",
-            "text": "0.1.5",
+            "text": "0.1.6",
             "class": "DepictionTableTextView"
           },
           {
@@ -151,6 +151,20 @@
             "useBoldText": true,
             "useBottomMargin": true,
             "class": "DepictionSubheaderView"
+          },
+          {
+            "markdown": "0.1.6",
+            "useSpacing": false,
+            "class": "DepictionMarkdownView"
+          },
+          {
+            "markdown": "<small style=\"color: #999; margin-top: -8px;\">Released 5/3/2019</small>",
+            "useRawFormat": true,
+            "class": "DepictionMarkdownView"
+          },
+          {
+            "markdown": "Added support for Sileo 1.0",
+            "class": "DepictionMarkdownView"
           },
           {
             "markdown": "0.1.4 - 0.1.5",

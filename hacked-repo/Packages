@@ -17,15 +17,15 @@ Name: HapticKeyboard
 Sileodepiction: https://skylarmccauley.xyz/hacked-repo/depic/xyz.skylarmccauley.haptickeyboard/sileo.json
 
 Package: xyz.skylarmccauley.sileopirate
-Version: 0.1.5~1
+Version: 0.1.6
 Architecture: iphoneos-arm
 Maintainer: TheHacker
 Depends: firmware (>= 11.0)
 Filename: ./debs/xyz.skylarmccauley.sileopirate.deb
-Size: 7256
-MD5sum: 6a29ecdbffc49c9d369c8abca0ea0117
-SHA1: 57d98caf403225e8b9f121df0cac4e7225035c19
-SHA256: b62b220aad837a9ddae4ed5b2b24eff2866f6503ff772bc62c20b3b7e0a19d3a
+Size: 7300
+MD5sum: 444ad18b289ba1a8269467b40161d3c9
+SHA1: 1d04f2560508c6286c2d8e9ae2d523702ac50439
+SHA256: ee08dfa169740ed12d74a043022cfc2517e4e8e3ee3ec1e643c79c88ca3eef18
 Section: Tweaks
 Homepage: https://skylarmccauley.xyz/
 Description: Raid ye Sileo package manager with me Pirate Speak
