@@ -106,7 +106,7 @@
             "class": "DepictionHeaderView"
           },
           {
-            "markdown": "- Does not work with Sileo 1.0\nRestoring Cydia Sources breaks Electra",
+            "markdown": "- Does not work with Sileo 1.0\n- Restoring Cydia Sources breaks Electra",
             "useSpacing": true,
             "class": "DepictionMarkdownView"
           },
