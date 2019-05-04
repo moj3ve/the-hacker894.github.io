@@ -21,11 +21,30 @@ Version: 0.1.6
 Architecture: iphoneos-arm
 Maintainer: TheHacker
 Depends: firmware (>= 11.0)
-Filename: ./debs/xyz.skylarmccauley.sileopirate.deb
+Filename: ./debs/xyz.skylarmccauley.sileopirate_0.1.6_.deb
 Size: 7300
 MD5sum: 444ad18b289ba1a8269467b40161d3c9
 SHA1: 1d04f2560508c6286c2d8e9ae2d523702ac50439
 SHA256: ee08dfa169740ed12d74a043022cfc2517e4e8e3ee3ec1e643c79c88ca3eef18
+Section: Tweaks
+Homepage: https://skylarmccauley.xyz/
+Description: Raid ye Sileo package manager with me Pirate Speak
+Author: TheHacker
+Depiction: http://skylarmccauley.xyz/hacked-repo/depic/xyz.skylarmccauley.sileopirate/
+Name: SileoPirate
+Sileodepiction: https://skylarmccauley.xyz/hacked-repo/depic/xyz.skylarmccauley.sileopirate/sileo.json
+
+Package: xyz.skylarmccauley.sileopirate
+Version: 0.2
+Architecture: iphoneos-arm
+Maintainer: TheHacker
+Depends: firmware (>= 11.0), curl, unzip, zip
+Conflicts: xyz.skylarmccauley.sileopirate (<=0.1.9)
+Filename: ./debs/xyz.skylarmccauley.sileopirate_0.2_.deb
+Size: 2136
+MD5sum: ee3917e443ce435d75e2e87bbc9a54d4
+SHA1: c37953a715157b96c22dedd1fa88ee5e0f6197de
+SHA256: 51957efba1c9c99e25e25be35b05c87de2c20871f2f44db177aabe51b5cac8ed
 Section: Tweaks
 Homepage: https://skylarmccauley.xyz/
 Description: Raid ye Sileo package manager with me Pirate Speak

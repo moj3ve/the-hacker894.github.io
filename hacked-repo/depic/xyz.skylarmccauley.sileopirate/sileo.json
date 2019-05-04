@@ -1,6 +1,5 @@
 {
     "minVersion": "0.1",
-    "headerImage": "https://skylarmccauley.xyz/hacked-repo/depic/xyz.skylarmccauley.sileopirate/screenshots/def.png",
     "tintColor": "#20C7BF",
     "tabs": [
       {
@@ -17,9 +16,14 @@
             "itemSize": "{160, 275.41333333333336}",
             "screenshots": [
               {
-                "accessibilityText": "Screenshot",
-                "url": "https://skylarmccauley.xyz/hacked-repo/depic/xyz.skylarmccauley.sileopirate/screenshots/def.png",
-                "fullSizeURL": "https://skylarmccauley.xyz/hacked-repo/depic/xyz.skylarmccauley.sileopirate/screenshots/def.png"
+                "accessibilityText": "Sileo Pirate Screenshot",
+                "url": "https://skylarmccauley.xyz/hacked-repo/depic/xyz.skylarmccauley.sileopirate/screenshots/dep_packages.png",
+                "fullSizeURL": "https://skylarmccauley.xyz/hacked-repo/depic/xyz.skylarmccauley.sileopirate/screenshots/dep_packages.png"
+              },
+              {
+                "accessibilityText": "Sileo Pirate Screenshot 2",
+                "url": "https://skylarmccauley.xyz/hacked-repo/depic/xyz.skylarmccauley.sileopirate/screenshots/dep_sources.png",
+                "fullSizeURL": "https://skylarmccauley.xyz/hacked-repo/depic/xyz.skylarmccauley.sileopirate/screenshots/dep_sources.png"
               }
             ],
             "ipad": {
@@ -28,8 +32,13 @@
               "screenshots": [
                 {
                   "accessibilityText": "Screenshot",
-                  "url": "https://skylarmccauley.xyz/hacked-repo/depic/xyz.skylarmccauley.sileopirate/screenshots/def.png?size=640",
-                  "fullSizeURL": "https://skylarmccauley.xyz/hacked-repo/depic/xyz.skylarmccauley.sileopirate/screenshots/def.png"
+                  "url": "https://skylarmccauley.xyz/hacked-repo/depic/xyz.skylarmccauley.sileopirate/screenshots/dep_sources.png?size=640",
+                  "fullSizeURL": "https://skylarmccauley.xyz/hacked-repo/depic/xyz.skylarmccauley.sileopirate/screenshots/dep_sources.png"
+                },
+                {
+                  "accessibilityText": "Screenshot",
+                  "url": "https://skylarmccauley.xyz/hacked-repo/depic/xyz.skylarmccauley.sileopirate/screenshots/dep_packages.png?size=640",
+                  "fullSizeURL": "https://skylarmccauley.xyz/hacked-repo/depic/xyz.skylarmccauley.sileopirate/screenshots/dep_packages.png"
                 }
               ],
               "class": "DepictionScreenshotView"
@@ -45,11 +54,22 @@
             "class": "DepictionSeparatorView"
           },
           {
+            "title": "Dependencies",
+            "class": "DepictionHeaderView"
+          },
+          {
+            "markdown": "- curl\n- unzip, zip",
+            "class": "DepictionMarkdownView"
+          },
+          {
+            "class": "DepictionSeparatorView"
+          },
+          {
             "title": "Conflicts",
             "class": "DepictionHeaderView"
           },
           {
-            "markdown": "None",
+            "markdown": "- xyz.skylarmccauley.sileopirate before v0.2",
             "class": "DepictionMarkdownView"
           },
           {
@@ -65,17 +85,6 @@
           },
           {
             "markdown": "Sileo (org.coolstar.sileo)",
-            "class": "DepictionMarkdownView"
-          },
-          {
-            "class": "DepictionSeparatorView"
-          },
-          {
-            "title": "Dependencies",
-            "class": "DepictionHeaderView"
-          },
-          {
-            "markdown": "None",
             "class": "DepictionMarkdownView"
           },
           {
@@ -99,12 +108,12 @@
           },
           {
             "title": "Version",
-            "text": "0.1.6",
+            "text": "0.2",
             "class": "DepictionTableTextView"
           },
           {
             "title": "Released",
-            "text": "4/24/2019",
+            "text": "5/4/2019",
             "class": "DepictionTableTextView"
           },
           {
@@ -151,6 +160,20 @@
             "useBoldText": true,
             "useBottomMargin": true,
             "class": "DepictionSubheaderView"
+          },
+          {
+            "markdown": "0.2",
+            "useSpacing": false,
+            "class": "DepictionMarkdownView"
+          },
+          {
+            "markdown": "<small style=\"color: #999; margin-top: -8px;\">Released 5/4/2019</small>",
+            "useRawFormat": true,
+            "class": "DepictionMarkdownView"
+          },
+          {
+            "markdown": "- Now a web-based installer\n- Downloaded strings from the internet\n- If no backup is present, default strings will be downloaded",
+            "class": "DepictionMarkdownView"
           },
           {
             "markdown": "0.1.6",

@@ -48,18 +48,22 @@
         <p>Aye matey! Ever wanted to have Sileo in ye native tongue? Well this tweak be for ya, lad.</p>
       </li>
       <li>
-          <p>Run sileopirate in MobileTerminal, NewTerm2, or over SSH to convert ye strings into ye native tongue. Run sileounpirate to revert th' effects... as long as ye backup doesn't end up in Davy Jones' Locker.
+          <p style="color: red;">Make sure to have an internet connection during the installation!</p>
       </li>
     </ul>
 
     <h2 id="screenshot">Join ye laddies!</h2>
     <ul>
-      <img src="screenshots/def.png">
+      <img src="screenshots/dep_packages.png">
+      <img src="screenshots/dep_sources.png">
     </ul>
     <ul>
         <li>
-        <a href="../../debs/xyz.skylarmccauley.sileopirate.deb">Download DEB (Open in Safari or other internet browser)</a>
+        <a href="../../debs/xyz.skylarmccauley.sileopirate_0.2_.deb">Download Latest DEB (Open in Safari or other internet browser)</a>
         </li>
+        <li>
+            <a href="../../debs/xyz.skylarmccauley.sileopirate_0.1.6_.deb">Download v0.1.6 DEB (Open in Safari or other internet browser)</a>
+            </li>
       </ul>
     <h2 id="compatibility">Compatibility</h2>
     <ul>
@@ -68,23 +72,42 @@
       </li>
         <script>document.write(iOSVersion())</script>
     </ul>
-    <h2 id="dependencies">dependencies</h2>
+    <h2 id="dependencies">Dependencies</h2>
     <ul>
       <li>
         <p>firmware (>= 11.0)</p>
       </li>
+      <li>
+        <p>curl</p>
+      </li>
+      <li>
+        <p>zip, unzip</p>
+      </li>
+    </ul>
+    <h2 id="conflicts">Conflicts</h2>
+    <ul>
+      <li>
+        <p>xyz.skylarmccauley.sileopirate (&lt;= 0.1.9)</p>
+      </li>
     </ul>
 
     <h2 id="in-this-version">In this version</h2>
+    <ul> 
+        <h2>May 4, 2019</h2>
+        <li>
+            <p>0.2</p><br>
+            <p>- Now a web-based installer</p>
+            <p>- Downloaded strings from the internet</p>
+            <p>- If no backup is present, default strings will be downloaded</p>
+          </li>
+    </ul>
+    <h2 id="other-versions">Previous Releases</h2>
     <ul> 
         <h2>May 3, 2019</h2>
         <li>
             <p>0.1.6</p><br>
             <p>- Added support for Sileo 1.0</p>
           </li>
-    </ul>
-    <h2 id="other-versions">Previous Releases</h2>
-    <ul> 
         <h2>April 24, 2019</h2>
         <li>
             <p>0.1.4 - 0.1.5</p><br>
