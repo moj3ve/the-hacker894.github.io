@@ -119,12 +119,12 @@
           },
           {
             "title": "Version",
-            "text": "0.8.1",
+            "text": "0.8.2",
             "class": "DepictionTableTextView"
           },
           {
             "title": "Released",
-            "text": "4/28/2019",
+            "text": "5/3/2019",
             "class": "DepictionTableTextView"
           },
           {
