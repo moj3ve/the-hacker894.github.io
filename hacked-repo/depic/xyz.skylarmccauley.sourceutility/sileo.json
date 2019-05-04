@@ -17,9 +17,19 @@
             "itemSize": "{160, 275.41333333333336}",
             "screenshots": [
               {
-                "accessibilityText": "Screenshot",
+                "accessibilityText": "sourceutility Main Menu",
                 "url": "https://skylarmccauley.xyz/hacked-repo/depic/xyz.skylarmccauley.sourceutility/screenshots/main_menu.jpg",
                 "fullSizeURL": "https://skylarmccauley.xyz/hacked-repo/depic/xyz.skylarmccauley.sourceutility/screenshots/main_menu.jpg"
+              },
+              {
+                "accessibilityText": "sourceutility Backup Menu",
+                "url": "https://skylarmccauley.xyz/hacked-repo/depic/xyz.skylarmccauley.sourceutility/screenshots/backup_menu.jpg",
+                "fullSizeURL": "https://skylarmccauley.xyz/hacked-repo/depic/xyz.skylarmccauley.sourceutility/screenshots/backup_menu.jpg"
+              },
+              {
+                "accessibilityText": "sourceutility Patches Menu",
+                "url": "https://skylarmccauley.xyz/hacked-repo/depic/xyz.skylarmccauley.sourceutility/screenshots/patches_menu.jpg",
+                "fullSizeURL": "https://skylarmccauley.xyz/hacked-repo/depic/xyz.skylarmccauley.sourceutility/screenshots/patches_menu.jpg"
               }
             ],
             "ipad": {
@@ -27,18 +37,54 @@
               "itemSize": "{320, 550.8266666666667}",
               "screenshots": [
                 {
-                  "accessibilityText": "Screenshot",
+                  "accessibilityText": "sourceutility Main Menu",
                   "url": "https://skylarmccauley.xyz/hacked-repo/depic/xyz.skylarmccauley.sourceutility/screenshots/main_menu.jpg?size=640",
                   "fullSizeURL": "https://skylarmccauley.xyz/hacked-repo/depic/xyz.skylarmccauley.sourceutility/screenshots/main_menu.jpg"
-                }
+                },
+                {
+                    "accessibilityText": "sourceutility Backup Menu",
+                    "url": "https://skylarmccauley.xyz/hacked-repo/depic/xyz.skylarmccauley.sourceutility/screenshots/backup_menu.jpg?size=640",
+                    "fullSizeURL": "https://skylarmccauley.xyz/hacked-repo/depic/xyz.skylarmccauley.sourceutility/screenshots/backup_menu.jpg"
+                  },
+                  {
+                    "accessibilityText": "sourceutility Patches Menu",
+                    "url": "https://skylarmccauley.xyz/hacked-repo/depic/xyz.skylarmccauley.sourceutility/screenshots/patches_menu.jpg?size=640",
+                    "fullSizeURL": "https://skylarmccauley.xyz/hacked-repo/depic/xyz.skylarmccauley.sourceutility/screenshots/patches_menu.jpg"
+                  }
               ],
               "class": "DepictionScreenshotView"
             },
             "class": "DepictionScreenshotsView"
           },
           {
-            "markdown": "ewfc",
+            "markdown": "The all-in-one utility for managing your already added Cydia, Sileo, and Zebra sources. Backups include a restore script packaged in so you can share your backups with others.\n\nRun sourceutility in MobileTerminal, NewTerm2, or over SSH to get started",
             "useSpacing": true,
+            "class": "DepictionMarkdownView"
+          },
+          {
+            "class": "DepictionSeparatorView"
+          },
+          {
+            "title": "Conflicts",
+            "class": "DepictionHeaderView"
+          },
+          {
+            "markdown": "- xyz.skylarmccauley.sourcebackup\n- xyz.skylarmccauley.sourceutility (<=0.6)",
+            "class": "DepictionMarkdownView"
+          },
+          {
+            "class": "DepictionSeparatorView"
+          },
+          {
+            "title": "Requirements",
+            "class": "DepictionHeaderView"
+          },
+          {
+            "markdown": "iOS 11 - 12.1.2",
+            "class": "DepictionMarkdownView"
+          },
+          {
+            "markdown": "Cydia, Sileo, or Zebra package manager.",
             "class": "DepictionMarkdownView"
           },
           {
@@ -49,7 +95,7 @@
             "class": "DepictionHeaderView"
           },
           {
-            "markdown": "Does not work with Sileo 1.0",
+            "markdown": "- Does not work with Sileo 1.0\nRestoring Cydia Sources breaks Electra",
             "useSpacing": true,
             "class": "DepictionMarkdownView"
           },
@@ -121,7 +167,7 @@
             "class": "DepictionMarkdownView"
           },
           {
-            "markdown": "- - Adjusted Select Menus for notched devices\n- - Added Utilities Menu\n- - Cleaned up the menus some more\n- Added option to purge Cydia Lists & Sources (left over from debugging)\n- Renamed Utilities Menu to Other Utilities Menu\n- Added a reboot option in the Other Utilities Menu\n- Added some red text here and there so you know which options are dangerous",
+            "markdown": "-Adjusted Select Menus for notched devices\n- Added Utilities Menu\n- Cleaned up the menus some more\n- Added option to purge Cydia Lists & Sources (left over from debugging)\n- Renamed Utilities Menu to Other Utilities Menu\n- Added a reboot option in the Other Utilities Menu\n- Added some red text here and there so you know which options are dangerous",
             "class": "DepictionMarkdownView"
           },
           {

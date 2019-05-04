@@ -7,7 +7,7 @@
         "tabname": "Details",
         "views": [
           {
-            "title": "efv",
+            "title": "SileoPirate",
             "useBoldText": true,
             "useBottomMargin": false,
             "class": "DepictionSubheaderView"
@@ -28,7 +28,7 @@
               "screenshots": [
                 {
                   "accessibilityText": "Screenshot",
-                  "url": "?size=640",
+                  "url": "https://skylarmccauley.xyz/hacked-repo/depic/xyz.skylarmccauley.sileopirate/screenshots/def.png?size=640",
                   "fullSizeURL": "https://skylarmccauley.xyz/hacked-repo/depic/xyz.skylarmccauley.sileopirate/screenshots/def.png"
                 }
               ],
@@ -37,8 +37,34 @@
             "class": "DepictionScreenshotsView"
           },
           {
-            "markdown": "ewfc",
+            "markdown": "Aye matey! Ever wanted to have Sileo in ye native tongue? Well this tweak be for ya, lad.\n\nRun sileopirate in MobileTerminal, NewTerm2, or over SSH to convert ye strings into ye native tongue. Run sileounpirate to revert th' effects... as long as ye backup doesn't end up in Davy Jones' Locker.",
             "useSpacing": true,
+            "class": "DepictionMarkdownView"
+          },
+          {
+            "class": "DepictionSeparatorView"
+          },
+          {
+            "title": "Conflicts",
+            "class": "DepictionHeaderView"
+          },
+          {
+            "markdown": "None",
+            "class": "DepictionMarkdownView"
+          },
+          {
+            "class": "DepictionSeparatorView"
+          },
+          {
+            "title": "Requirements",
+            "class": "DepictionHeaderView"
+          },
+          {
+            "markdown": "iOS 11 - 12.1.2",
+            "class": "DepictionMarkdownView"
+          },
+          {
+            "markdown": "Sileo (org.coolstar.sileo)",
             "class": "DepictionMarkdownView"
           },
           {

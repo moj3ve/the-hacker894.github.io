@@ -14,8 +14,42 @@
           },
 
           {
-            "markdown": "ewfc",
+            "markdown": "Have a haptic-enabled keyboard. Compatible with A12 as well",
             "useSpacing": true,
+            "class": "DepictionMarkdownView"
+          },
+          {
+            "class": "DepictionSeparatorView"
+          },
+          {
+            "markdown": "This tweak was previously available on BigBoss. However, it was taken down (for reasons unknown to me). I decided to package the files up into <code>DEB</code>. I will keep this package up as long as I can. If there is an issue with this package being here, please contact me.",
+            "useSpacing": true,
+            "class": "DepictionMarkdownView"
+          },
+          {
+            "class": "DepictionSeparatorView"
+          },
+          {
+            "title": "Conflicts",
+            "class": "DepictionHeaderView"
+          },
+          {
+            "markdown": "None",
+            "class": "DepictionMarkdownView"
+          },
+          {
+            "class": "DepictionSeparatorView"
+          },
+          {
+            "title": "Requirements",
+            "class": "DepictionHeaderView"
+          },
+          {
+            "markdown": "iOS 9 - 12.1.2",
+            "class": "DepictionMarkdownView"
+          },
+          {
+            "markdown": "Device with Haptic Feedback (iPhone 6S or newer, excluding iPhone SE)",
             "class": "DepictionMarkdownView"
           },
           {
@@ -26,7 +60,7 @@
             "class": "DepictionHeaderView"
           },
           {
-            "markdown": "",
+            "markdown": "None",
             "useSpacing": true,
             "class": "DepictionMarkdownView"
           },
