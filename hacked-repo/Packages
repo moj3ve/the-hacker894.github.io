@@ -73,6 +73,26 @@ Icon: https://skylarmccauley.xyz/hacked-repo/depic/xyz.skylarmccauley.sileopirat
 Name: SileoPirate
 Sileodepiction: https://skylarmccauley.xyz/hacked-repo/depic/xyz.skylarmccauley.sileopirate/sileo.json
 
+Package: xyz.skylarmccauley.sileopirate
+Version: 0.2.1
+Architecture: iphoneos-arm
+Maintainer: TheHacker
+Depends: firmware (>= 11.0), curl, unzip, zip
+Conflicts: xyz.skylarmccauley.sileopirate (<=0.1.9)
+Filename: ./debs/xyz.skylarmccauley.sileopirate_0.2.2_.deb
+Size: 27188
+MD5sum: a2d32e68f65bdadbe7f6770b6a0d1f39
+SHA1: 6d22d81e082816696e900c8e51bf3fe8a2cf2318
+SHA256: 8463f7f71b4e4c56e22644f877a416f15c0f85489dd767988f82b143d834c5d9
+Section: Tweaks
+Homepage: https://skylarmccauley.xyz/
+Description: Raid ye Sileo package manager with me Pirate Speak
+Author: TheHacker
+Depiction: http://skylarmccauley.xyz/hacked-repo/depic/xyz.skylarmccauley.sileopirate/
+Icon: https://skylarmccauley.xyz/hacked-repo/depic/xyz.skylarmccauley.sileopirate/icon.png
+Name: SileoPirate
+Sileodepiction: https://skylarmccauley.xyz/hacked-repo/depic/xyz.skylarmccauley.sileopirate/sileo.json
+
 Package: xyz.skylarmccauley.sourceutility
 Version: 0.8.3.1
 Architecture: iphoneos-arm
