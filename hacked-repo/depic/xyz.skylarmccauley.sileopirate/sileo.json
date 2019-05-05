@@ -105,7 +105,7 @@
           },
           {
             "title": "Version",
-            "text": "0.2",
+            "text": "0.2.1",
             "class": "DepictionTableTextView"
           },
           {
@@ -157,6 +157,23 @@
             "useBoldText": true,
             "useBottomMargin": true,
             "class": "DepictionSubheaderView"
+          },
+          {
+            "markdown": "0.2.1",
+            "useSpacing": false,
+            "class": "DepictionMarkdownView"
+          },
+          {
+            "markdown": "<small style=\"color: #999; margin-top: -8px;\">Released 5/4/2019</small>",
+            "useRawFormat": true,
+            "class": "DepictionMarkdownView"
+          },
+          {
+            "markdown": "- Added new icon and banner by CodeRedKillah",
+            "class": "DepictionMarkdownView"
+          },
+          {
+            "class": "DepictionSeparatorView"
           },
           {
             "markdown": "0.2",
