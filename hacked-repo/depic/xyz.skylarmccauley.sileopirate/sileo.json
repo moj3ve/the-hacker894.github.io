@@ -1,7 +1,7 @@
 {
     "minVersion": "0.1",
     "headerImage":"https://skylarmccauley.xyz/hacked-repo/depic/xyz.skylarmccauley.sileopirate/banner.png",
-    "tintColor": "#20C7BF",
+    "tintColor": "#000",
     "tabs": [
       {
         "tabname": "Details",
