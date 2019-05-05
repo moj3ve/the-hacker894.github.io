@@ -1,12 +1,13 @@
 {
     "minVersion": "0.1",
+    "headerImage":"https://skylarmccauley.xyz/hacked-repo/depic/xyz.skylarmccauley.sileopirate/banner.png",
     "tintColor": "#20C7BF",
     "tabs": [
       {
         "tabname": "Details",
         "views": [
           {
-            "title": "SileoPirate",
+            "title": "Banner and Icon by CodeRedKillah",
             "useBoldText": true,
             "useBottomMargin": false,
             "class": "DepictionSubheaderView"
