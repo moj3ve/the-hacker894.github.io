@@ -93,6 +93,45 @@ Icon: https://skylarmccauley.xyz/hacked-repo/depic/xyz.skylarmccauley.sileopirat
 Name: SileoPirate
 Sileodepiction: https://skylarmccauley.xyz/hacked-repo/depic/xyz.skylarmccauley.sileopirate/sileo.json
 
+Package: xyz.skylarmccauley.sileopirate
+Version: 0.2.3
+Architecture: iphoneos-arm
+Maintainer: TheHacker
+Depends: firmware (>= 11.0), xyz.skylarmccauley.sileopirate.helper, curl, unzip, zip
+Conflicts: xyz.skylarmccauley.sileopirate (<=0.1.9)
+Filename: ./debs/xyz.skylarmccauley.sileopirate_0.2.3_.deb
+Size: 27828
+MD5sum: b981040f760c09234a2d540b045785ec
+SHA1: 431ad456592d879bcc04f4912828ba33260fe01a
+SHA256: bdd082f7aa58919f37bbfc93edaf0ca8651f52b0cafa698c1386f3cf5577213a
+Section: Tweaks
+Homepage: https://skylarmccauley.xyz/
+Description: Raid ye Sileo package manager with me Pirate Speak
+Author: TheHacker
+Depiction: http://skylarmccauley.xyz/hacked-repo/depic/xyz.skylarmccauley.sileopirate/
+Icon: https://skylarmccauley.xyz/hacked-repo/depic/xyz.skylarmccauley.sileopirate/icon.png
+Name: SileoPirate
+Sileodepiction: https://skylarmccauley.xyz/hacked-repo/depic/xyz.skylarmccauley.sileopirate/sileo.json
+
+Package: xyz.skylarmccauley.sileopirate.helper
+Version: 1.0
+Architecture: iphoneos-arm
+Maintainer: TheHacker
+Depends: mobilesubstrate
+Filename: ./debs/xyz.skylarmccauley.sileopirate.helper_1.0.0_.deb
+Size: 5372
+MD5sum: 4f31ede0f55a1e33ce6e9359d8dacf60
+SHA1: 271105c6f4f21a0f58cc8cb23670a6a7b9ebb999
+SHA256: d3ca23959b56c3273c73cf810fa3870bf901f9d8b6ef6b302a4ce06294843032
+Section: Tweaks
+Homepage: https://skylarmccauley.xyz/
+Description: Arrr! This be another landlubber to help carry out the duties of SileoPirate.
+Author: TheHacker
+Depiction: http://skylarmccauley.xyz/hacked-repo/depic/xyz.skylarmccauley.sileopirate.helper/
+Icon: https://skylarmccauley.xyz/hacked-repo/depic/xyz.skylarmccauley.sileopirate/icon.png
+Name: SileoPirate Helper
+Sileodepiction: https://skylarmccauley.xyz/hacked-repo/depic/xyz.skylarmccauley.sileopirate.helper/sileo.json
+
 Package: xyz.skylarmccauley.sourceutility
 Version: 0.8.3.1
 Architecture: iphoneos-arm
