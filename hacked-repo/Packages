@@ -113,6 +113,26 @@ Icon: https://skylarmccauley.xyz/hacked-repo/depic/xyz.skylarmccauley.sileopirat
 Name: SileoPirate
 Sileodepiction: https://skylarmccauley.xyz/hacked-repo/depic/xyz.skylarmccauley.sileopirate/sileo.json
 
+Package: xyz.skylarmccauley.sileopirate
+Version: 0.2.3.1
+Architecture: iphoneos-arm
+Maintainer: TheHacker
+Depends: firmware (>= 11.0), xyz.skylarmccauley.sileopirate.helper, curl, unzip, zip
+Conflicts: xyz.skylarmccauley.sileopirate (<=0.1.9), com.hydri.sileoowo, com.hydri.sileowo
+Filename: ./debs/xyz.skylarmccauley.sileopirate_0.2.3.1_.deb
+Size: 27196
+MD5sum: 4e433f2413978f2428c53b5c6e58b505
+SHA1: 2ae0282ee84477215d66d135e6f69ed338731c55
+SHA256: 996052369a62703b0c772210f3283d62cb8439f335a0e5f76acd117139254c31
+Section: Tweaks
+Homepage: https://skylarmccauley.xyz/
+Description: Raid ye Sileo package manager with me Pirate Speak
+Author: TheHacker
+Depiction: http://skylarmccauley.xyz/hacked-repo/depic/xyz.skylarmccauley.sileopirate/
+Icon: https://skylarmccauley.xyz/hacked-repo/depic/xyz.skylarmccauley.sileopirate/icon.png
+Name: SileoPirate
+Sileodepiction: https://skylarmccauley.xyz/hacked-repo/depic/xyz.skylarmccauley.sileopirate/sileo.json
+
 Package: xyz.skylarmccauley.sileopirate.helper
 Version: 1.0
 Architecture: iphoneos-arm
@@ -123,6 +143,25 @@ Size: 4852
 MD5sum: 619bf2e208d3c668db085ae93796b3b7
 SHA1: d7bf68ce049e50498e3b25ec64c15437601f8b38
 SHA256: e0504d512be5f78d4ed4c191e66968d4b0f7dd8e9c9856d7f8f0b97258b79067
+Section: Tweaks
+Homepage: https://skylarmccauley.xyz/
+Description: Arrr! This be another landlubber to help carry out the duties of SileoPirate.
+Author: TheHacker
+Depiction: http://skylarmccauley.xyz/hacked-repo/depic/xyz.skylarmccauley.sileopirate.helper/
+Icon: https://skylarmccauley.xyz/hacked-repo/depic/xyz.skylarmccauley.sileopirate/icon.png
+Name: SileoPirate Helper
+Sileodepiction: https://skylarmccauley.xyz/hacked-repo/depic/xyz.skylarmccauley.sileopirate.helper/sileo.json
+
+Package: xyz.skylarmccauley.sileopirate.helper
+Version: 1.0.1
+Architecture: iphoneos-arm
+Maintainer: TheHacker
+Depends: mobilesubstrate, com.hydri.sileoowo, com.hydri.sileowo
+Filename: ./debs/xyz.skylarmccauley.sileopirate.helper_1.0.1_.deb
+Size: 4872
+MD5sum: 09ebc77c5adc9cc49c790f7047e5b31d
+SHA1: b385ae25dc451b34b7380944a0eb7821d8118929
+SHA256: 21f32f62132abb5c220a7d91b9ac30855a49a9b42ef59d7200f61815e73b99f6
 Section: Tweaks
 Homepage: https://skylarmccauley.xyz/
 Description: Arrr! This be another landlubber to help carry out the duties of SileoPirate.
