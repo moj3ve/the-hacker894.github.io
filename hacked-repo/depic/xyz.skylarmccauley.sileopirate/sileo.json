@@ -59,7 +59,7 @@
             "class": "DepictionHeaderView"
           },
           {
-            "markdown": "-SileoPirate Helper\n - curl\n- unzip, zip",
+            "markdown": "- SileoPirate Helper\n - curl\n- unzip, zip",
             "class": "DepictionMarkdownView"
           },
           {
