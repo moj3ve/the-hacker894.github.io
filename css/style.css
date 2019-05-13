@@ -82,10 +82,7 @@ hr {
 	text-align: center;
 	position: relative;
 	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#6b4da8+0,4977c2+100 */
-	background: rgb(107,77,168); /* Old browsers */
-	background: -moz-linear-gradient(left, #025260 0%, #FF692F 100%); /* FF3.6-15 */
-	background: -webkit-linear-gradient(left, #025260 0%, #FF692F 100%); /* Chrome10-25,Safari5.1-6 */
-	background: linear-gradient(to right, #025260 0%, #FF692F 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	background: #333333; /* Old browsers */
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6b4da8', endColorstr='#4977c2', GradientType=1 ); /* IE6-9 */
 	margin: 0 auto;
 	margin-bottom: 30px;
