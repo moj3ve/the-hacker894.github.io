@@ -131,10 +131,7 @@ p, h1 {
 .styled-link {
   text-decoration: none;
   outline: none;
-  color: rgb(249, 118, 2);
-  color: -moz-linear-gradient(left, rgba(249, 118, 2, 1) 0%, rgba(73,119,194,0.85) 100%); /* FF3.6-15 */
-	color: -webkit-linear-gradient(left, rgba(249, 118, 2, 1) 0%, rgba(73,119,194,0.85) 100%); /* Chrome10-25,Safari5.1-6 */
-	color: linear-gradient(to right, rgba(249, 118, 2, 1) 0%, rgba(73,119,194,0.85) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  color: #FF692F;
   transition: all 0.25s ease-in; 
 }
 .styled-link:hover,
@@ -152,10 +149,7 @@ p, h1 {
 .blue-hover:hover {
   transform: translateY(-5px);
   border: none;
-  border-bottom: 5px solid rgb(107,77,168);
-  border-bottom: 5px solid -moz-linear-gradient(left, rgba(107,77,168,1) 0%, rgba(73,119,194,1) 100%);
-  border-bottom: 5px solid -webkit-linear-gradient(left, rgba(107,77,168,1) 0%, rgba(73,119,194,1) 100%);
-  border-bottom: 5px solid linear-gradient(to right, rgba(107,77,168,1) 0%, rgba(73,119,194,1) 100%);;
+  border-bottom: 5px solid #FF692F;
 }
 
 

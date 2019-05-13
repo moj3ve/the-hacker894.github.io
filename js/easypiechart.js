@@ -200,8 +200,8 @@ var CanvasRenderer = function(el, options) {
 var EasyPieChart = function(el, opts) {
 	var defaultOptions = {
 		barColor: '#fff',
-		trackColor: '#434987',
-		scaleColor: '#434987',
+		trackColor: '#333333',
+		scaleColor: '#333333',
 		scaleLength: 0,
 		lineCap: 'square',
 		lineWidth: 7,

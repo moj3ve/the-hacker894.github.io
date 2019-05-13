@@ -83,9 +83,9 @@ hr {
 	position: relative;
 	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#6b4da8+0,4977c2+100 */
 	background: rgb(107,77,168); /* Old browsers */
-	background: -moz-linear-gradient(left, rgba(107,77,168,1) 0%, rgba(73,119,194,1) 100%); /* FF3.6-15 */
-	background: -webkit-linear-gradient(left, rgba(107,77,168,1) 0%, rgba(73,119,194,1) 100%); /* Chrome10-25,Safari5.1-6 */
-	background: linear-gradient(to right, rgba(107,77,168,1) 0%, rgba(73,119,194,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	background: -moz-linear-gradient(left, #025260 0%, #FF692F 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(left, #025260 0%, #FF692F 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to right, #025260 0%, #FF692F 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6b4da8', endColorstr='#4977c2', GradientType=1 ); /* IE6-9 */
 	margin: 0 auto;
 	margin-bottom: 30px;
@@ -141,7 +141,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6b4da8', end
 }
 .navbar-custom .nav li a:hover {
 	outline: 0;
-	color: #526cbb;
+	color: #FF692F;;
 	background-color: transparent;
 }
 .navbar-custom .nav li a:focus, .navbar-custom .nav li a:active {
@@ -607,6 +607,16 @@ color: #2c3e50;
 	margin-top: 20px;
 	letter-spacing: 2px;
 }
+header {
+	-moz-transition: width 0.5s ease-in-out, left 0.5s ease-in-out;
+  -webkit-transition: width 0.5s ease-in-out, left 0.5s ease-in-out;
+  -moz-transition: width 0.5s ease-in-out, left 0.5s ease-in-out;
+  -o-transition: width 0.5s ease-in-out, left 0.5s ease-in-out;
+  transition: width 0.5s ease-in-out, left 0.5s ease-in-out;
+  animation: slide-up 0.25s ease;
+  transition: all .5s linear;
+
+}
 section {
 	padding: 120px 0;
 }
@@ -868,7 +878,7 @@ button.p-s-1, button.p-s-2, button.p-s-3 {
 #footer {
 	margin-bottom: 0;
 	}
-.emailCopy-left: {
+.emailCopy-left {
 	float: left;
 }
 .emailCopy-right {
