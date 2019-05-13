@@ -3,19 +3,19 @@
 <metadata>
 <vectornator:setting key="DisplayWhiteBackground" value="0"/>
 <vectornator:setting key="RulersVisible" value="1"/>
-<vectornator:setting key="GridSpacing" value="36"/>
+<vectornator:setting key="SnapToEdges" value="0"/>
 <vectornator:setting key="Units" value="Pixels"/>
 <vectornator:setting key="DynamicGuides" value="0"/>
 <vectornator:setting key="SnapToPoints" value="0"/>
 <vectornator:setting key="CMYKEnabledKey" value="0"/>
 <vectornator:setting key="SnapToGrid" value="0"/>
 <vectornator:setting key="ShowGrid" value="1"/>
-<vectornator:setting key="SnapToEdges" value="0"/>
+<vectornator:setting key="GridSpacing" value="36"/>
 </metadata>
 <defs>
 <linearGradient y1="-19.6048" id="LinearGradient" x1="1407.86" y2="1609.9" x2="1418.71" gradientUnits="userSpaceOnUse" gradientTransform="matrix(0.950972 0 0 0.902539 97.3055 96.2712)">
-<stop stop-color="#f47403" offset="0"/>
-<stop stop-color="#707ba2" offset="1"/>
+<stop stop-color="#025260" offset="0"/>
+<stop stop-opacity="0.95" stop-color="#ff692f" offset="1"/>
 </linearGradient>
 </defs>
 <g id="Layer 1" vectornator:layerName="Layer 1">

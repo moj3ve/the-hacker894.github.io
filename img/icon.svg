@@ -14,8 +14,8 @@
 </metadata>
 <defs>
 <linearGradient y1="195.203" id="LinearGradient" x1="348.567" y2="765.203" x2="356.567" gradientUnits="userSpaceOnUse" gradientTransform="matrix(1 0 0 1 1.71828 -2.87649)">
-<stop stop-color="#f47403" offset="0"/>
-<stop stop-color="#707ba2" offset="1"/>
+<stop stop-color="#025260" offset="0"/>
+<stop stop-opacity="0.95" stop-color="#ff692f" offset="1"/>
 </linearGradient>
 </defs>
 <g id="Layer 2" vectornator:layerName="Layer 2">
