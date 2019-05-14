@@ -11,6 +11,38 @@
    font-family: 'Product Sans';
    background-color: #fafafa;
 }
+@media screen and (max-width: 780px) {
+	.subtitle {
+		font-size: 1.53vw;
+		margin-bottom: 0px;
+		letter-spacing: 2px;
+	}
+	
+}
+.subtitle {
+	margin-bottom: 0;
+	text-transform: uppercase;
+  	margin-bottom: 1rem;
+  	color: rgba(0, 0, 0, 0.3);
+  	letter-spacing: 0.5px;
+  	font-family: monospace; 
+  	font-size: 14px; 
+  	font-style: normal; 
+  	font-variant: normal; 
+  	font-weight: 100; 
+  	line-height: 14px;
+}
+.credit {
+	letter-spacing: 0.5px;
+  	font-family: monospace; 
+  	font-size: 10px; 
+  	font-style: normal; 
+  	font-variant: normal; 
+  	font-weight: 100; 
+  	
+  	
+  	
+}
 body::before,
 body::after {
   content: "";
