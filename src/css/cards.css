@@ -143,11 +143,14 @@ p, h1 {
 .card-links > a {
   text-transform: uppercase;
   display: inline-block;
-  padding: 4px;
-  outline: rgba(224, 224, 224, 0.342) 2px solid;
-  margin-bottom: 2rem;
-  margin-left: 5px;
-  margin-right: 5px;
+  padding: 15px;
+  height: inherit;
+  border-left: rgba(224, 224, 224, 0.342) 2px solid;
+  border-right: rgba(224, 224, 224, 0.342) 2px solid;
+}
+.card-links {
+  border-top: rgba(224, 224, 224, 0.342) 2px solid;
+  border-bottom: rgba(224, 224, 224, 0.342) 2px solid;
 }
 
 .ff-serif {
@@ -226,7 +229,7 @@ p, h1 {
 .styled-link:hover,
 .styled-link:focus,
 .styled-link:active {
-  color: #536dfe;
+  color: rgb(48, 48, 48) !important;
 }
 .shadow-1 {
   box-shadow: 0 2px 5px 0 rgba(0,0,0,0.15);
