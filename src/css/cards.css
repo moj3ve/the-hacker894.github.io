@@ -19,7 +19,7 @@
 	}
 	
 }
-.subtitle {
+.card .subtitle {
 	margin-bottom: 0;
 	text-transform: uppercase;
   	margin-bottom: 1rem;
@@ -32,6 +32,32 @@
   	font-weight: 100; 
   	line-height: 14px;
 }
+.card .desc {
+
+}
+.card .title {
+  font-family: 'Product Sans';
+  font-weight: normal;
+  color: rgba(0,0,0,0.9);
+  font-size: 2.25rem;
+  margin-top: 0;
+
+}
+.card .desc {
+  margin-bottom: 1rem;
+
+}
+@media screen and (max-width: 780px) {
+  .card .title, .card .desc {
+    margin-bottom: 0px;
+  }
+}
+@media screen and (min-width: 781px) {
+  .card .title, .card .desc {
+    margin-bottom: 1rem;
+
+  }
+}
 .credit {
 	letter-spacing: 0.5px;
   	font-family: monospace; 
@@ -39,9 +65,40 @@
   	font-style: normal; 
   	font-variant: normal; 
   	font-weight: 100; 
-  	
-  	
-  	
+}
+.card {
+  border-radius: 15px !important;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    position: relative;
+    background-color: #fff;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.15);
+    transition: all 0.25s ease-in;
+    border-bottom: 5px solid transparent;
+    
+}
+.card:hover {
+  transform: translateY(-5px);
+  border: none;
+}
+.card.cleverbot {
+  background-color:#42AEDE;
+}
+.card.age-approve {
+  background-color: #41B782;
+}
+.card.executor, .card.executor .title,  .card.executor .subtitle, .card.executor .styled-link {
+  background-color: black;
+  color: white !important;
+}
+.card.hacked-gradient {
+  background: -moz-linear-gradient(top, #025260 0%, #FF692F 55%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, #025260 0%, #FF692F 55%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #025260 0%, #FF692F 55%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  border-bottom: 5px solid #FF692F;
+
 }
 body::before,
 body::after {
@@ -163,7 +220,7 @@ p, h1 {
 .styled-link {
   text-decoration: none;
   outline: none;
-  color: #FF692F;
+  color: #000;
   transition: all 0.25s ease-in; 
 }
 .styled-link:hover,
@@ -440,3 +497,40 @@ p, h1 {
   float: right;
   margin-right: 20%
 }
+
+@media screen and (max-width: 994px) {
+  .card > img {
+    display: none;
+  }
+  .styled-link {
+    font-size: 10pt;
+  }
+  .card.hacked-gradient {
+    background-color: #FF692F !important;
+    background: #FF692F !important;
+  }
+}
+@media screen and (max-width: 574px) {
+  .card .title {
+    font-size: 14pt;
+  }
+  .card .desc {
+    font-size: 10pt;
+  }
+  .left {
+    float: none !important;
+    margin-left: 5%;
+    margin-right: 5%;
+    text-align: center;
+  }
+  .right {
+    float: none !important;
+    margin-right: 5%;
+    margin-left: 5%;
+    text-align: center;
+  }
+  .column {
+    width: auto;
+  }
+}
+

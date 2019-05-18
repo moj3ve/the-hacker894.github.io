@@ -106,16 +106,16 @@
 
 
 <!-- Bootstrap -->
-<link rel="stylesheet" type="text/css"  href="css/bootstrap.css">
+<link rel="stylesheet" type="text/css"  href="src/css/bootstrap.css">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 
 
 <!-- Stylesheet
     ================================================== -->
-<link rel="stylesheet" type="text/css"  href="css/style.css">
-<link rel="stylesheet" type="text/css"  href="css/cards.css">
+<link rel="stylesheet" type="text/css"  href="src/css/style.css">
+<link rel="stylesheet" type="text/css"  href="src/css/cards.css">
 
-<link rel="stylesheet" type="text/css" href="css/prettyPhoto.css">
+<link rel="stylesheet" type="text/css" href="src/css/prettyPhoto.css">
 
 <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -226,7 +226,9 @@
             <div>
           <h3>Pages</h3> 
           <hr>
-
+          <div class="meep-meep">
+              <a class="mm-btn page-scroll" href="#websites">Skip Section</a>
+            </div>
           <div class="page-selector">
             <button onclick="changePage(1)" href="javascript:void(0);" class="p-s-1">
                 <p class="p-s ">1</p>
@@ -241,6 +243,7 @@
                 <hr class="selector-3">
             </button>
           </div>
+          
         </div>
     
   </div>
@@ -249,7 +252,7 @@
       <div class="pages">
           <div class="p1">
               <div class="left column">
-                  <div class="my-2 mx-1 mobile-cards p-relative bg-white shadow-1 blue-hover">
+                  <div class="card cleverbot">
                       <img src="img/portfolio/cleverBotIconNew.png" alt="CleverBot"
                           class="d-block w-full">
                     
@@ -258,11 +261,11 @@
                     NodeJS
                     </p>
                     
-                    <h1 class="ff-serif font-weight-normal text-black card-heading mt-0 mb-1" style="line-height: 1.25;">
+                    <h1 class="title" style="line-height: 1.25;">
                     CleverBot
                     </h1>
                     
-                    <p class="mb-1 no-mobile">
+                    <p class="desc">
                     DiscordJS Bot using the cloud-based CleverBot service, CleverBot.io
                     </p>
                     
@@ -278,7 +281,7 @@
                   </div>
                     </div>
                     
-                 <div class="apps my-2 mx-1 mobile-cards p-relative bg-white shadow-1 blue-hover">
+                 <div class="card executor">
               <img src="https://skylarmccauley.xyz/hacked-repo/depic/xyz.skylarmccauley.sileopirate/icon.png" alt="Hacker"
                   class="d-block w-full">
       
@@ -287,11 +290,11 @@
             Shell
           </p>
       
-          <h1 class="ff-serif font-weight-normal text-black card-heading mt-0 mb-1" style="line-height: 1.25;">
+          <h1 class="title" style="line-height: 1.25;">
             SileoPirate
           </h1>
       		
-          <p class="mb-1 no-mobile">
+          <p class="desc">
              Arrrr, matey! Turn ye Sileo Localized Text into Pirate Speak!
             </p>
       		
@@ -310,7 +313,7 @@
       		</p>
       </div>
       
-            <div class="apps my-2 mx-1 mobile-cards p-relative bg-white shadow-1 blue-hover">
+            <div class="card">
               <img src="https://i.imgur.com/XoJGlxQ.png" alt="Hacker"
                   class="d-block w-full">
       
@@ -319,11 +322,11 @@
             HTML / CSS
           </p>
       
-          <h1 class="ff-serif font-weight-normal text-black card-heading mt-0 mb-1" style="line-height: 1.25;">
+          <h1 class="title" style="line-height: 1.25;">
             Jailbreak Guide
           </h1>
       
-          <p class="mb-1 no-mobile">
+          <p class="desc">
              Your one-stop-shop for guides on how to Jailbreak your iOS Device.
             </p>
       
@@ -346,7 +349,7 @@
                 </div>
                 <div class="right column">
     
-                    <div class="my-2 mx-1 mobile-cards p-relative bg-white shadow-1 blue-hover">
+                    <div class="card executor">
                         <img src="img/portfolio/ex3cut0r.png" alt="Ex3cut0r"
                             class="d-block w-full">
                 
@@ -355,11 +358,11 @@
                       NodeJS
                     </p>
                 
-                    <h1 class="ff-serif font-weight-normal text-black card-heading mt-0 mb-1" style="line-height: 1.25;">
+                    <h1 class="title" style="line-height: 1.25;">
                       Ex3cut0r
                     </h1>
                 
-                    <p class="mb-1 no-mobile">
+                    <p class="desc">
                       Ex3cut0r, the bot for all your encoding, decoding, and converting; all through Discord
                       </p>
                 
@@ -376,7 +379,7 @@
                 </div>  
     
                 
-			<div class="apps my-2 mx-1 mobile-cards p-relative bg-white shadow-1 blue-hover">
+			<div class="card executor">
                     <img src="img/portfolio/snake.svg" alt="Snake"
                         class="d-block w-full">
             
@@ -385,12 +388,12 @@
                   Javascript
                 </p>
             
-                <h1 class="ff-serif font-weight-normal text-black card-heading mt-0 mb-1" style="line-height: 1.25;">
+                <h1 class="title" style="line-height: 1.25;">
                   Snake
                 </h1>
             
-                <p class="mb-1 no-mobile">
-                 	Snake AI game hosted by yours truly. (Not made by me)
+                <p class="desc">
+                 	Snake AI game hosted and maintained by yours truly.
                   </p>
             
               </div>
@@ -402,20 +405,20 @@
               </div>
             </div>
             
-            <div class="apps my-2 mx-1 mobile-cards p-relative bg-white shadow-1 blue-hover">
+            <div class="card hacked-gradient">
                     <img src="img/hacker.jpg" alt="Hacker"
                         class="d-block w-full">
             
               <div class="px-2 py-2">
                 <p class="subtitle">
-                  DB
+                  APT
                 </p>
             
-                <h1 class="ff-serif font-weight-normal text-black card-heading mt-0 mb-1" style="line-height: 1.25;">
+                <h1 class="title" style="line-height: 1.25;">
                   Hacked Repo
                 </h1>
             
-                <p class="mb-1 no-mobile">
+                <p class="desc">
                  	APT-Based repo with utilities for Jailbroken iOS Devices.
                   </p>
             
@@ -424,13 +427,6 @@
             <div class="card-links">
               <a target="_blank" href="hacked-repo/" class="styled-link">
                 View
-              </a> 
-              <a target="_blank" href="cydia://url/https://cydia.saurik.com/share#?source=https://skylarmccauley.xyz/hacked-repo/" class="styled-link">
-                Add to Cydia
-              </a> 
-              
-              <a target="_blank" href="sileo://source/https://skylarmccauley.xyz/hacked-repo/" class="styled-link">
-                Add to Sileo
               </a> 
             </div>
               
@@ -444,7 +440,7 @@
             <div class="left column">
 
                 
-                <div class="apps my-2 mx-1 mobile-cards p-relative bg-white shadow-1 blue-hover">
+                <div class="card executor">
                     <img src="projects/videogame-vectors/icon.png" alt="Videogame Vecotrs"
                         class="d-block w-full">
             
@@ -453,11 +449,11 @@
                   Vector
                 </p>
             
-                <h1 class="ff-serif font-weight-normal text-black card-heading mt-0 mb-1" style="line-height: 1.25;">
+                <h1 class="title" style="line-height: 1.25;">
                   Videogame Vectors
                 </h1>
             
-                <p class="mb-1 no-mobile">
+                <p class="desc">
                  	I turn videogame logos into vector graphics
                   </p>
             
@@ -470,7 +466,7 @@
             </div>
             
             
-        <div class="my-2 mx-1 mobile-cards p-relative bg-white shadow-1 blue-hover">
+        <div class="card age-approve">
             <img src="img/portfolio/ageapprove.png" alt="AgeApprove"
                 class="d-block w-full">
         
@@ -479,11 +475,11 @@
           NodeJS
         </p>
         
-        <h1 class="ff-serif font-weight-normal text-black card-heading mt-0 mb-1" style="line-height: 1.25;">
+        <h1 class="title" style="line-height: 1.25;">
           AgeApprove
         </h1>
         
-        <p class="mb-1 no-mobile">
+        <p class="desc">
           The server-exclusive DiscordJS for approving the ages of the server's members. <br> (Requested by Korbs#0001.)
           </p>
         
@@ -495,176 +491,11 @@
         </div>
         </div>
 
-        <div class="apps my-2 mx-1 mobile-cards p-relative bg-white shadow-1 blue-hover">
-          <img src="img/portfolio/sunset.png" alt="Sunset"
-              class="d-block w-full">
-  
-    <div class="px-2 py-2">
-      <p class="subtitle">
-        NodeJS
-      </p>
-  
-      <h1 class="ff-serif font-weight-normal text-black card-heading mt-0 mb-1" style="line-height: 1.25;">
-        Sunset
-      </h1>
-  
-      <p class="mb-1 no-mobile">
-         The, now archived, multipurpose Discord Bot with commands for moderation, economy, and much, much more.
-        </p>
-  
-    </div>
-    <div class="card-links">
-    <a target="_blank" href="https://github.com/The-Hacker894/Sunset" class="styled-link">
-      GitHub
-    </a> 
-    </div>
-  </div>
-             <div class="apps my-2 mx-1 mobile-cards p-relative bg-white shadow-1 blue-hover">
-                    <img src="img/portfolio/ctgp7.png" alt="CTGP-7"
-                        class="d-block w-full">
-            
-              <div class="px-2 py-2">
-                <p class="subtitle">
-                  HTML / CSS / JS
-                </p>
-            
-                <h1 class="ff-serif font-weight-normal text-black card-heading mt-0 mb-1" style="line-height: 1.25;">
-                  CTGP-7 FAQ
-                </h1>
-            
-                <p class="mb-1 no-mobile">
-                 	Frequently asked questions for the CTGP-7 Modding Community
-                  </p>
-            
-              </div>
-              
-              <div class="card-links">
-              <a target="_blank" href="https://ctgp-7.github.io/" class="styled-link">
-                Read More
-              </a>  
-              <a target="_blank" href="https://discord.gg/0uTPwYv3SPQww54l" class="styled-link">
-                Discord Server
-              </a>
-              </div>
-            </div>
         
               
             </div>
             <div class="right column">
-
-                <div class="my-2 mx-1 mobile-cards mobile-cards p-relative bg-white shadow-1 blue-hover">
-                    <img src="img/portfolio/zucc.png" alt="The Zucc"
-                        class="d-block w-full">
-            
-              <div class="px-2 py-2">
-                <p class="subtitle">
-                  NodeJS
-                </p>
-            
-                <h1 class="ff-serif font-weight-normal text-black card-heading mt-0 mb-1" style="line-height: 1.25;">
-                  The Zucc
-                </h1>
-            
-                <p class="mb-1 no-mobile">
-                  A very simple DiscordJS bot based off of the Mark Zuckerburg memes.
-                  </p>
-            
-              </div>
-              <div class="card-links">
-              <a target="_blank" href="//skylarmccauley.xyz/projects/zucc.zip" class="styled-link">
-                Download
-              </a>
-        </div>
-    
-        
-            </div>
-    
-                <div class="my-2 mx-1 mobile-cards p-relative bg-white shadow-1 blue-hover">
-                    <img src="img/portfolio/gamershubapp.png" alt="GamersHub Android App"
-                        class="d-block w-full">
-            
-              <div class="px-2 py-2">
-                <p class="subtitle">
-                  Java &amp; XML
-                </p>
-            
-                <h1 class="ff-serif font-weight-normal text-black card-heading mt-0 mb-1" style="line-height: 1.25;">
-                  GamersHub App
-                </h1>
-            
-                <p class="mb-1 no-mobile">
-                  A small app for GamersHub <br>(Requested by GamersHub).
-                </p>
-            
-              </div>
-              <div class="card-links">
-              <a target="_blank" href="https://github.com/The-Hacker894/GamersHub-App/releases/" class="styled-link">
-                GitHub
-              </a>  
-              <a target="_blank" href="https://play.google.com/store/apps/details?id=com.hackerlabs.sky.gamershub" class="styled-link">
-                Google Play
-              </a>
-              </div>
-            </div>
-            <div class="my-2 mx-1 mobile-cards p-relative bg-white shadow-1 blue-hover">
-                <img src="img/portfolio/passcodeLock.svg" alt="Passcode Lock"
-                    class="d-block w-full">
-        
-          <div class="px-2 py-2">
-            <p class="subtitle">
-              HTML / CSS / JavaScript
-            </p>
-        
-            <h1 class="ff-serif font-weight-normal text-black card-heading mt-0 mb-1" style="line-height: 1.25;">
-              Passcode Lock
-            </h1>
-        
-            <p class="mb-1 no-mobile">
-              A simple CSS / JS project assignment
-              </p>
-        
-          </div>
-          <div class="card-links">
-          <a target="_blank"  href="//skylarmccauley.xyz/projects/passcodeLock" class="styled-link">
-            Visit
-          </a>        
-          </div>
-        </div>
-            </div>
-    
-          </div>
-
-          <div class="p3">
-          <div class="left column">
-
-          	  <div class="my-2 mx-1 mobile-cards p-relative bg-white shadow-1 blue-hover">
-        <img src="img/portfolio/exposex.png" alt="Expose X"
-            class="d-block w-full">
-        
-        <div class="px-2 py-2">
-        <p class="subtitle">
-        NodeJS
-        </p>
-        
-        <h1 class="ff-serif font-weight-normal text-black card-heading mt-0 mb-1" style="line-height: 1.25;">
-        Expose X Bot
-        </h1>
-        
-        <p class="mb-1 no-mobile">
-        The server-exclusive support bot for the Expose X Bot <br> (Requested by Korbs#0001.)
-        </p>
-        
-        </div>
-        <div class="card-links">
-        <a target="_blank" href="//skylarmccauley.xyz/projects/Expose_X.zip" class="styled-link">
-        Download
-        </a>
-        </div>
-        </div>
-        
-        </div>
-        <div class="right column">
-        	              <div class="apps my-2 mx-1 mobile-cards p-relative bg-white shadow-1 blue-hover">
+                <div class="card">
                     <img src="img/portfolio/nouapp.png" alt="No U Android App"
                         class="d-block w-full">
             
@@ -673,11 +504,11 @@
                   Java &amp; XML
                 </p>
             
-                <h1 class="ff-serif font-weight-normal text-black card-heading mt-0 mb-1" style="line-height: 1.25;">
+                <h1 class="title" style="line-height: 1.25;">
                   No U App
                 </h1>
             
-                <p class="mb-1 no-mobile">
+                <p class="desc">
                   The app for all of your comebacks. Available on Android.
                   </p>
             
@@ -692,26 +523,45 @@
               </a>
               </div>
             </div>
-        </div>
-      
-         
+                    
+            <div class="card executor">
+                <img src="img/portfolio/ctgp7.png" alt="CTGP-7"
+                    class="d-block w-full">
+        
+          <div class="px-2 py-2">
+            <p class="subtitle">
+              HTML / CSS / JS
+            </p>
+        
+            <h1 class="title" style="line-height: 1.25;">
+              CTGP-7 FAQ
+            </h1>
+        
+            <p class="desc">
+               Frequently asked questions for the CTGP-7 Modding Community
+              </p>
+        
           </div>
           
-      </div>
-      <div class="pages-loading">
-        <h4>Loading...</h4>
-        <p><i class="fas fa-sync"></i></p>
-        <p>If this keeps loading, try enabling JavaScript</p>
-      </div>
-      <div class="screenSmall">
-          <h4>Display Too Small</h4>
-          <p>Sorry, but your display size is too small to view my portfolio; try using a Desktop.</p>
+          <div class="card-links">
+          <a target="_blank" href="https://ctgp-7.github.io/" class="styled-link">
+            Read More
+          </a>  
+          <a target="_blank" href="https://discord.gg/0uTPwYv3SPQww54l" class="styled-link">
+            Discord Server
+          </a>
+          </div>
         </div>
-      <div class="turnPhoneContainer">
-        <img class="turnPhone" src="img/glyph/iphone/iphone-solid.svg" alt="iPhone Glyph">
-        <p>Try putting your device in landscape to view my portfolio.</p>
+            </div>
 
+    
+
+
+          
+          
       </div>
+      </div>
+
         </div>
 
       </div>
@@ -732,7 +582,7 @@
           <div style="margin-left:auto;margin-right:auto;" class="text-center center">
             
             <a href="https://www.hacker-hub.com" class="btn btn-primary btn-lg page-scroll">HackerHub</a> 
-            <a href="https://skylarmccauley.xyz" class="btn btn-primary btn-lg page-scroll">Portfolio</a> 
+            <a href="https://skylarmccauley.xyz" class="btn btn-primary btn-lg page-scroll">Skylar McCauley</a> 
             <a href="https://jailbreakguide.me" class="btn btn-primary btn-lg page-scroll">Jailbreak Guide</a> <br>
             <a href="https://www.hacker-hub.com/partner/cabooshy" class="btn btn-primary btn-lg page-scroll">Cabooshy (Partner)</a> 
             <a href="https://www.hacker-hub.com/partner/korbs" class="btn btn-primary btn-lg page-scroll">KorbsStudio (Partner)</a> 

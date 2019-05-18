@@ -200,6 +200,9 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 	outline: none;
 	outline-offset: none;
 }
+.p-s-3 {
+	display: none !important;
+}
 /* Home Section */
 .intro {
 	display: table;
@@ -306,6 +309,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6b4da8', end
 	padding: 100px 0;
 	background: #f6f6f6;
 }
+
 .categories {
 	padding-bottom: 30px;
 	text-align: center;
@@ -675,11 +679,8 @@ header .intro-text {
 	display: block;
 	text-align: center;
 }
-@media (min-width: 640px) {
+
 	.screenSmall {
-		display: none !important;
-	}
-	.pages-loading {
 		display: none !important;
 	}
 	.p1 {
@@ -697,9 +698,6 @@ header .intro-text {
 	.pages, .pages-selector, .pages-selection, .pages-selector, div.left.column, div.right.column {
 		display: block !important;
 	}
-	.turnPhoneContainer {
-		display: none !important;
-	}
 	.selector-1 {
 		display: block !important;
 		opacity: 1.0 
@@ -712,8 +710,8 @@ header .intro-text {
 	display: block !important;
 	opacity: 0.1
 	}
-}
-@media only screen and (orientation: portrait) and (max-width: 640px){
+
+/*@media only screen and (orientation: portrait) and (max-width: 640px){
 	.turnPhoneContainer {
 		display: block !important;
 	}
@@ -739,7 +737,7 @@ div.page-selector {
 	margin-top: 5% !important;
 }
 
-}
+} 
 @media (max-width: 780px) {
 	a.text-uppercase.d-inline-block.font-weight-medium.lts-2px.ml-2.mb-2.text-center.styled-link {
 		margin-left: 5.5px;
@@ -757,7 +755,7 @@ div.page-selector {
   animation: rotating 1.7s  infinite;
 }
 
-@-webkit-keyframes rotating /* Safari and Chrome */ {
+@-webkit-keyframes rotating  {
 	33% {
 	  -webkit-transform: rotate(0deg);
 	  -o-transform: rotate(0deg);
@@ -796,7 +794,7 @@ div.page-selector {
 	  -o-transform: rotate(0deg);
 	  transform: rotate(0deg);
 	}
-  }
+} */
 
 .screenSmall {
 	margin-bottom: 2pt;
@@ -812,12 +810,6 @@ button.p-s-1, button.p-s-2, button.p-s-3 {
 	
 	outline: none;
 	border: none;
-}
-.pages {
-	display: none
-}
-.pages-loading {
-	display: block;
 }
 .fa-bars:before {
 	content: "\f0c9";
@@ -880,4 +872,19 @@ button.p-s-1, button.p-s-2, button.p-s-3 {
 }
 .emailCopy-right {
 	float: right;
+}
+.mm-btn {
+	border-radius: 15px !important;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+		padding: 15px;
+		position: relative;
+		display: inline-block;
+		background-color: rgb(63, 63, 63);
+		color: white;
+		text-decoration: none;
+}
+.mm-btn:hover {
+	background-color: rgb(29, 29, 29);
+	color: white;
 }
