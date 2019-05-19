@@ -255,7 +255,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d96b4da8', e
 	margin-bottom: 30px;
 }
 #links, #portfolio {
-	padding: 100px 0 1;
+	padding: 25px 0;
 	background: #f6f6f6;
 }
 #links img {
@@ -666,6 +666,11 @@ header .intro-text {
 .black {
 	color: black !important;
 }
+@media (min-width: 768px) {
+	.skill-sub {
+		display: none !important;
+	}
+}
 @media (max-width: 767px) {
 	.navbar-icons {
 		display: none;
@@ -675,6 +680,32 @@ header .intro-text {
 		margin-bottom: 0.5pt !important;
 		font-size: 15px !important;
 	}
+	#skills {
+		display: none !important;
+	}
+	.skill-sub {
+		display: block !important;
+	}
+	#about {
+		padding: 100px 0 25px 0 !important;
+	}
+	#portfolio, #links {
+		padding: 10px 0 25px 0 !important;
+	}
+	.hide768 {
+		display: none !important;
+	}
+}
+.skill-sub {
+	background-color: #f6f6f6 !important;
+}
+.skill-sub hr {
+	height: 2px;
+	background: -moz-linear-gradient(left, #025260 0%, #FF692F 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(left, #025260 0%, #FF692F 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to right, #025260 0%, #FF692F 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	margin: auto;
+	width: 85%;
 }
 .navbar-items {
 	font-size: 18px;
