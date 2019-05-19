@@ -145,12 +145,12 @@ p, h1 {
   display: inline-block;
   padding: 15px;
   height: inherit;
+  border-radius: 5px;
   border-left: rgba(224, 224, 224, 0.342) 2px solid;
   border-right: rgba(224, 224, 224, 0.342) 2px solid;
 }
-.card-links {
-  border-top: rgba(224, 224, 224, 0.342) 2px solid;
-  border-bottom: rgba(224, 224, 224, 0.342) 2px solid;
+.card-links > a:hover {
+  opacity: 0.5;
 }
 
 .ff-serif {

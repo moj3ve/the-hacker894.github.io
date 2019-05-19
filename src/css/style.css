@@ -738,6 +738,12 @@ button.p-s-1, button.p-s-2, button.p-s-3 {
 	outline: none;
 	border: none;
 }
+.p-s:hover {
+	opacity: 0.5;
+}
+.p-s:focus {
+	opacity: 0.3;
+}
 .fa-bars:before {
 	content: "\f0c9";
 	margin-right: 45px;
@@ -812,6 +818,10 @@ button.p-s-1, button.p-s-2, button.p-s-3 {
 		text-decoration: none;
 }
 .mm-btn:hover {
+	background-color: rgb(29, 29, 29);
+	color: white;
+}
+.mm-btn:focus {
 	background-color: rgb(29, 29, 29);
 	color: white;
 }
