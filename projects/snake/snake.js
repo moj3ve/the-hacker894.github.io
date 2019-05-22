@@ -29,7 +29,7 @@ function start() {
 	//	window.requestAnimationFrame(loop);
 	canvas = document.getElementById("canvas");
 	canvas.width = window.innerWidth - 20;
-	canvas.height = window.innerHeight - 20;
+	canvas.height = window.innerHeight - 100;
 	ctx = canvas.getContext("2d");
 	lastRender = 0;
 	ctx.textAlign = "center";
