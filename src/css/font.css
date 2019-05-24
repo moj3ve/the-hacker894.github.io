@@ -1,9 +1,9 @@
 @font-face {
-    font-family: Product Sans;
-    src: url("https://skylarmccauley.xyz/fonts/fonts/ProductSans/regular.ttf");
+    font-family: Ubuntu;
+    src: url("https://skylarmccauley.xyz/fonts/fonts/Ubuntu/Ubuntu-Regular.ttf");
 }
 body, html, p, p1, p2, p3, p4, h1, h2, h3, h4, h6, b, strong, i, em, mark, small, del, ins, sub, sup, ul, li, ol, a, div {
-    font-family: 'Product Sans';
+    font-family: 'Ubuntu';
     -moz-transition: width 1s ease-in-out, left 1.5s ease-in-out;
     -webkit-transition: width 1s ease-in-out, left 1.5s ease-in-out;
     -moz-transition: width 1s ease-in-out, left 1.5s ease-in-out;

@@ -3,7 +3,7 @@
     src: url("https://skylarmccauley.xyz/fonts/fonts/Ubuntu/Ubuntu-Regular.ttf");
 }
 body, html {
-	font-family: 'Ubuntu';
+	font-family: 'Ubuntu', sans-serif !important;;
 	text-rendering: optimizeLegibility !important;
 	-webkit-font-smoothing: antialiased !important;
 	color: #666;
@@ -51,7 +51,7 @@ p.intro {
 	font-size: 16px;
 	margin: 12px 0 0;
 	line-height: 24px;
-	font-family: 'Ubuntu';
+	font-family: 'Ubuntu', sans-serif !important;;
 }
 a {
 	color: #222;
@@ -528,7 +528,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d96b4da8', e
 label {
 	font-size: 12px;
 	font-weight: 400;
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Ubuntu', sans-serif !important;
 	float: left;
 }
 #contact .form-control {
@@ -681,6 +681,9 @@ header .intro-text {
 		font-size: 15px !important;
 	}
 	#skills {
+		display: none !important;
+	}
+	.hide-with-skills {
 		display: none !important;
 	}
 	.skill-sub {
