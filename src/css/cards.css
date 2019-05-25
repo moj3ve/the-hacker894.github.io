@@ -8,7 +8,7 @@
    text-rendering: optimizeLegibility;
    font-variant-ligatures: none;
    box-sizing: border-box;
-   font-family: 'Ubuntu';
+   font-family: 'Poppins';
    background-color: #fafafa;
 }
 @media screen and (max-width: 780px) {
@@ -36,7 +36,7 @@
 
 }
 .card .title {
-  font-family: 'Ubuntu';
+  font-family: 'Poppins';
   font-weight: normal;
   color: rgba(0,0,0,0.9);
   font-size: 2.25rem;
@@ -154,7 +154,7 @@ p, h1 {
 }
 
 .ff-serif {
-  font-family: 'Ubuntu';
+  font-family: 'Poppins';
 }
 
 .font-weight-normal {

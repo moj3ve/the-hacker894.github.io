@@ -107,8 +107,7 @@
 
 <!-- Bootstrap -->
 <link rel="stylesheet" type="text/css"  href="src/css/bootstrap.css">
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
-
+<script defer src="https://use.fontawesome.com/releases/v5.8.2/js/all.js" integrity="sha384-DJ25uNYET2XCl5ZF++U8eNxPWqcKohUUBUpKGlNLMchM7q4Wjg2CUpjHLaL8yYPH" crossorigin="anonymous"></script>
 
 <!-- Stylesheet
     ================================================== -->
@@ -155,7 +154,7 @@
           <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
           <li class="hidden"> <a href="#page-top"></a> </li>
           <li><div class="navbar-items" > <div class="navbar-icons"><i class="fas fa-home nb-i"></i></div></i><a class="page-scroll" href="#page-top">Home</a></div> </li>
-          <li class="hide768"> <div class="navbar-items"><div class="navbar-icons"><i class="fas fa-suitcase nb-i"></i></div><a class="page-scroll" href="#skills">Skills</a> </div></li>
+          <li> <div class="navbar-items"><div class="navbar-icons"><i class="fas fa-suitcase nb-i"></i></div><a class="page-scroll" href="#flair">Flair</a> </div></li>
           <li> <div class="navbar-items"><div class="navbar-icons"><i class="fas fa-code nb-i"></i></div><a class="page-scroll" href="#portfolio">Portfolio</a></div> </li>
           <li> <div class="navbar-items"><div class="navbar-icons"><i class="fas fa-server nb-i"></i></div><a class="page-scroll" href="#links">Links</a></div> </li>
           <li> <div class="navbar-items"><div class="navbar-icons"><i class="fas fa-user nb-i"></i></div><a class="page-scroll" href="#contact">Contact</a></div></li>
@@ -181,7 +180,9 @@
         <div class="about-text">
           <p>I am a NodeJS, Shell, and Frontend Developer. I have around 4 years of experience in programming. I primarily do programming in NodeJS working on the popular Discord Bot, CleverBot, as well as Shell/Bash scripting. I am also one of the maintainers for the website, Jailbreak Guide. You can find most of my projects on my <a href="https://github.com/The-Hacker894/the-hacker894.github.io">GitHub Page</a>.</p>
           <p>I soon hope to being learning languages like Objective C, Swift, and Kotlin and endeavor into the world on making mobile apps.</p>
-          <a href="#portfolio" class="btn btn-primary btn-lg page-scroll hide-with-skills">My Portfolio</a>
+          <a href="#portfolio" class="btn btn-primary btn-lg page-scroll ">My Portfolio</a>
+          <a href="#flair" class="btn btn-primary btn-lg page-scroll ">Flair</a>
+          <a href="#contact" class="btn btn-primary btn-lg page-scroll">Contact</a>
           <!-- Personal Site -->
           <ins class="adsbygoogle"
           style="display:block"
@@ -197,35 +198,47 @@
     </div>
   </div>
 </div>
-<div class="skill-sub">
-  <hr>
 </div>
-<!-- Skills Section -->
-<div id="skills" class="text-center">
+<!-- flair Section -->
+<div id="flair" class="text-center">
   <div class="container">
     <div class="section-title center">
-      <h2>Skills</h2>
+      <h2>Flair</h2>
       <hr>
     </div>
-    <div class="row">
-      <div class="col-md-3 col-sm-6 skill"> <span class="chart" data-percent="65"> <span class="percent">65</span> </span>
-        <h4>HTML5</h4>
-      </div>
-      <div class="col-md-3 col-sm-6 skill"> <span class="chart" data-percent="40"> <span class="percent">40</span> </span>
-        <h4>CSS3</h4>
-      </div>
-      <div class="col-md-3 col-sm-6 skill"> <span class="chart" data-percent="70"> <span class="percent">70</span> </span>
-        <h4>NodeJS</h4>
-      </div>
-      <div class="col-md-3 col-sm-6 skill"> <span class="chart" data-percent="50"> <span class="percent">50</span> </span>
-        <h4>Shell / Bash</h4>
-      </div> 
-      <div class="wow ex" data-wow-delay="50ms">
-        <div class="achievement-box"> <span class="count">4</span>
-          <h4>Years of Programming Experience</h4>
-        </div>
-      </div>
+    <div class="row skill-icons">
+   
+    <span class="icn">
+    <i class="fab fa-html5"></i>
+    
+	</span>
+    <span class="icn">
+    <i class="fab fa-css3-alt"></i>
+   <p class="subtitle"></p>
+		</span>
+    <span class="icn">
+    <i class="fab fa-js-square"></i>
+   
+	</span>
+    <span class="icn">
+    <i class="fab fa-node-js"></i>
+    
+	</span>
+	<span class="icn">
+    <i class="fas fa-terminal"></i>
+   	</span>
+	
     </div>
+    <hr>
+    <div class="row profile-icons">
+    	<span class="icn">
+            <a target="_blank" href="https://github.com/The-Hacker894"><i class="fab fa-github black"></i></a>
+		</span>
+		<span class="icn">
+			<a target="_blank" href="https://play.google.com/store/apps/developer?id=Skylar+McCauley"><i class="fab fa-google-play black"></i></a>
+		</span>
+    </div>
+      </div>
   </div>
 </div>
 <!-- Portfolio Section -->
@@ -238,8 +251,6 @@
     <div class="page-selection" >
 
             <div>
-          <h3>Pages</h3> 
-          <hr>
           <div class="meep-meep">
               <a class="mm-btn page-scroll" href="#links">Skip Section</a>
             </div>
@@ -711,13 +722,6 @@
         <a target="_blank" href="https://mail.google.com/mail/u/0/?view=cm&fs=1&tf=1&to=skylarmccauley864@gmail.com&su=" class="btn btn-default btn-lg">Email Me (GMail)</a> 
         <a onClick="Clipboard.copy('skylarmccauley864@gmail.com')" id="copyEmail"class="btn btn-default btn-lg">Copy Email</a>
          <div>
-       
-        <div class="social">
-          <ul>
-            <li><a target="_blank" href="https://github.com/The-Hacker894"><i class="fab fa-github black"></i></a></li>
-
-          </ul>
-        </div>
       </div>
     </div>
   </div>
@@ -733,7 +737,6 @@
 <script type="text/javascript" src="js/jquery.1.11.1.js"></script> 
 <script type="text/javascript" src="js/bootstrap.js"></script> 
 <script type="text/javascript" src="js/SmoothScroll.js"></script> 
-<script type="text/javascript" src="js/easypiechart.js"></script> 
 <script type="text/javascript" src="js/jquery.prettyPhoto.js"></script> 
 <script type="text/javascript" src="js/jquery.isotope.js"></script> 
 <script type="text/javascript" src="js/jquery.counterup.js"></script> 
