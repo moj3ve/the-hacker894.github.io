@@ -11,7 +11,11 @@ body, html {
 	text-rendering: optimizeLegibility !important;
 	-webkit-font-smoothing: antialiased !important;
 	color: #666;
+	overflow-x: hidden;
 	}
+img {
+	border-radius: inherit;
+}
 h1 {
 	font-weight: 700;
 }
@@ -131,6 +135,11 @@ hr.long {
 .navbar-custom .navbar-brand:focus {
 	outline: 0;
 }
+.navbar-toggle {
+	color: rgb(138, 138, 138) !important;
+	padding-right: 6%;
+
+}
 .navbar-custom .navbar-brand .navbar-toggle {
 	padding: 4px 6px;
 	font-size: 16px;
@@ -146,19 +155,20 @@ hr.long {
 	margin: 0 20px;
 	text-transform: uppercase;
 	letter-spacing: 1px;
-	-webkit-transition: background .3s ease-in-out;
-	-moz-transition: background .3s ease-in-out;
-	transition: background .3s ease-in-out;
+	transition: color.3s ease-in-out;
 }
 .navbar-custom .nav li a:hover {
 	outline: 0;
 	color: #FF692F;;
 	background-color: transparent;
+	transition: color.3s ease-in-out;
+
 }
 .navbar-custom .nav li a:focus, .navbar-custom .nav li a:active {
 	outline: 0;
 	background-color: transparent;
-	color: #526cbb;
+	color: rgb(218, 86, 35);
+	transition: color.3s ease-in-out;
 }
 .navbar-custom .nav li.active {
 	outline: 0;
@@ -668,12 +678,27 @@ header .intro-text {
 .black {
 	color: black !important;
 }
-@media (min-width: 768px) {
+@media (min-width: 769px) {
 	.skill-sub {
 		display: none !important;
 	}
+	.navbar-header {
+		display: none !important;
+	}
 }
-@media (max-width: 767px) {
+@media (max-width: 574px) {
+	.skill-icons .icn {
+		font-size: 14vw !important;
+		margin-left: 1vw !important;
+		margin-right: 1vw !important;
+	}
+	.profile-icons .icn {
+		font-size: 5.5vw !important;
+		margin-left: .9vw !important;
+		margin-right: .9vw !important;
+	}
+}
+@media (max-width: 768px) and (min-width: 575px) {
 	.navbar-icons {
 		display: none;
 	}
@@ -692,17 +717,20 @@ header .intro-text {
 	.hide768 {
 		display: none !important;
 	}
+	.skill-icons {
+		padding-left: 25px !important;
+		padding-right: 25px !important;
+	}
 	.skill-icons .icn {
-	font-size: 4em !important;
-	margin-left: .5% !important;
-	margin-right: .5% !important;
+	font-size: 15.5vw !important;
+	margin-left: 1vw !important;
+	margin-right: 1vw !important;
 }
 	.profile-icons .icn {
-	font-size: 1.5em !important;
-	margin-left: .7% !important;
-	margin-right: .7% !important;
+	font-size: 4vw !important;
+	margin-left: .7vw !important;
+	margin-right: .7vw !important;
 }
-
 }
 .skill-sub {
 	background-color: #f6f6f6 !important;
@@ -867,17 +895,20 @@ button.p-s-1, button.p-s-2, button.p-s-3 {
 .no-mb {
 	margin-bottom: 0 !important;
 }
+.skill-icons {
+	padding: 0 0 25px;
+}
 .skill-icons .icn {
-	font-size: 7em;
+	font-size: 10vw;
 	display: inline-block !important;
-	margin-left: 1.5%;
-	margin-right: 1.5%;
+	margin-left: 1vw;
+	margin-right: 1vw;
 }
 .profile-icons .icn {
-	font-size: 2em;
+	font-size: 2.5vw;
 	display: inline-block !important;
-	margin-left: 1.5%;
-	margin-right: 1.5%;
+	margin-left: 1vw;
+	margin-right: 1vw;
 }
 .fa-html5 {
 	color: #F16529 !important;
