@@ -678,6 +678,7 @@ header .intro-text {
 .black {
 	color: black !important;
 }
+
 @media (min-width: 769px) {
 	.skill-sub {
 		display: none !important;
@@ -686,19 +687,54 @@ header .intro-text {
 		display: none !important;
 	}
 }
-@media (max-width: 574px) {
+@media (min-width: 4000px) {
 	.skill-icons .icn {
-		font-size: 14vw !important;
-		margin-left: 1vw !important;
-		margin-right: 1vw !important;
+		font-size: 5vw;
+		margin-left: .5vw !important;
+		margin-right: .5vw !important;
 	}
 	.profile-icons .icn {
-		font-size: 5.5vw !important;
-		margin-left: .9vw !important;
-		margin-right: .9vw !important;
+		font-size: 1.4vw;
+		margin-left: .5vw !important;
+		margin-right: 1vw !important;
+	}
+}
+@media (max-width: 4000px) and (min-width: 2049px) {
+	.skill-icons .icn {
+		font-size: 5.5vw;
+		margin-left: .5vw !important;
+		margin-right: .5vw !important;
+	}
+	.profile-icons .icn {
+		font-size: 1.4vw;
+
+	}
+}
+@media (max-width: 2048px) and (min-width: 769px) {
+	.skill-icons .icn {
+		font-size: 10vw;
+
+	}
+	.profile-icons .icn {
+		font-size: 1.9vw;
+
 	}
 }
 @media (max-width: 768px) and (min-width: 575px) {
+	.skill-icons {
+		padding-left: 25px !important;
+		padding-right: 25px !important;
+	}
+	.skill-icons .icn {
+	font-size: 15.5vw !important;
+}
+	.profile-icons .icn {
+	font-size: 4vw !important;
+	margin-left: .7vw !important;
+	margin-right: .7vw !important;
+}
+}
+@media (max-width: 768px) {
 	.navbar-icons {
 		display: none;
 	}
@@ -717,21 +753,19 @@ header .intro-text {
 	.hide768 {
 		display: none !important;
 	}
-	.skill-icons {
-		padding-left: 25px !important;
-		padding-right: 25px !important;
-	}
+
+}
+@media (max-width: 574px) {
 	.skill-icons .icn {
-	font-size: 15.5vw !important;
-	margin-left: 1vw !important;
-	margin-right: 1vw !important;
-}
+		font-size: 14vw !important;
+	}
 	.profile-icons .icn {
-	font-size: 4vw !important;
-	margin-left: .7vw !important;
-	margin-right: .7vw !important;
+		font-size: 5.5vw !important;
+		margin-left: .9vw !important;
+		margin-right: .9vw !important;
+	}
 }
-}
+
 .skill-sub {
 	background-color: #f6f6f6 !important;
 }
@@ -898,14 +932,7 @@ button.p-s-1, button.p-s-2, button.p-s-3 {
 .skill-icons {
 	padding: 0 0 25px;
 }
-.skill-icons .icn {
-	font-size: 10vw;
-	display: inline-block !important;
-	margin-left: 1vw;
-	margin-right: 1vw;
-}
-.profile-icons .icn {
-	font-size: 2.5vw;
+.skill-icons .icn, .profile-icons .icn{
 	display: inline-block !important;
 	margin-left: 1vw;
 	margin-right: 1vw;
