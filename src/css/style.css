@@ -937,6 +937,9 @@ button.p-s-1, button.p-s-2, button.p-s-3 {
 	margin-left: 1vw;
 	margin-right: 1vw;
 }
+profile-icons .icn:hover, profile-icons .icn:focus{
+	color: #4C4C4C !important;
+}
 .fa-html5 {
 	color: #F16529 !important;
 }
