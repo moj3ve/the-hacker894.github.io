@@ -1,13 +1,13 @@
 @font-face {
-    font-family: Poppins;
-    src: url("https://skylarmccauley.xyz/fonts/fonts/Poppins/Poppins-Regular.ttf");
+    font-family: Rubik;
+    src: url("https://skylarmccauley.xyz/fonts/fonts/Rubik/Rubik-Regular.ttf");
 }
 body {
 	width: 100% !important;
 	max-width: 100% !important;;
 }
 body, html {
-	font-family: 'Poppins', sans-serif !important;;
+	font-family: 'Rubik', sans-serif !important;;
 	text-rendering: optimizeLegibility !important;
 	-webkit-font-smoothing: antialiased !important;
 	color: #666;
@@ -57,7 +57,7 @@ p.intro {
 	font-size: 16px;
 	margin: 12px 0 0;
 	line-height: 24px;
-	font-family: 'Poppins', sans-serif !important;;
+	font-family: 'Rubik', sans-serif !important;;
 }
 a {
 	color: #222;
@@ -543,7 +543,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d96b4da8', e
 label {
 	font-size: 12px;
 	font-weight: 400;
-	font-family: 'Poppins', sans-serif !important;
+	font-family: 'Rubik', sans-serif !important;
 	float: left;
 }
 #contact .form-control {
