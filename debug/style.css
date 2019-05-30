@@ -1,0 +1,24 @@
+@font-face {
+    font-family: Rubik;
+    src: url("https://skylarmccauley.xyz/fonts/fonts/Rubik/Rubik-Regular.ttf");
+}
+body, html, p, p1, p2, p3, p4, h1, h2, h3, h4, h6, b, strong, i, em, mark, small, del, ins, sub, sup, ul, li, ol, a, div {
+    font-family: 'Rubik', sans-serif !important;
+    -moz-transition: width 1s ease-in-out, left 1.5s ease-in-out;
+    -webkit-transition: width 1s ease-in-out, left 1.5s ease-in-out;
+    -moz-transition: width 1s ease-in-out, left 1.5s ease-in-out;
+    -o-transition: width 1s ease-in-out, left 1.5s ease-in-out;
+    transition: width 1s ease-in-out, left 1.5s ease-in-out;
+}
+body {
+	padding: 25px;
+	color: white;
+	background-color: black;
+}
+code {
+	background-color: #ffdde2;
+	color: #FF4C4C;
+	border-radius: 3px;
+	padding: 2px;
+	font-size: 10pt !important;
+}
