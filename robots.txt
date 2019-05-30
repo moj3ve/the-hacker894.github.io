@@ -1,4 +1,4 @@
 Sitemap: https://skylarmccauley.xyz/sitemap.xml
 User-agent: *
 Disallow: /404/
-Disallow: /mail/
+Disallow: /404.html
