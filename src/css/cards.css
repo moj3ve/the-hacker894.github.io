@@ -216,6 +216,7 @@ p, h1 {
   outline: none;
   color: #000;
   transition: all 0.25s ease-in; 
+  margin-bottom: 2%;
 }
 .styled-link:hover,
 .styled-link:focus,
