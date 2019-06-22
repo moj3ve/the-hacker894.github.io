@@ -10,7 +10,13 @@ function process() {
         alert("You must write a message!")
         return
     }
-    msg = btoa(msg);
+    try {
+        msg = btoa(msg);
+    } catch (ex) {
+        alert(ex + "\n\nTry not including emoji?")
+        return;
+    }
+    
     
     url=window.location.href
     // url=url.substring(0, url.length - 10); 
