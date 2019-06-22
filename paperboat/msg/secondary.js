@@ -1,3 +1,6 @@
+function applyVerText() {
+    document.getElementById("ver").innerHTML = `v0.2-alpha`;
+}
 function toggleDisplay(e) {
     var e = document.getElementById(e);
     if (e.style.display === "none") {
@@ -54,6 +57,7 @@ function toggleDisplay(e) {
 })(window, document, navigator);
 
 function init() {
+    applyVerText()
     var msg = window.location.hash
     msg = msg.substr(1);
     try {

@@ -36,17 +36,11 @@ p {
     margin: 0;
     font-family: SF-Pro-Rounded-Bold;
 }
-.title-area img {
-    border-radius: 35px;
-    box-shadow: 1px 1px 10px rgb(0, 136, 194);
-    width: 15vw;
-
-}
 h1, .ver{
     display: inline-block;
 }
 .ver {
-    font-size: 1vw;
+    font-size: 115%;
     font-family: SF-Pro-Rounded-Reg;
 }
 .composer {
@@ -60,6 +54,9 @@ h1, .ver{
     border: 2px solid white;
     border-radius: 15px;
     padding: 1%;
+}
+#f-msg {
+    font-size: 155%;
 }
 a.btn {
     background-color: white;
