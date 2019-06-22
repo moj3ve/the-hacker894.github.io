@@ -1,8 +1,10 @@
 function applyVerText() {
-    document.getElementById("ver").innerHTML = `v0.2.3-alpha`;
+    document.getElementById("ver").innerHTML = `v0.2.4-alpha`;
+    document.getElementById("msg").placeholder =`Type your stupid message here :P`;
 }
 function init() {
     applyVerText()
+    
 }
 function process() {
     var msg = document.getElementById("msg").value

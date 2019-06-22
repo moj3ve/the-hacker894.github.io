@@ -1,5 +1,5 @@
 function applyVerText() {
-    document.getElementById("ver").innerHTML = `v0.2.3-alpha`;
+    document.getElementById("ver").innerHTML = `v0.2.4-alpha`;
 }
 function toggleDisplay(e) {
     var e = document.getElementById(e);
