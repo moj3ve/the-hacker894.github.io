@@ -68,6 +68,11 @@ a.btn {
     margin-top: 1%;
     margin-bottom: 1%;
 }
+img {
+	width: 3vw;
+	display: inline-block;
+	text-align: center;
+}
 .message{
     margin: 5% 5% 0;
     border-radius: 15px;

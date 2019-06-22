@@ -1,5 +1,5 @@
 function applyVerText() {
-    document.getElementById("ver").innerHTML = `v0.2.2-alpha`;
+    document.getElementById("ver").innerHTML = `v0.2.3-alpha`;
 }
 function init() {
     applyVerText()
