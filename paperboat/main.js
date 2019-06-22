@@ -32,9 +32,9 @@ function displayNone(e) {
     
     
     url=window.location.href
-    url=url.substring(0, url.length - 10); 
-    link=`${url}msg/index.html#${msg}`
-    //link=`${url}msg/#${msg}`
+    //url=url.substring(0, url.length - 10); 
+    //link=`${url}msg/index.html#${msg}`
+    link=`${url}msg/#${msg}`
     document.getElementById("hidden").innerHTML = link
     // End
 }
