@@ -65,6 +65,8 @@ a.btn {
     border-radius: 15px;
     padding: 1%;
     text-decoration: none;
+    margin-top: 1%;
+    margin-bottom: 1%;
 }
 .message{
     margin: 5% 5% 0;
