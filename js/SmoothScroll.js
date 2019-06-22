@@ -22,8 +22,8 @@ var defaultOptions = {
     pulseNormalize   : 1,
 
     // Acceleration
-    accelerationDelta : 20,  // 20
-    accelerationMax   : 1,   // 1
+    accelerationDelta : 30,  // 20
+    accelerationMax   : 1.5,   // 1
 
     // Keyboard Settings
     keyboardSupport   : true,  // option

@@ -1,0 +1,95 @@
+@font-face {
+    font-family: SF-Pro-Rounded-Bold;
+    src: url("https://skylarmccauley.xyz/paperboat/fonts/SF-Pro-Rounded-Bold.otf");
+}
+@font-face {
+    font-family: SF-Pro-Rounded-Bold;
+    src: url("./fonts/SF-Pro-Rounded-Bold.otf");
+}
+@font-face {
+    font-family: SF-Pro-Rounded-Reg;
+    src: url("https://skylarmccauley.xyz/paperboat/fonts/SF-Pro-Rounded-Regular.otf");
+}
+@font-face {
+    font-family: SF-Pro-Rounded-Reg;
+    src: url("./fonts/SF-Pro-Rounded-Regular.otf");
+}
+@font-face {
+    font-family: SF-Pro-Rounded-Light;
+    src: url("https://skylarmccauley.xyz/paperboat/fonts/SF-Pro-Rounded-Light.otf");
+}
+@font-face {
+    font-family: SF-Pro-Rounded-Light;
+    src: url("./fonts/SF-Pro-Rounded-Light.otf");
+}
+body, html, .col-lg-6, .col-lg-3 {
+    background-color: #00B1FF !important;
+    font-family: SF-Pro-Rounded-Bold !important;
+    color: white;
+    text-align: center;
+}
+h1 {
+    margin: 0;
+    font-size: 5vw;
+}
+p {
+    margin: 0;
+    font-family: SF-Pro-Rounded-Bold;
+}
+.title-area img {
+    border-radius: 35px;
+    box-shadow: 1px 1px 10px rgb(0, 136, 194);
+    width: 15vw;
+
+}
+h1, .ver{
+    display: inline-block;
+}
+.ver {
+    font-size: 1vw;
+    font-family: SF-Pro-Rounded-Reg;
+}
+.composer {
+    margin: 5% 0;
+    margin-bottom: 1% !important;
+}
+.composer #msg {
+    background-color: inherit;
+    color: white;
+    font-family: SF-Pro-Rounded-Bold;
+    border: 2px solid white;
+    border-radius: 15px;
+    padding: 1%;
+}
+a.btn {
+    background-color: white;
+    color: #00B1FF;
+    border: 2px solid white;
+    border-radius: 15px;
+    padding: 1%;
+    text-decoration: none;
+}
+.message, .loading{
+    margin: 5% 5% 0;
+    border-radius: 15px;
+    border: 2px solid white;
+    padding: 7%;
+}
+br {
+    margin-bottom: 5%;
+}
+.hidden {
+    display: none !important;
+}
+.shr-cont {
+    margin-bottom: 10% !important;
+}
+.credits {
+    margin-top: 5%;
+    margin-bottom: 5%;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    border-radius: 15px;
+    border: 2px solid white;
+    padding: 2%;
+}
