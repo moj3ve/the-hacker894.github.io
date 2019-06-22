@@ -59,7 +59,7 @@ h1, .ver{
     padding: 1%;
 }
 #f-msg {
-    font-size: 155%;
+    font-size: 145%;
 }
 a.btn {
     background-color: white;
@@ -76,9 +76,29 @@ img {
 	display: inline-block;
 	text-align: center;
 }
+@media(max-width:1280px) {
+    img {
+        width: 4vw;
+    }
+}
+@media(max-width:825px) {
+    img {
+        width: 5.75vw;
+    }
+}
+@media(max-width:465px) {
+    img {
+        width: 8vw;
+    }
+}
 .pending-msg {
-	width: 25vw !important;
+	width: 25vw;
 	text-align: center !important;
+}
+@media(min-width:1024px) {
+    .pending-msg {
+        width: 15vw;
+    }
 }
 .message{
     margin: 5% 5% 0;
