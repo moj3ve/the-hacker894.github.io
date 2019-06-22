@@ -1,5 +1,5 @@
 function applyVerText() {
-    document.getElementById("ver").innerHTML = `v0.2-alpha`;
+    document.getElementById("ver").innerHTML = `v0.2.1-alpha`;
 }
 function init() {
     applyVerText()
@@ -13,8 +13,7 @@ function process() {
     msg = btoa(msg);
     
     url=window.location.href
-     url=url.substring(0, url.length - 10); 
+    // url=url.substring(0, url.length - 10); 
     window.location.href=`${url}msg/index.html#${msg}`
-    
-  // window.location.href=`${url}msg/index.html#${msg}`
+
 }
