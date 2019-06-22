@@ -78,9 +78,6 @@ a.btn {
 br {
     margin-bottom: 5%;
 }
-#message {
-    display: none;
-}
 .hidden {
     display: none !important;
 }

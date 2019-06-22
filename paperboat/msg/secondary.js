@@ -63,7 +63,6 @@ function init() {
     }
 
     toggleDisplay("l")
-    toggleDisplay("message")
     document.getElementById("f-msg").innerHTML = `${msg}`;
     document.getElementById("hidden").innerHTML = window.location.href;
   //  document.getElementById("share").a=`${window.location.href}`;
