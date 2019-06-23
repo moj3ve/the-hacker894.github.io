@@ -1,5 +1,5 @@
 function applyVerText() {
-    document.getElementById("ver").innerHTML = `v0.3`;
+    document.getElementById("ver").innerHTML = `v0.4`;
 }
 function toggleDisplay(e) {
     var e = document.getElementById(e);
@@ -61,13 +61,13 @@ function init() {
     var msg = window.location.hash
     msg = msg.substr(1);
     try {
-        msg = atob(msg)
+         msg = CryptoJS.AES.decrypt(msg, "pb-0909");
     } catch (ex) {
         console.log(ex)
     }
 
     toggleDisplay("l")
-    document.getElementById("f-msg").innerHTML = `${msg}`;
+    document.getElementById("f-msg").innerHTML = `${msg.toString(CryptoJS.enc.Utf8)}`;
     document.getElementById("hidden").innerHTML = window.location.href;
   //  document.getElementById("share").a=`${window.location.href}`;
 }

@@ -1,5 +1,5 @@
 function applyVerText() {
-    document.getElementById("ver").innerHTML = `v0.3`;
+    document.getElementById("ver").innerHTML = `v0.4`;
     document.getElementById("msg").placeholder =`Type your stupid message here :P`;
 }
 function init() {
@@ -23,7 +23,7 @@ function displayNone(e) {
         return
     }
     try {
-        msg = btoa(msg);
+        msg = CryptoJS.AES.encrypt(msg, "pb-0909");
     } catch (ex) {
         alert(ex + "\n\nTry not including emoji?")
         return;
@@ -32,9 +32,9 @@ function displayNone(e) {
     displayNone("composer")
     
     url=window.location.href
-    //url=url.substring(0, url.length - 10); 
-    //link=`${url}msg/index.html#${msg}`
-    link=`${url}msg/#${msg}`
+    url=url.substring(0, url.length - 10); 
+    link=`${url}msg/index.html#${msg}`
+    //link=`${url}msg/#${msg}`
     document.getElementById("hidden").innerHTML = link
     // End
 }
