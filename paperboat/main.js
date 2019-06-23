@@ -15,8 +15,7 @@ function displayNone(e) {
       e.style.display = "none";
 }
   function process() {
-    displayBlock("sender")
-    displayNone("composer")
+    
     // Get and Encode Message
     var msg = document.getElementById("msg").value
     if(msg.length < 1) {
@@ -29,7 +28,8 @@ function displayNone(e) {
         alert(ex + "\n\nTry not including emoji?")
         return;
     }
-    
+    displayBlock("sender")
+    displayNone("composer")
     
     url=window.location.href
     //url=url.substring(0, url.length - 10); 
