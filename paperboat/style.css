@@ -34,6 +34,9 @@ body, html, .col-lg-6, .col-lg-3 {
     color: white !important;
     text-align: center;
 }
+*:focus {
+    outline: none;
+}
 h1 {
     margin: 0;
     font-size: 5vw;

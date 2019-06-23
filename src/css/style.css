@@ -12,7 +12,10 @@ body, html {
 	-webkit-font-smoothing: antialiased !important;
 	color: #666;
 	overflow-x: hidden;
-	}
+}
+*:focus {
+    outline: none;
+}
 img {
 	border-radius: inherit !important;
 }
