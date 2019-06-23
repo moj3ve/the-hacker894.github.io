@@ -1,5 +1,5 @@
 function applyVerText() {
-    document.getElementById("ver").innerHTML = `v0.4`;
+    document.getElementById("ver").innerHTML = `v0.4.1`;
     document.getElementById("msg").placeholder =`Type your stupid message here :P`;
 }
 function init() {
