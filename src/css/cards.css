@@ -19,6 +19,9 @@
 	}
 	
 }
+.cd, .cd:hover, .cd:visited, .cd:focus {
+	color: inherit;
+}
 .card .subtitle {
 	margin-bottom: 0;
 	text-transform: uppercase;
@@ -31,9 +34,6 @@
   	font-variant: normal; 
   	font-weight: 100; 
   	line-height: 14px;
-}
-.card .desc {
-
 }
 .card .title {
   font-family: 'Rubik';
@@ -67,7 +67,7 @@
   	font-weight: 100; 
 }
 .card {
-  border-radius: 15px !important;
+  border-radius: 5px !important;
     margin-top: 2rem;
     margin-bottom: 2rem;
     margin-left: 1rem;
@@ -81,7 +81,6 @@
 }
 .card:hover {
   transform: translateY(-5px);
-  border: none;
 }
 .card.cleverbot {
   background-color:#42AEDE;
