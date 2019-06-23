@@ -32,7 +32,7 @@
   	font-size: 14px; 
   	font-style: normal; 
   	font-variant: normal; 
-  	font-weight: 100; 
+  	font-weight: 200; 
   	line-height: 14px;
 }
 .card .title {
@@ -79,11 +79,18 @@
     border-bottom: 5px solid transparent;
     
 }
+.card .desc {
+  font-weight: 550
+}
+
 .card:hover {
   transform: translateY(-5px);
 }
 .card.cleverbot {
   background-color:#42AEDE;
+}
+.card.paperboat {
+  background-color:#00b1ff;
 }
 .card.age-approve {
   background-color: #41B782;
