@@ -1,6 +1,6 @@
 // Error 404 Script
 function errorText() {
-    var errors = Array("PAGE_NOT_FOUND", "PAGE_DOES_NOT_EXIST", "CANNOT_FIND_PAGE", "PAGE_NULL", "PAGE_404");
+    var errors = Array("PAGE_NOT_FOUND", "PAGE_DOES_NOT_EXIST", "PAGE_EXISTS_NULL", "PAGE_EXISTS_VIOLATION", "CANNOT_FIND_PAGE", "PAGE_NULL", "PAGE_404");
 
     var item = errors[Math.floor(Math.random()*errors.length)];
     
@@ -15,8 +15,24 @@ function errorHexStop() {
 }
 function errorHexExtra() {
     var extraErrors = Array("80F128D0", "000009C", '00000000', "80D247F0", "71D042E2")
-
     var eE = extraErrors[Math.floor(Math.random()*extraErrors.length)];
     
     return document.write(eE)
 }    
+function animateValue(id, start, end, duration) {
+    var range = end - start;
+    var current = start;
+    var increment = end > start? 1 : -1;
+    var stepTime = Math.abs(Math.floor(duration / range));
+    var obj = document.getElementById(id);
+    var timer = setInterval(function() {
+        current += increment;
+        obj.innerHTML = current;
+        if (current == end) {
+            clearInterval(timer);
+            document.getElementById("restart").style.display = "block";
+            window.location.href="https://skylarmccauley.xyz"
+        }
+    }, stepTime);
+}
+

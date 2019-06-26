@@ -61,7 +61,7 @@
 .credit {
 	letter-spacing: 0.5px;
   	font-family: monospace; 
-  	font-size: 10px; 
+  	font-size: 12px; 
   	font-style: normal; 
   	font-variant: normal; 
   	font-weight: 100; 
@@ -82,9 +82,14 @@
 .card .desc {
   font-weight: 550
 }
-
+.card {
+	transition: all 0.15s ease-in;
+}
 .card:hover {
-  transform: translateY(-5px);
+	transform: scale(1.02)
+}
+.card:active {
+  transform: scale(0.98)
 }
 .card.cleverbot {
   background-color:#42AEDE;
@@ -497,18 +502,29 @@ p, h1 {
   float: right;
   margin-right: 20%
 }
-
+.card .body {
+  padding: 2em;
+}
 @media screen and (max-width: 994px) {
-  .card > img {
+  .card .desc {
     display: none;
   }
   .styled-link {
     font-size: 10pt;
   }
-  .card.hacked-gradient {
-    background-color: #FF692F !important;
-    background: #FF692F !important;
+  .column {
+    width: 33%;
   }
+  .card .body {
+    padding: .5em !important;
+  }
+  .left {
+    margin-left: 9% !important;
+  }
+  .right {
+    margin-right: 9% !important;
+  }
+  
 }
 @media screen and (max-width: 574px) {
   .card .title {
@@ -517,20 +533,14 @@ p, h1 {
   .card .desc {
     font-size: 10pt;
   }
+  .column {
+    width: 40%;
+  }
   .left {
-    float: none !important;
-    margin-left: 5%;
-    margin-right: 5%;
-    text-align: center;
+    margin-left: 6% !important;
   }
   .right {
-    float: none !important;
-    margin-right: 5%;
-    margin-left: 5%;
-    text-align: center;
-  }
-  .column {
-    width: auto;
+    margin-right: 6% !important;
   }
 }
 

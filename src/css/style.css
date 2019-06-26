@@ -227,9 +227,6 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 	outline: none;
 	outline-offset: none;
 }
-.p-s-3 {
-	display: none !important;
-}
 /* Home Section */
 .intro {
 	display: table;
@@ -681,7 +678,6 @@ header .intro-text {
 .black {
 	color: black !important;
 }
-
 @media (min-width: 769px) {
 	.skill-sub {
 		display: none !important;
@@ -689,6 +685,12 @@ header .intro-text {
 	.navbar-header {
 		display: none !important;
 	}
+}
+span.icn {
+	transition: all 0.25s ease-in;
+}
+span.icn:hover {
+	transform: scale(1.1)
 }
 @media (min-width: 4000px) {
 	.skill-icons .icn {
@@ -791,7 +793,7 @@ header .intro-text {
 	text-align: center !important;
 
 }
-.page-selector, div.page-selector  {
+.page-selector-cont, div.page-selector-cont  {
 	display: block;
 	text-align: center;
 }
@@ -835,7 +837,7 @@ header .intro-text {
 
 }
 button.p-s-1, button.p-s-2, button.p-s-3 {
-	margin: 0 5pt 0 5pt;
+	margin: 0 2pt 0 2pt;
 	background-color: #f6f6f6;
 	color: black;
 	
@@ -925,7 +927,7 @@ button.p-s-1, button.p-s-2, button.p-s-3 {
 .meep-meep {
 	margin-bottom: 3%;
 }
-profile-icons .icn:hover, profile-icons .icn:focus{
+.profile-icons .icn:hover, .profile-icons .icn:focus{
 	color: #4C4C4C !important;
 }
 .fa-html5 {
@@ -940,8 +942,24 @@ profile-icons .icn:hover, profile-icons .icn:focus{
 .fa-node-js {
 	color: #8CC84B !important;
 }
-
-
-
-
-
+.page-selector {
+	transition: all 0.15s ease-in;
+}
+.page-selector:hover {
+	transform: scale(1.05)
+}
+.page-selector:active {
+	transform: scale(0.95)
+}
+.ps {
+	font-size: 205%;
+}
+a.btn {
+	transition: all 0.15s ease-in;
+}
+a.btn:hover {
+	transform: scale(1.02)
+}
+a.btn:active {
+	transform: scale(0.98)
+}
