@@ -1,68 +1,39 @@
-<html id="frown">
-<head>
-<title>Error 404</title>
-<link rel="icon" href="https://skylarmccauley.xyz/404/frown.png">
-<link rel="apple-touch-icon" href="https://skylarmccauley.xyz/404/frown.png"/>
+<html>
+    <head>
+            <title>Error 404</title>
+            <link rel="icon" href="https://skylarmccauley.xyz/404/frown.png">
+            <link rel="apple-touch-icon" href="https://skylarmccauley.xyz/404/frown.png"/>
+            
+            <link rel="stylesheet" type="text/css"  href="https://skylarmccauley.xyz/404/404.css">
+            <script src="https://skylarmccauley.xyz/404/404.js"></script>
+            
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body onload="animateValue('error-dump', 0, 100, 7500)">
+        <main>
+                <header>
+                  <h1 class="emotion">:(</h1>
+                </header>
+                <div class="main-info">
+                        <p class="description">Your PC ran into a problem and needs to restart. We're just collecting some error info, and then we'll restart for you. </p>
+                        <p class="error-collection"><span role="progress"><span id="error-dump">0</span>% complete</span></p>
 
-<link rel="stylesheet" type="text/css"  href="https://skylarmccauley.xyz/404/404.css">
-<script src="https://skylarmccauley.xyz/404/404.js"></script>
+                        <div id="restart">
+                                <a href="https://skylarmccauley.xyz">Restart</a>
+                          </div>
+                </div>
+                
+                <div class="space"></div>
+                  
+                <footer>
+                        <img src="404/qr.svg">
+                        <div class="info">
+                                <p><small>For more information about this issue and possible fixes, visit <a class="hidden-link" href="https://skylarmccauley.xyz">https://skylarmccauley.xyz</a>:<br><br>If you call a support person, give them this info:<br>Stop code: <span><script>errorText()</script></span></small></p>
+                        </div>
+                  
+                  
+                </footer>
+        </main>
 
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-</head>
-<body>
-        <span class="neg">ERROR 404</span>
-        <div class="error">
-                <p>
-                        A problem has been detected and this website has stopped loading to prevent confusion. 
-                        <br>
-                        <br>
-                        <script>errorText()</script>
-                            <br>
-                            <br>
-                            If this is the first time you've seen this error screen, try checking for the correct link.
-                                <br>
-                                <br>
-                            If the problems continue, the page may have been moved or does not exist anymore. Clearing your cookies and caches may also fix the problem.
-                        <br>
-                        <br>
-                        Technical Information:
-                        <br>
-                        <br>
-                        *** STOP: 0x<script>errorHexStop()</script> (0x<script>errorHexExtra()</script>, 0x<script>errorHexExtra()</script>, 0x<script>errorHexExtra()</script>, 0x<script>errorHexExtra()</script>)
-                </p>
-        </div>
-        <div class="errorForSmallScreen">
-                <p>
-                        A problem has been detected and this website has stopped loading to prevent confusion. 
-                        <br>
-                        <br>
-                        <script>errorText()</script>
-                            <br>
-                            <br>
-                        Technical Information:
-                        <br>
-                        <br>
-                        *** STOP: 0x<script>errorHexStop()</script> (0x<script>errorHexExtra()</script>, 0x<script>errorHexExtra()</script>, 0x<script>errorHexExtra()</script>, 0x<script>errorHexExtra()</script>)
-                </p>
-        </div>
-        <div class="errorForTinyScreen">
-                <p>
-                        <script>errorText()</script>
-                            <br>
-                            <br>
-                        Technical Information:
-                        <br>
-                        <br>
-                        *** STOP: 0x<script>errorHexStop()</script> (0x<script>errorHexExtra()</script>, 0x<script>errorHexExtra()</script>, 0x<script>errorHexExtra()</script>, 0x<script>errorHexExtra()</script>)
-                </p>
-        </div>
-<div class="menu">
-        | 
-<a href="https://skylarmccauley.xyz">Home</a> | 
-
-</div>
-
-
-</body>
+    </body>
 </html>
