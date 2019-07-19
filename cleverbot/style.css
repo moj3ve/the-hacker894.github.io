@@ -62,7 +62,11 @@ body, html, p, p1, p2, p3, p4, h1, h2, h3, h4, h6, b, strong, i, em, mark, small
     -o-transition: width 1s ease-in-out, left 1.5s ease-in-out;
     transition: width 1s ease-in-out, left 1.5s ease-in-out;
   }
-
+  body, html, div, a, p, h1,h2,h3,h4,h5,h6, iframe {
+	cursor: auto;
+	cursor:url(../src/cursor.png) 25 15, auto !important;
+	cursor:url(../src/cursor.png) 25 15, pointer !important;
+}
 .box {
     text-align: center;
     margin: 50px;

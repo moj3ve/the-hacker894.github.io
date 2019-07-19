@@ -12,6 +12,13 @@ body, html {
 	-webkit-font-smoothing: antialiased !important;
 	color: #666;
 	overflow-x: hidden;
+
+
+}
+body, html, div, a, p, h1,h2,h3,h4,h5,h6, iframe {
+	cursor: auto;
+	cursor:url(../cursor.png) 25 15, auto !important;
+	cursor:url(../cursor.png) 25 15, pointer !important;
 }
 *:focus {
     outline: none;
@@ -605,7 +612,7 @@ color: #2c3e50;
 #footer {
 	background: #222;
 	color: #777;
-	padding: 30px 0 25px 0;
+	padding: 25px 0 25px 0;
 }
 #footer p {
 	font-size: 13px;
@@ -963,3 +970,27 @@ a.btn:hover {
 a.btn:active {
 	transform: scale(0.98)
 }
+/* Scrollbar */
+/* width */
+::-webkit-scrollbar {
+	width: 10px;
+	
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+	background: #f6f6f6; 
+	
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+	background: #888; 
+	
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+	background: #555; 
+  }
+  
