@@ -34,7 +34,7 @@ body, html, .col-lg-6, .col-lg-3 {
     color: white !important;
     text-align: center;
 }
-body, html, div, a, p, h1,h2,h3,h4,h5,h6, iframe {
+body, html, div, a, p, h1,h2,h3,h4,h5,h6, iframe, button {
 	cursor: auto;
 	cursor:url(../src/cursor.png) 25 15, auto !important;
 	cursor:url(../src/cursor.png) 25 15, pointer !important;
