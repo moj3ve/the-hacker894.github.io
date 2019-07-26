@@ -23,53 +23,11 @@ body, html, p, p1, p2, p3, p4, h1, h2, h3, h4, h6, b, strong, i, em, mark, small
     -moz-transition: width 1s ease-in-out, left 1.5s ease-in-out;
     -o-transition: width 1s ease-in-out, left 1.5s ease-in-out;
     transition: width 1s ease-in-out, left 1.5s ease-in-out;
+    margin: 0;
+    overflow: hidden;
   }
-	
 	</style>
-<!--	<script>
-	
-		var upPress= new KeyboardEvent('keydown', {'keyCode':119, 'which':119});
-		var leftPress= new KeyboardEvent('keydown', {'keyCode':97, 'which':97});
-		var rightPress= new KeyboardEvent('keydown', {'keyCode':100, 'which':100});
-		var downPress= new KeyboardEvent('keydown', {'keyCode':115, 'which':115});
-		function up() {
-			document.dispatchEvent (upPress); 
-		}
-		function left() {
-			document.dispatchEvent (leftPress); 
-		}
-		function right() {
-			document.dispatchEvent (rightPress); 
-		}
-		function down() {
-			document.dispatchEvent (downPress); 
-		}
-		document.onkeydown = checkKey;
 
-		function checkKey(e) {
-			
-		    e = e || window.event;
-			console.log(e.keyCode)
-		    if (e.keyCode == '38') {
-		        // up arrow
-		        up()
-		    }
-		    else if (e.keyCode == '40') {
-		        // down arrow
-		        down()
-		    }
-		    else if (e.keyCode == '37') {
-		       // left arrow
-		       left()
-		    }
-		    else if (e.keyCode == '39') {
-		       // right arrow
-		       right()
-		    }
-		
-		}
-	</script> -->
-	
 	    <meta charset="UTF-8">
         <meta name="application-name" content="Snake">
 
@@ -91,9 +49,9 @@ body, html, p, p1, p2, p3, p4, h1, h2, h3, h4, h6, b, strong, i, em, mark, small
   </head>
 <title>Snake</title>
 <script src = "snake.js"></script>
-<body style = "background-color: black">
+<body style = "background-color: black" scroll="no">
 <canvas id = "canvas"></canvas>
-<hr>
+
 <!-- Personal Site -->
 <ins class="adsbygoogle"
 style="display:block"
