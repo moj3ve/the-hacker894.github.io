@@ -28,9 +28,12 @@ function start() {
 	canvas = document.getElementById("canvas");
 	//	window.requestAnimationFrame(loop);
 	canvas = document.getElementById("canvas");
-	canvas.width = window.innerWidth - 20;
-	canvas.height = window.innerHeight - 100;
+	canvas.width = window.innerWidth - 15;
+	canvas.height = window.innerHeight - 190;
 	ctx = canvas.getContext("2d");
+	ctx.lineWidth = 2;
+	ctx.strokeStyle="#FF0000";
+	ctx.strokeRect(0, 0, canvas.width, canvas.height);
 	lastRender = 0;
 	ctx.textAlign = "center";
 	ctx.font = "30px Retro";
@@ -68,8 +71,9 @@ function draw() {
 		ctx.fillText("Your Score Was: " + (score - startScore), canvas.width * .5, canvas.height * .45 + 50);
 		ctx.fillText("Press Space To Play Again", canvas.width * .5, canvas.height * .45 + 100);
 		ctx.fillText("Press i To Show AI", canvas.width * .5, canvas.height * .45 + 150);
+		//ctx.fillText("<a href='https://skylarmccauley.xyz/projects/snake/#noQuestion'>Click here to disable Math Questions</a>", canvas.width * .5, canvas.height * .45 + 200)
 		if (correctAns != undefined)
-			ctx.fillText("The Correct Answer Was: " + correctAns, canvas.width * .5, canvas.height * .45 + 200);
+			ctx.fillText("The Correct Answer Was: " + correctAns, canvas.width * .5, canvas.height * .45 + 250);
 	} else {
 		ctx.font = "30px Retro";
 		ctx.fillStyle = "rgb(255, 255, 255)";
@@ -84,7 +88,7 @@ function onClick(e) {
 
 function onKeyPress(e) {
 console.log(e.key);
-	if (aiOn) return;
+	
 	switch (e.key) {
 	case "w":
 		case "ArrowUp":
@@ -113,7 +117,10 @@ aiOn = false;
 gameOver = false;
 }
 break;
+
+break;
 case "i":
+if(aiOn) return;
 if (gameOver) {
 start();
 aiOn = true;
@@ -125,6 +132,9 @@ break;
 
 function updateSnake() {
 ctx.font = "30px Retro";
+if(aiOn) {
+	ctx.fillText("Use WASD to End", canvas.width * .5, canvas.height * .45 + 250);
+}
 	for (let i = 0; i < grid.length; i++) {
 		for (let j = 0; j < grid[i].length; j++) {
 			grid[i][j].age--;
@@ -136,6 +146,7 @@ ctx.font = "30px Retro";
 	}
 	try {
 		if (aiOn) {
+			
 			if (keep == 0) {
 				let output = getAIDir(headX, headY, foodX, foodY);
 				velX = output.velX;
@@ -150,6 +161,7 @@ ctx.font = "30px Retro";
 			ctx.fillRect(canvas.width/2 - 50, canvas.height * .05, 100, canvas.height * .05);
 			ctx.fillStyle = "rgb(255, 255, 255)";
 			ctx.fillText(score - startScore, canvas.width/2, canvas.height * .1);
+			
 			makeFood();
 			if (!aiOn) {
 				if (!askQuestion()) {

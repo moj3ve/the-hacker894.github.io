@@ -1,10 +1,15 @@
 function applyVerText() {
-    document.getElementById("ver").innerHTML = `v0.4.1`;
+    document.getElementById("ver").innerHTML = `v0.6`;
     document.getElementById("msg").placeholder =`Type your stupid message here :P`;
+}
+function applyShareText() {
+	if(navigator.share) {
+		document.getElementById("paperBoatShareBtn").innerHTML= `Share link to your message!`
+	}
 }
 function init() {
     applyVerText()
-    
+    applyShareText()
 }
 function displayBlock(e) {
     var e = document.getElementById(e);
@@ -25,7 +30,7 @@ function displayNone(e) {
     try {
         msg = CryptoJS.AES.encrypt(msg, "pb-0909");
     } catch (ex) {
-        alert(ex + "\n\nTry not including emoji?")
+        alert(ex + "\n\nTry not including odd chracters?")
         return;
     }
     displayBlock("sender")
@@ -42,6 +47,23 @@ function recompose() {
     displayNone("sender")
     displayBlock("composer")
     document.getElementById("hidden").innerHTML = ""
+}
+function shareLink() {
+	if (navigator.share) {
+  // Web Share API is supported
+  		
+     paperBoatURL = document.getElementById("hidden").innerHTML; 
+	  navigator.share({
+	      title: 'PaperBoat Message',
+	      url: paperBoatURL
+	    })
+	    .catch(console.error);
+	    
+		} else {
+	  // Fallback
+	  	Clipboard.copy()
+		}
+	
 }
 window.Clipboard = (function(window, document, navigator) {
     var textArea,

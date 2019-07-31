@@ -39,22 +39,26 @@ body, html, div, a, p, h1,h2,h3,h4,h5,h6, iframe, button {
 	cursor:url(../src/cursor.png) 25 15, auto !important;
 	cursor:url(../src/cursor.png) 25 15, pointer !important;
 }
+.main-container {
+	margin-top: 3%;
+}
 *:focus {
     outline: none;
 }
 h1 {
     margin: 0;
-    font-size: 5vw;
+    font-size: 7vw;
 }
 p {
     margin: 0;
     font-family: SF-Pro-Rounded-Bold;
+    font-size: 120%;
 }
 h1, .ver{
     display: inline-block;
 }
 .ver {
-    font-size: 115%;
+    font-size: 117%;
     font-family: SF-Pro-Rounded-Reg;
 }
 #sender {
@@ -64,6 +68,10 @@ h1, .ver{
     margin: 5% 0;
     margin-bottom: 1% !important;
 }
+::placeholder {
+    color: white; 
+} 
+  
 .composer #msg {
     background-color: inherit;
     color: white;
@@ -73,7 +81,7 @@ h1, .ver{
     padding: 1%;
 }
 #f-msg {
-    font-size: 145%;
+    font-size: 155%;
 }
 a.btn {
     background-color: white;
@@ -137,6 +145,7 @@ br {
     border-radius: 15px;
     border: 2px solid white;
     padding: 2%;
+    color: white;
 }
 hr {
     border-radius: 5px;
