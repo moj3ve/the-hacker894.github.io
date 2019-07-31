@@ -1,5 +1,10 @@
 function applyVerText() {
-    document.getElementById("ver").innerHTML = `v0.5`;
+    document.getElementById("ver").innerHTML = `v0.6`;
+}
+function applyShareText() {
+	if(navigator.share) {
+		document.getElementById("share").innerHTML= `Click here to share the link to this message!`
+	}
 }
 function toggleDisplay(e) {
     var e = document.getElementById(e);
@@ -9,6 +14,20 @@ function toggleDisplay(e) {
       e.style.display = "none";
     }
   }
+function shareLink() {
+	paperBoatURL = window.location.href
+	if (navigator.share) {
+	navigator.share({
+	      title: 'PaperBoat Message',
+	      url: paperBoatURL
+	    })
+	    .catch(console.error);
+	    
+		} else {
+	  // Fallback
+	  	Clipboard.copy()
+		}
+}
   window.Clipboard = (function(window, document, navigator) {
     var textArea,
         copy;
@@ -58,6 +77,7 @@ function toggleDisplay(e) {
 
 function init() {
     applyVerText()
+    applyShareText()
     var msg = window.location.hash
     msg = msg.substr(1);
     try {
