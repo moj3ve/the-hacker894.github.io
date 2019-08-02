@@ -34,7 +34,7 @@ body, html, .col-lg-6, .col-lg-3 {
     color: white !important;
     text-align: center;
 }
-body, html, div, a, p, h1,h2,h3,h4,h5,h6, iframe, button {
+body, html, div, a, p, h1,h2,h3,h4,h5,h6, iframe, button, textarea {
 	cursor: auto;
 	cursor:url(../src/cursor.png) 25 15, auto !important;
 	cursor:url(../src/cursor.png) 25 15, pointer !important;
@@ -66,12 +66,16 @@ h1, .ver{
 }
 .composer, .sender {
     margin: 5% 0;
-    margin-bottom: 1% !important;
+    margin-bottom: 5% !important;
 }
 ::placeholder {
     color: white; 
 } 
-  
+.composer a {
+    display: inline-block;
+    float: right;
+    margin-bottom: 5% !important;
+}
 .composer #msg {
     background-color: inherit;
     color: white;
@@ -79,9 +83,15 @@ h1, .ver{
     border: 2px solid white;
     border-radius: 15px;
     padding: 1%;
+    resize: both;
+    overflow: auto;
+    margin: 0;
 }
 #f-msg {
     font-size: 155%;
+}
+#share, #remake {
+    margin-top: 1% !important;
 }
 a.btn {
     background-color: white;
@@ -90,8 +100,8 @@ a.btn {
     border-radius: 15px;
     padding: 1%;
     text-decoration: none;
-    margin-top: 1%;
-    margin-bottom: 1%;
+    text-align: center;
+    margin: 0 2.5%;
 }
 img {
 	width: 3vw;
@@ -137,8 +147,12 @@ br {
 .shr-cont {
     margin-bottom: 10% !important;
 }
-.credits {
+.whisper {
+    font-size: 0.9vw;
     margin-top: 5%;
+}
+.credits {
+    margin-top: 1.5%;
     margin-bottom: 5%;
     margin-left: 10vw;
     margin-right: 10vw;
@@ -151,6 +165,35 @@ hr {
     border-radius: 5px;
     border: 2px solid white;
 }
-input {
-    width: 60% !important;
+
+textarea {
+    width: 100%;
+    max-width: 100% !important;
+    min-width: 100% !important;
+    height: 10vw;
+    min-height: 10vw !important;
+    display: inline-block;
+}
+/* Scrollbar */
+textarea::-webkit-scrollbar, ::-webkit-scrollbar{
+    width: 10px !important;
+    z-index: 9999;
+}
+textarea::-webkit-scrollbar-track, ::-webkit-scrollbar-track {
+    background: inherit !important; 
+    border-radius: 15px;
+    z-index: 9999;
+}
+textarea::-webkit-scrollbar-thumb, ::-webkit-scrollbar-thumb {
+    background: rgb(192, 192, 192) !important; 
+    border-radius: 15px;
+    z-index: 9999;
+}
+textarea::-webkit-scrollbar-thumb:hover, ::-webkit-scrollbar-thumb:hover {
+    background: rgb(139, 139, 139) !important; 
+    z-index: 9999;
+}
+textarea::-webkit-resizer {
+    background: #fff;
+    
 }

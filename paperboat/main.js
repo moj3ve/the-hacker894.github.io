@@ -1,15 +1,11 @@
 function applyVerText() {
-    document.getElementById("ver").innerHTML = `v0.6`;
+    document.getElementById("ver").innerHTML = `v0.7`;
     document.getElementById("msg").placeholder =`Type your stupid message here :P`;
 }
 function applyShareText() {
 	if(navigator.share) {
 		document.getElementById("paperBoatShareBtn").innerHTML= `Share link to your message!`
-	}
-}
-function init() {
-    applyVerText()
-    applyShareText()
+    }
 }
 function displayBlock(e) {
     var e = document.getElementById(e);
@@ -19,6 +15,18 @@ function displayNone(e) {
     var e = document.getElementById(e);
       e.style.display = "none";
 }
+function applyWhisperText() {
+    var width = parseFloat(window.screen.availWidth)
+    if(!width >= parseFloat(1024)) {
+        displayNone("whisper")
+    }
+}
+function init() {
+    applyVerText()
+    applyShareText()
+    applyWhisperText()
+}
+
   function process() {
     
     // Get and Encode Message

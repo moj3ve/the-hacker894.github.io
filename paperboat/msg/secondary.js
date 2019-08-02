@@ -1,5 +1,5 @@
 function applyVerText() {
-    document.getElementById("ver").innerHTML = `v0.6`;
+    document.getElementById("ver").innerHTML = `v0.7`;
 }
 function applyShareText() {
 	if(navigator.share) {

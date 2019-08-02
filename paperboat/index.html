@@ -70,10 +70,13 @@
             </div>
 
             <div id="composer" class="composer">
-                    <input oninput="displayNone('sender')" autocomplete="off" placeholder="You must enable JavaScript to use PaperBoat" type="text" id="msg" required minlength="2" maxlength="8192" size="50">
 
-                    <a class="btn" href="javascript:void(0)" onclick="process()">Fold up your PaperBoat!</a>
-            </div>
+                        <textarea oninput="displayNone('sender')" autocomplete="off" placeholder="You must enable JavaScript to use PaperBoat" type="text" id="msg" required minlength="2" maxlength="8192"></textarea>
+                        
+                        
+                    <a class="btn" id="fold" href="javascript:void(0)" onclick="process()">Fold up your PaperBoat!</a>
+                    <a class="btn" id="home" href="../../">Home</a>
+                </div>
             <div id="sender" class="sender">
                     <h3>Thanks for using PaperBoat!</h3>
                 <a class="btn" id="paperBoatShareBtn" href="javascript:void(0)" onclick="shareLink()">Copy link to your message!</a>
@@ -82,9 +85,10 @@
             <div id="hidden" class="hidden">
 
             </div>
+            
             <br>
-            <a class="btn" href="../../">Home</a>
-            <br>
+            <p id="whisper" class="whisper">You can grab the bottom-right of the composer to resize it!</p>
+
             <div class="credits">
                 PaperBoat created by Skylar McCauley
                 <img src="icon.svg">
