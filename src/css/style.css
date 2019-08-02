@@ -200,7 +200,7 @@ hr.long {
 	text-transform: uppercase;
 	margin-top: 2pt;
 }
-.btn-default:hover, .btn-default:focus, .btn-default.focus, .btn-default:active, .btn-default.active {
+.btn-default:hover, .btn-default:focus, .btn-default:active {
 	color: #fff;
 	background-color: #222;
 	border-color: #222;
@@ -216,7 +216,7 @@ hr.long {
 	font-weight: 400;
 	margin-top: 2pt;
 }
-.btn-primary:hover, .btn-primary:focus, .btn-primary.focus, .btn-primary:active, .btn-primary.active {
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active {
 	color: #fff;
 	background-color: #F87601;
 	border-color: #F87601;
@@ -596,12 +596,13 @@ color: #2c3e50;
 #copyEmail {
 	transition: all .5s;
 }
-.emailCopySuccessful {
+.emailCopySuccessful, .emailCopySuccessful:hover {
 	background-color: rgb(5, 201, 37);
 }
-.emailCopySuccessful:hover {
-	background-color: rgb(5, 201, 37);
+.emailCopyUnsuccessful, .emailCopyUnsuccessful:hover{
+	background-color: rgb(255, 43, 43);
 }
+
 #contact .social {
 	margin-top: 80px;
 }

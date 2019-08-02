@@ -59,11 +59,19 @@ function sleep(ms) {
         }
       }
 // Contact Section Handler
-      async function emailCopied() {
-        copyEmailBtn = document.getElementById("copyEmail")
-        copyEmailBtn.classList.add("emailCopySuccessful")
-        await sleep(650)
-        copyEmailBtn.classList.remove("emailCopySuccessful")
+      async function emailCopied(a) {
+        if(a) {
+          copyEmailBtn = document.getElementById("copyEmail")
+          copyEmailBtn.classList.add("emailCopySuccessful")
+          await sleep(650)
+          copyEmailBtn.classList.remove("emailCopySuccessful")
+        } else {
+          copyEmailBtn = document.getElementById("copyEmail")
+          copyEmailBtn.classList.add("emailCopyUnsuccessful")
+          await sleep(650)
+          copyEmailBtn.classList.remove("emailCopyUnsuccessful")
+        }
+        
       }
       function shareEmail() {
 
@@ -73,14 +81,21 @@ function sleep(ms) {
             navigator.share({
               text: "skylarmccauley864@gmail.com"
             })
-            emailCopied()
+            emailCopied(true)
           } catch (ex) {
-            alert(ex)
+            console.log(ex)
+            emailCopied(false)
           }
           
         } else {
-          Clipboard.copy('skylarmccauley864@gmail.com')
-          emailCopied()
+          try {
+            Clipboard.copy('skylarmccauley864@gmail.com')
+            emailCopied(true)
+          } catch (ex) {
+            console.log(ex)
+            emailCopied(false)
+          }
+          
         }
       }
       function init() {
