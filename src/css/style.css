@@ -591,6 +591,16 @@ color: #2c3e50;
 }
 #contact .btn {
 	margin-top: 2pt;
+	
+}
+#copyEmail {
+	transition: all .5s;
+}
+.emailCopySuccessful {
+	background-color: rgb(5, 201, 37);
+}
+.emailCopySuccessful:hover {
+	background-color: rgb(5, 201, 37);
 }
 #contact .social {
 	margin-top: 80px;
@@ -993,4 +1003,3 @@ a.btn:active {
   ::-webkit-scrollbar-thumb:hover {
 	background: #555; 
   }
-  
