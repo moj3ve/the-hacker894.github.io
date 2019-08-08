@@ -136,7 +136,7 @@ code {
 }
 .credits {
     text-align: left;
-    background-color: rgba(169, 229, 255, 0.39); !important;
+    background-color: rgba(169, 229, 255, 0.39) !important;
     border-radius: 15px;
     margin: 50px;
     padding: 15px;
