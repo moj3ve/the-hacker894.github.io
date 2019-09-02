@@ -1,5 +1,5 @@
 function applyVerText() {
-    document.getElementById("ver").innerHTML = `v0.7`;
+    document.getElementById("ver").innerHTML = `v0.7.1`;
 }
 function applyShareText() {
 	if(navigator.share) {
@@ -78,6 +78,7 @@ function shareLink() {
 function init() {
     applyVerText()
     applyShareText()
+    
     var msg = window.location.hash
     msg = msg.substr(1);
     try {
@@ -85,9 +86,27 @@ function init() {
     } catch (ex) {
         console.log(ex)
     }
-
-    toggleDisplay("l")
-    document.getElementById("f-msg").innerHTML = `${msg.toString(CryptoJS.enc.Utf8)}`;
-    document.getElementById("hidden").innerHTML = window.location.href;
+    function determineMsg() {
+        toggleDisplay("l")
+        function prepareShare() {
+            document.getElementById("hidden").innerHTML = window.location.href;
+        }
+        function noMsg() {
+            document.getElementById("f-msg").innerHTML = `No message here :(`;
+            toggleDisplay('hopesanddreams')
+            toggleDisplay('pending-msg')
+            toggleDisplay('pending-msg-div')
+            toggleDisplay('share')
+        }
+        
+        if(window.location.hash.length < 1) return noMsg()
+        document.getElementById("f-msg").innerHTML = `${msg.toString(CryptoJS.enc.Utf8)}`;
+    }
+    determineMsg()
+    
+    
+    
   //  document.getElementById("share").a=`${window.location.href}`;
 }
+
+//#U2FsdGVkX1/6dRIlXfQvI/YzDh9ATYNdZXLjxOPH2lk=
