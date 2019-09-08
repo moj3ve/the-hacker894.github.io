@@ -9,11 +9,6 @@ body {
   -webkit-transition: height .5s;
   transition: height .5s;
 }
-body, html, div, a, p, h1,h2,h3,h4,h5,h6, iframe, button {
-	cursor: auto;
-	cursor:url(../src/cursor-inverted.png) 25 15, auto !important;
-	cursor:url(../src/cursor-inverted.png) 25 15, pointer !important;
-}
 .center, .row {
     text-align: center;
 }
