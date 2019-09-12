@@ -1,8 +1,21 @@
 var sounds = {
-	slither: new Audio('./src/sounds/slitherLoop.mp3')
+	slither: new Audio('./src/sounds/slitherLoop.mp3'),
+	gameOver: new Audio('./src/sounds/gameOver.mp3'),
+	newFood: new Audio('./src/sounds/newFood.mp3'),
+	keyPress: new Audio('./src/sounds/pressKey.mp3'),
+	questionCorrect: new Audio('./src/sounds/questionCorrect.mp3'),
+	score100: new Audio('./src/sounds/score100.mp3')
 }
-
-
+function playSound(s) {
+	if(window.location.hash && window.location.hash.includes('noSound')) return;
+	s.play()
+}
+function pauseSound(s, m) {
+	s.pause()
+	if(m) {
+		s.currentTime = 0
+	}
+}
 class Node {
 	constructor(x, y) {
 		this.x = x;
@@ -30,6 +43,9 @@ class Node {
 
 function start() {
 
+	pauseSound(sounds.gameOver, true)
+	pauseSound(sounds.slither)
+	playSound(sounds.slither)
 	canvas = document.getElementById("canvas");
 	//	window.requestAnimationFrame(loop);
 	canvas = document.getElementById("canvas");
@@ -68,7 +84,7 @@ function start() {
 }
 
 function draw() {
-
+	
 	if (gameOver) {
 		ctx.font = "30px Retro";
 		ctx.fillStyle = "rgb(255, 255, 255)";
@@ -82,6 +98,8 @@ function draw() {
 	} else {
 		ctx.font = "30px Retro";
 		ctx.fillStyle = "rgb(255, 255, 255)";
+		
+		
 		ctx.fillText(score - startScore, canvas.width/2, canvas.height * .1);
 	}
 }
@@ -99,24 +117,41 @@ console.log(e.key);
 		case "ArrowUp":
 			velX = 0;
 			velY = -1;
+			if(!gameOver) {
+				playSound(sounds.keyPress)
+				
+			}
 		break;
 	case "s":
 		case "ArrowDown":
 		velX = 0;
 		velY = 1;
+		if(!gameOver) {
+			playSound(sounds.keyPress)
+		}
 	break;
 	case "a":
 		case "ArrowLeft":
 		velX = -1;
 		velY = 0;
+		if(!gameOver) {
+			playSound(sounds.keyPress)
+		}
 	break;
 	case "d":
 		case "ArrowRight":
 			velX = 1;
 			velY = 0;
+			if(!gameOver) {
+				playSound(sounds.keyPress)
+			}
 	break;
 	case " ":
+			if(gameOver) {
+				playSound(sounds.keyPress)
+			}
 if (gameOver) {
+	pauseSound(sounds.gameOver, true)
 start();
 aiOn = false;
 gameOver = false;
@@ -125,6 +160,9 @@ break;
 
 break;
 case "i":
+		if(gameOver) {
+			playSound(sounds.keyPress)
+		}
 if(aiOn) return;
 if (gameOver) {
 start();
@@ -135,7 +173,7 @@ break;
 }
 }
 
-function updateSnake() {
+async function updateSnake () {
 ctx.font = "30px Retro";
 if(aiOn) {
 	ctx.fillText("Use WASD to End", canvas.width * .5, canvas.height * .45 + 250);
@@ -166,7 +204,9 @@ if(aiOn) {
 			ctx.fillRect(canvas.width/2 - 50, canvas.height * .05, 100, canvas.height * .05);
 			ctx.fillStyle = "rgb(255, 255, 255)";
 			ctx.fillText(score - startScore, canvas.width/2, canvas.height * .1);
-			
+			if(score== 100 || score == "100") {
+				playSound(sounds.score100)
+			}
 			makeFood();
 			if (!aiOn) {
 				if (!askQuestion()) {
@@ -178,13 +218,14 @@ if(aiOn) {
 			return;
 		}
 		
-		sounds.slither.pause()
+		pauseSound(sounds.slither)
+		playSound(sounds.slither)
 			grid[headX + velX][headY + velY].state = 2;
 			grid[headX + velX][headY + velY].age = score;
 			headX += velX;
 			headY += velY;
 			grid[headX][headY].drawNode(pixelWidth, pixelWidth);
-			sounds.slither.play()
+			
 			if (!gameOver)
 				setTimeout(updateSnake, aiOn ? 5 : 65);
 	} catch (err){
@@ -195,6 +236,7 @@ if(aiOn) {
 
 function makeFood() {
 
+	playSound(sounds.newFood)
 	foodX = Math.floor(Math.random() * grid.length);
 	foodY = Math.floor(Math.random() * grid[0].length);
 	while (grid[foodX][foodY].state == 2) {
@@ -209,6 +251,7 @@ function endGame() {
 
 	console.log("game over");
 	gameOver = true;
+	playSound(sounds.gameOver)
 	draw();
 }
 
@@ -310,11 +353,9 @@ function getAIDir(headX, headY, foodX, foodY) {
 
 function askQuestion() {
 
-	if(window.location.hash) {
-		if(!window.location.hash.includes('mathQuestion')) {
+	if(window.location.hash && !window.location.hash.includes('mathQuestion')) {
 			correctAns = undefined;
 			return true;
-		}
 	}
 	if (Math.random() > .45)
 		return true;
@@ -354,6 +395,7 @@ function askQuestion() {
 	}
 	if (ans == ui) {
 		correctAns = undefined;
+		playSound(sounds.questionCorrect)
 		return true; 
 	}
 	correctAns = ans;
