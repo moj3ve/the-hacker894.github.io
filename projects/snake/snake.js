@@ -1,3 +1,8 @@
+var sounds = {
+	slither: new Audio('./src/sounds/slitherLoop.mp3')
+}
+
+
 class Node {
 	constructor(x, y) {
 		this.x = x;
@@ -172,11 +177,14 @@ if(aiOn) {
 			endGame();
 			return;
 		}
+		
+		sounds.slither.pause()
 			grid[headX + velX][headY + velY].state = 2;
 			grid[headX + velX][headY + velY].age = score;
 			headX += velX;
 			headY += velY;
 			grid[headX][headY].drawNode(pixelWidth, pixelWidth);
+			sounds.slither.play()
 			if (!gameOver)
 				setTimeout(updateSnake, aiOn ? 5 : 65);
 	} catch (err){
