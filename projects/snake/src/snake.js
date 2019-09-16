@@ -16,6 +16,10 @@ function pauseSound(s, m) {
 		s.currentTime = 0
 	}
 }
+function refresh() {
+	window.location.reload()
+}
+window.addEventListener("resize", refresh)
 class Node {
 	constructor(x, y) {
 		this.x = x;
