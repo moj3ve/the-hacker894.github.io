@@ -16,6 +16,10 @@ function pauseSound(s, m) {
 		s.currentTime = 0
 	}
 }
+function refresh() {
+	window.location.reload()
+}
+window.addEventListener("resize", refresh)
 class Node {
 	constructor(x, y) {
 		this.x = x;
@@ -86,7 +90,15 @@ function start() {
 function draw() {
 	
 	if (gameOver) {
+		if(mobile) {
 		ctx.font = "30px Retro";
+		ctx.fillStyle = "rgb(255, 255, 255)";
+		ctx.fillText("Mobile Device Detected!", canvas.width * .5, canvas.height * .45);
+		ctx.fillText("This is not compatible ", canvas.width * .5, canvas.height * .45 + 50);
+		ctx.fillText("with mobile devices", canvas.width * .5, canvas.height * .45 + 100);
+		// console.log(headX + )
+		} else {
+			ctx.font = "30px Retro";
 		ctx.fillStyle = "rgb(255, 255, 255)";
 		ctx.fillText("Game Over", canvas.width * .5, canvas.height * .45);
 		ctx.fillText("Your Score Was: " + (score - startScore), canvas.width * .5, canvas.height * .45 + 50);
@@ -95,6 +107,8 @@ function draw() {
 		//ctx.fillText("<a href='https://skylarmccauley.xyz/projects/snake/#noQuestion'>Click here to disable Math Questions</a>", canvas.width * .5, canvas.height * .45 + 200)
 		if (correctAns != undefined)
 			ctx.fillText("The Correct Answer Was: " + correctAns, canvas.width * .5, canvas.height * .45 + 250);
+		}
+		
 	} else {
 		ctx.font = "30px Retro";
 		ctx.fillStyle = "rgb(255, 255, 255)";
@@ -175,6 +189,7 @@ break;
 
 async function updateSnake () {
 ctx.font = "30px Retro";
+ctx.fillStyle = "rgb(255, 255, 255)";
 if(aiOn) {
 	ctx.fillText("Use WASD to End", canvas.width * .5, canvas.height * .45 + 250);
 }
@@ -235,7 +250,10 @@ if(aiOn) {
 }
 
 function makeFood() {
-
+	if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+		
+		endGame(true)
+	}
 	playSound(sounds.newFood)
 	foodX = Math.floor(Math.random() * grid.length);
 	foodY = Math.floor(Math.random() * grid[0].length);
@@ -247,7 +265,13 @@ function makeFood() {
 	grid[foodX][foodY].drawNode(pixelWidth, pixelWidth);
 }
 
-function endGame() {
+function endGame(m) {
+
+	if(m) {
+		gameOver = true
+		mobile = true
+	}
+	
 
 	console.log("game over");
 	gameOver = true;
@@ -419,6 +443,7 @@ var correctAns;
 var startScore;
 var keep;
 var pixelWidth;
+var mobile;
 document.addEventListener("DOMContentLoaded", start);
 document.addEventListener("click", onClick);
 document.addEventListener("keydown", onKeyPress);
