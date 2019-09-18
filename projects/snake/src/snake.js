@@ -104,6 +104,7 @@ function draw() {
 		ctx.fillText("Your Score Was: " + (score - startScore), canvas.width * .5, canvas.height * .45 + 50);
 		ctx.fillText("Press Space To Play Again", canvas.width * .5, canvas.height * .45 + 100);
 		ctx.fillText("Press i To Show AI", canvas.width * .5, canvas.height * .45 + 150);
+		ctx.fillText("", canvas.width * .5, canvas.height * .45 + 250);
 		//ctx.fillText("<a href='https://skylarmccauley.xyz/projects/snake/#noQuestion'>Click here to disable Math Questions</a>", canvas.width * .5, canvas.height * .45 + 200)
 		if (correctAns != undefined)
 			ctx.fillText("The Correct Answer Was: " + correctAns, canvas.width * .5, canvas.height * .45 + 250);
@@ -129,36 +130,52 @@ console.log(e.key);
 	switch (e.key) {
 	case "w":
 		case "ArrowUp":
-			velX = 0;
+			if(!aiOn) {
+				velX = 0;
 			velY = -1;
 			if(!gameOver) {
 				playSound(sounds.keyPress)
 				
 			}
+			}
+			
 		break;
 	case "s":
 		case "ArrowDown":
-		velX = 0;
-		velY = 1;
+		if(!aiOn) {
+			velX = 0;
+			velY = 1;
 		if(!gameOver) {
 			playSound(sounds.keyPress)
 		}
+		}
+		
 	break;
 	case "a":
 		case "ArrowLeft":
-		velX = -1;
+		if(!aiOn) {
+			velX = -1;
 		velY = 0;
 		if(!gameOver) {
 			playSound(sounds.keyPress)
 		}
+		}
+		
 	break;
 	case "d":
 		case "ArrowRight":
+		if(!aiOn) {
 			velX = 1;
 			velY = 0;
 			if(!gameOver) {
 				playSound(sounds.keyPress)
 			}
+		}
+			
+	break;
+	case "k":
+			endGame()
+			aiOn = false
 	break;
 	case " ":
 			if(gameOver) {
@@ -191,7 +208,7 @@ async function updateSnake () {
 ctx.font = "30px Retro";
 ctx.fillStyle = "rgb(255, 255, 255)";
 if(aiOn) {
-	ctx.fillText("Use WASD to End", canvas.width * .5, canvas.height * .45 + 250);
+	ctx.fillText("Press K to End", canvas.width * .5, canvas.height * .45 + 250);
 }
 	for (let i = 0; i < grid.length; i++) {
 		for (let j = 0; j < grid[i].length; j++) {
@@ -276,6 +293,7 @@ function endGame(m) {
 	console.log("game over");
 	gameOver = true;
 	playSound(sounds.gameOver)
+	
 	draw();
 }
 
