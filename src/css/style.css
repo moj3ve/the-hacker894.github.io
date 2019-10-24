@@ -21,12 +21,47 @@ body, html {
 img {
 	border-radius: inherit !important;
 }
+@media (prefers-color-scheme: dark) {
+    h1 {
+		color: #f8f8f8
+	}
+	.intro-text p {
+		color: #F3F2F8;
+	}
+	h2 {
+		color: #F3F2F8;
+	}
+	.h2-like {
+		color: #F3F2F8
+	}
+	h3, h4 {
+		color: #E6E5EB;
+	}
+	p {
+		font-size: 15px;
+		color: #F3F2FA;
+	}
+	a {
+		color: #0A84FF;
+	}
+	a:hover, a:focus {
+		text-decoration: none;
+		color: #5E5BE6;
+	}
+	hr {
+		color: #48484A;
+	}
+	.navbar-custom {
+		background-color: #1C1C1E
+	}
+
+}
 h1 {
 	font-weight: 700;
-	color: #f8f8f8
+	color: #1C1C1E
 }
 .intro-text p {
-	color: #f8f8f8
+	color: #2C2C2E
 }
 h1 strong {
 	font-weight: 900;
@@ -34,7 +69,7 @@ h1 strong {
 h2 {
 	line-height: 20px;
 	margin: 0;
-	color: #F3F2F8;
+	color: #1C1C1E;
 	font-weight: 400;
 	margin-bottom: 30px;
 	font-size: 34px;
@@ -43,14 +78,14 @@ h2 {
 .h2-like {
 	line-height: 20px;
 	margin: 0;
-	color: #F3F2F8 !important;
+	color: #1C1C1E !important;
 	font-weight: 400 !important;
 	margin-bottom: 30px;
 	font-size: 24px !important;
 	text-transform: uppercase;
 }
 h3, h4 {
-	color: #333;
+	color: #2C2C2E;
 	font-size: 20px;
 	font-weight: 600;
 }
@@ -61,7 +96,7 @@ h5 {
 }
 p {
 	font-size: 15px;
-	color: #F3F2F8;
+	color: #2C2C2E;
 }
 p.intro {
 	font-size: 16px;
@@ -70,11 +105,11 @@ p.intro {
 	font-family: 'Rubik', sans-serif !important;;
 }
 a {
-	color: #0A84FF;
+	color: #007AFF;
 }
 a:hover, a:focus {
 	text-decoration: none;
-	color: #5E5BE6;
+	color: #5757D3;
 }
 ul, ol {
 	list-style: none;
@@ -107,7 +142,7 @@ hr {
 	text-align: center;
 	position: relative;
 	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#6b4da8+0,4977c2+100 */
-	background: #F3F2F8; /* Old browsers */
+	background: #C8C7CD; /* Old browsers */
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6b4da8', endColorstr='#4977c2', GradientType=1 ); /* IE6-9 */
 	margin: 0 auto;
 	margin-bottom: 30px;
@@ -135,7 +170,7 @@ hr.long {
 }
 .navbar-custom {
 	margin-bottom: 0;
-	background-color: #1C1C1E;
+	background-color: #99989E;
 	border-radius: 0px;
 	padding: 10px 0;
 }
@@ -146,7 +181,7 @@ hr.long {
 	outline: 0;
 }
 .navbar-toggle {
-	color: rgb(138, 138, 138) !important;
+	color: #1C1C1E !important;
 	padding-right: 6%;
 
 }
