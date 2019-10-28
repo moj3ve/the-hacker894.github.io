@@ -48,7 +48,7 @@
   margin-bottom: 1rem;
 
 }
-@media screen and (max-width: 780px) {
+@media screen and (max-width: 780px) and (min-width: 476px) {
   .card .title{
     margin-top: 1em;
     margin-bottom: 1.1em;
@@ -62,7 +62,11 @@
   .card div.icon {
     text-align: center !important;
     margin: auto !important;
-    display: none !important;
+    float: none !important;
+    
+  }
+  .card .title {
+    margin-top: .25em;
   }
 }
 @media screen and (min-width: 781px) {
