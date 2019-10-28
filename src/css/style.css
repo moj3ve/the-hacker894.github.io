@@ -18,9 +18,6 @@ body, html {
 *:focus {
     outline: none;
 }
-img {
-	border-radius: inherit !important;
-}
 h1 {
 	font-weight: 700;
 	color: #f8f8f8
