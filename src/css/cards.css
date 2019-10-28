@@ -49,8 +49,20 @@
 
 }
 @media screen and (max-width: 780px) {
-  .card .title, .card .desc {
-    margin-bottom: 0px;
+  .card .title{
+    margin-top: 1em;
+    margin-bottom: 1.1em;
+  }
+  
+  .card .desc {
+    margin-bottom: 0 !important;
+  }
+}
+@media  screen and (max-width: 475px) {
+  .card div.icon {
+    text-align: center !important;
+    margin: auto !important;
+    display: none !important;
   }
 }
 @media screen and (min-width: 781px) {
@@ -82,13 +94,13 @@
     
 }
 .card div.icon {
-  text-align: left !important;
+  text-align: left;
   width: fit-content;
   float: left;
 }
 .card img {
   border-radius: 150px;
-  text-align: left !important;
+  text-align: left;
   margin-left: .5em;
   margin-top: .5em;
   box-shadow: 0 2px 5px 0 rgba(0,0,0,0.15);
@@ -505,9 +517,7 @@ p, h1 {
   padding: 2em;
 }
 @media screen and (max-width: 994px) {
-  .card .desc {
-    display: none;
-  }
+  
   .styled-link {
     font-size: 10pt;
   }
