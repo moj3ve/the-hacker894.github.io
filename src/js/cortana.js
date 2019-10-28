@@ -6,7 +6,7 @@ function sleep(ms) {
       var orientation = parseInt(window.orientation)
 
       function JSExists() {
-        $(`.noJS`).fadeOut(250)
+        $(`.noJS`).fadeOut(225)
         return;
       }
 
@@ -16,9 +16,17 @@ function sleep(ms) {
         // This is hardcoded to support 3 Pages
         function cp() {
           
-          $(`.p2`).fadeOut(250)
-          $(`.p3`).fadeOut(250)
-          $(`.p1`).fadeIn(250)
+          
+          setTimeout(() => {
+            $(`.p2`).fadeOut(225)
+          }, 100)
+          setTimeout(() => {
+            $(`.p3`).fadeOut(225)
+          }, 100)
+          setTimeout(() => {
+            $(`.p1`).fadeIn(250)
+          }, 175)
+          
 
           $('.selector-1').css({opacity: 1.0})
           $('.selector-2').css({opacity: 0.1})
@@ -36,9 +44,16 @@ function sleep(ms) {
           return;
         }
         if(p == 2) {
-          $(`.p1`).fadeOut(250)
-          $(`.p3`).fadeOut(250)
-          $(`.p2`).fadeIn(250)
+          setTimeout(() => {
+            $(`.p1`).fadeOut(225)
+          }, 100)
+          setTimeout(() => {
+            $(`.p3`).fadeOut(225)
+          }, 100)
+          setTimeout(() => {
+            $(`.p2`).fadeIn(250)
+          }, 175)
+          
 
           $('.selector-1').css({opacity: 0.1})
           $('.selector-2').css({opacity: 1.0})
@@ -47,9 +62,16 @@ function sleep(ms) {
           return;
         }
         if(p >= 3) {
-          $(`.p1`).fadeOut(250)
-          $(`.p2`).fadeOut(250)
-          $(`.p3`).fadeIn(250)
+          setTimeout(() => {
+            $(`.p1`).fadeOut(225)
+          }, 100)
+          setTimeout(() => {
+            $(`.p2`).fadeOut(225)
+          }, 100)
+          setTimeout(() => {
+            $(`.p3`).fadeIn(250)
+          }, 175)
+          
 
           $('.selector-1').css({opacity: 0.1})
           $('.selector-2').css({opacity: 0.1})
