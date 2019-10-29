@@ -91,6 +91,9 @@
 .card:active {
   transform: scale(0.98)
 }
+.card.sunset {
+  background-color: #FF8100
+}
 .card.cleverbot {
   background-color:#42AEDE;
 }
